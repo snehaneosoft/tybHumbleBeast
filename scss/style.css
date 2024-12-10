@@ -6,6 +6,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Calibri";
+  src: url("../../fonts/Calibri-Bold.woff2") format("woff2"), url("../../fonts/Calibri-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Bank Gothic";
   src: url("../../fonts/BankGothicBTLightRegular.woff2") format("woff2"), url("../../fonts/BankGothicBTLightRegular.woff") format("woff");
   font-weight: 300;
@@ -81,6 +88,9 @@
   border: 1px solid var(--bs-primary-red);
   background: transparent;
 }
+.button_rounded {
+  border-radius: 25px;
+}
 
 html {
   font-size: 16px;
@@ -122,6 +132,11 @@ body {
 .strikethrough {
   text-decoration: line-through;
   text-decoration-thickness: 1px;
+}
+
+.common_font {
+  font-size: 1.125rem;
+  line-height: 27px;
 }
 
 header {
@@ -382,6 +397,35 @@ footer .footer_bottom .copy_right ul li {
   border-radius: 13px;
   color: var(--bs-blue);
 }
+.nutrition_books_purchase .purchase_top_section {
+  margin-bottom: 19px;
+}
+.nutrition_books_purchase .purchase_bottom_section .purchase_bottom_heading {
+  font-size: 1.18rem;
+}
+.nutrition_books_purchase .purchase_bottom_section .pur-bttm-sec {
+  gap: 27px;
+  margin-bottom: 57px;
+}
+.nutrition_books_purchase .purchase_footer_section {
+  gap: 33px;
+}
+.nutrition_books_purchase .purchase_footer_section_incdes {
+  gap: 12px;
+}
+.nutrition_books_purchase .purchase_footer_section .incrdecr_span,
+.nutrition_books_purchase .purchase_footer_section .count_show {
+  border: 1px solid var(--bs-gray);
+  border-radius: 25px;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nutrition_books_purchase .purchase_footer_section .count_show {
+  width: 74px;
+}
 
 ul {
   list-style: none;
@@ -395,5 +439,6 @@ ul {
   --bs-black: #000;
   --bs-Yellow: #ffb800;
   --bs-blue: #179cdb;
+  --bs-gray: #979797;
   --rgb-orange: 232, 170, 10;
 }/*# sourceMappingURL=style.css.map */

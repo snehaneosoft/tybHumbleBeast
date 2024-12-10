@@ -53,4 +53,35 @@
     @include border-radius(13px);
     color: var(--bs-blue);
   }
+  .purchase_top_section {
+    margin-bottom: 19px;
+  }
+  .purchase_bottom_section {
+    .purchase_bottom_heading {
+      font-size: 1.18rem;
+    }
+    .pur-bttm-sec {
+      gap: 27px;
+      margin-bottom: 57px;
+    }
+  }
+  .purchase_footer_section {
+    gap: 33px;
+    &_incdes {
+      gap: 12px
+    }
+    .incrdecr_span,
+    .count_show {
+      border: 1px solid var(--bs-gray);
+      @include border-radius(25px);
+      width: 43px;
+      height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .count_show {
+      width: 74px;
+    }
+  }
 }
