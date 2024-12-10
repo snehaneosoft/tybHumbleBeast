@@ -15,6 +15,9 @@ body {
 .fontInter {
   font-family: 'Inter';
 }
+.fontBankGothic {
+  font-family: 'Bank Gothic';
+}
 .fontCalibri {
   font-family: 'Calibri';
 }
@@ -23,4 +26,8 @@ body {
 }
 .fontBold {
   font-weight: bold;
+}
+.strikethrough {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
 }

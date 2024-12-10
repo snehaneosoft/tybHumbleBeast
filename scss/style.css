@@ -77,6 +77,10 @@
   font-size: 16px;
   line-height: 29px;
 }
+.button_bgtransparent {
+  border: 1px solid var(--bs-primary-red);
+  background: transparent;
+}
 
 html {
   font-size: 16px;
@@ -99,6 +103,10 @@ body {
   font-family: "Inter";
 }
 
+.fontBankGothic {
+  font-family: "Bank Gothic";
+}
+
 .fontCalibri {
   font-family: "Calibri";
 }
@@ -109,6 +117,11 @@ body {
 
 .fontBold {
   font-weight: bold;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
 }
 
 header {
@@ -305,10 +318,6 @@ footer .footer_bottom .copy_right ul li {
   display: flex;
   gap: 14px;
 }
-.achieve_best .blueprint_container .card .paper_strike .strikethrough {
-  text-decoration: line-through;
-  text-decoration-thickness: 1px;
-}
 .achieve_best .blueprint_container .card .paper_strike .paper_back_box {
   border: 1px solid rgba(var(--rgb-orange), 0.62);
   border-radius: 10px;
@@ -316,6 +325,62 @@ footer .footer_bottom .copy_right ul li {
 }
 .achieve_best .blueprint_container .card .paper_strike .paper_back_box p {
   color: var(--bs-Yellow);
+}
+
+.books_purchase_wrap .books_purchase_wrap_box {
+  background: url(../../images/book1.png) no-repeat;
+  background-position: 50% 35%;
+  background-size: cover;
+}
+.books_purchase_wrap .books_purchase_banner {
+  padding: 103px 40px 73px 40px;
+  background: url(../../images/bgbk.png) #000 no-repeat right;
+  width: 65%;
+}
+.books_purchase_wrap .books_purchase_banner h5 {
+  font-size: 3.563rem;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+.books_purchase_wrap .books_purchase_banner .explore_txt {
+  margin-top: 40px;
+}
+.books_purchase_wrap .books_purchase_banner .explore_txt {
+  line-height: 32px;
+  border-radius: 25px;
+  padding: 6px 24px;
+  text-decoration: none;
+  background: #000;
+  margin: 40px 0 74px 0;
+}
+.books_purchase_wrap .bk_purchase_container {
+  background: url("../../images/book1.png") no-repeat right;
+}
+
+.nutrition_books_purchase {
+  padding: 120px 0 0 0;
+}
+.nutrition_books_purchase .card_heading {
+  font-size: 2.18rem;
+  padding-top: 50px;
+  line-height: 56px;
+}
+.nutrition_books_purchase .card_subheading {
+  font-size: 1.125rem;
+  line-height: 37px;
+  gap: 24px;
+}
+.nutrition_books_purchase .paper_strike {
+  gap: 13px;
+  margin-top: 13px;
+}
+.nutrition_books_purchase .paper_back_box {
+  padding: 6px 17px;
+  font-size: 1.125rem;
+  line-height: 30px;
+  border: 1px solid var(--bs-blue);
+  border-radius: 13px;
+  color: var(--bs-blue);
 }
 
 ul {
@@ -329,5 +394,6 @@ ul {
   --bs-white: #fff;
   --bs-black: #000;
   --bs-Yellow: #ffb800;
+  --bs-blue: #179cdb;
   --rgb-orange: 232, 170, 10;
 }/*# sourceMappingURL=style.css.map */

@@ -54,10 +54,7 @@
       .paper_strike {
         display: flex;
         gap: 14px;
-        .strikethrough {
-          text-decoration: line-through;
-          text-decoration-thickness: 1px;
-        }
+        
         .paper_back_box {
           border: 1px solid rgba(var(--rgb-orange), 0.62);
           @include border-radius(10px);
