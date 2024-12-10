@@ -1,0 +1,26 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  background: url('../images/wave-red-lines-light.jpg') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+.heading_brdr {
+  padding: 1px;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1.36%, #ff0000 77.38%);
+  width: 48px;
+}
+.fontInter {
+  font-family: 'Inter';
+}
+.fontCalibri {
+  font-family: 'Calibri';
+}
+.fontPoppins {
+  font-family: 'Poppins';
+}
+.fontBold {
+  font-weight: bold;
+}

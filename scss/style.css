@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("../../fonts/Calibri.woff2") format("woff2"), url("../../fonts/Calibri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bank Gothic";
+  src: url("../../fonts/BankGothicBTLightRegular.woff2") format("woff2"), url("../../fonts/BankGothicBTLightRegular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bank Gothic";
+  src: url("../../fonts/BankGothicBTMediumRegular.woff2") format("woff2"), url("../../fonts/BankGothicBTMediumRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jura";
+  src: url("../../fonts/Jura-Bold.woff2") format("woff2"), url("../../fonts/Jura-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jura";
+  src: url("../../fonts/Jura-Medium.woff2") format("woff2"), url("../../fonts/Jura-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jura";
+  src: url("../../fonts/Jura-Light.woff") format("woff2"), url("../../fonts/Jura-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Light.woff2") format("woff2"), url("../../fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-SemiBold.woff2") format("woff2"), url("../../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Bold.woff2") format("woff2"), url("../../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.button {
+  background: var(--bs-primary-red);
+  line-height: 30px;
+  text-align: center;
+  padding: 6px 24px;
+  display: inline-block;
+  outline: none;
+  border: 1px solid var(--bs-primary-red);
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-radius: 8px;
+  color: var(--bs-white);
+  font-family: calibri;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  background: url("../images/wave-red-lines-light.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.heading_brdr {
+  padding: 1px;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1.36%, #ff0000 77.38%);
+  width: 48px;
+}
+
+.fontInter {
+  font-family: "Inter";
+}
+
+.fontCalibri {
+  font-family: "Calibri";
+}
+
+.fontPoppins {
+  font-family: "Poppins";
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+header {
+  padding: 25px 25px 0 25px;
+}
+header .nav-bar {
+  position: fixed;
+  background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(115, 115, 115, 0.39) 100%);
+  width: calc(100% - 50px);
+  z-index: 1;
+  left: 25px;
+  padding-right: 25px;
+  border-radius: 13px;
+}
+header .nav-bar .menu-ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  gap: 50px;
+}
+header .nav-bar .menu-ul li {
+  line-height: 29px;
+}
+header .nav-bar .menu-ul li a {
+  font-family: calibri;
+  font-size: 16px;
+  color: var(--bs-white);
+}
+header .nav-bar .menu-cart {
+  gap: 40px;
+}
+
+.main_content {
+  padding-top: 128px;
+}
+
+footer {
+  background: url("../../images/footerbg.jpg") no-repeat;
+  margin-top: 133px;
+}
+footer .footer_section {
+  position: relative;
+}
+footer .footer_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: #000;
+}
+footer .footer_section_container {
+  position: relative;
+}
+footer .footer_section .footer_wrap {
+  padding-top: 83px;
+}
+footer .footer_section .footer_wrap .footer_sec {
+  position: relative;
+  color: var(--bs-white);
+}
+footer .footer_section .footer_wrap .footer_sec h4 {
+  font-size: 1.563rem;
+  line-height: 34px;
+  margin-bottom: 21px;
+  font-family: "Jura";
+  font-weight: 500;
+}
+footer .footer_section .footer_wrap .footer_sec p {
+  font-weight: 300;
+}
+footer .footer_section .footer_wrap .footer_sec ul li {
+  margin-bottom: 20px;
+}
+footer .footer_section .footer_wrap .footer_sec ul li a {
+  color: var(--bs-white);
+  text-decoration: none;
+  font-family: "Inter";
+}
+footer .footer_section .footer_brder {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1.36%, #ff0000 49.33%, rgba(0, 0, 0, 0) 100.03%);
+  width: 100%;
+  padding-top: 6px;
+}
+footer .footer_section .social_media_ul {
+  display: flex;
+  gap: 22px;
+}
+footer .footer_section .footer_lt {
+  margin-bottom: 23px;
+}
+footer .footer_section .footer_lt .logo {
+  padding-bottom: 40px;
+}
+footer .footer_section .footer_lt_para {
+  font-size: 1.063rem;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-family: "Inter";
+}
+footer .footer_section .img-box {
+  background: var(--bs-white);
+  width: 25px;
+  height: 25px;
+}
+footer .stay_connected ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 23px;
+}
+footer .footer_bottom {
+  position: relative;
+  padding-top: 35px;
+}
+footer .footer_bottom .exclusive_offer {
+  color: var(--bs-white);
+  font-size: 0.875rem;
+  line-height: 20.74px;
+  font-family: "inter";
+  font-weight: 300;
+  padding-bottom: 28px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--bs-red);
+}
+footer .footer_bottom .copy_right {
+  padding: 0;
+}
+footer .footer_bottom .copy_right h5 {
+  font-size: 0.875rem;
+  color: var(--bs-white);
+}
+footer .footer_bottom .copy_right ul {
+  gap: 60px;
+}
+footer .footer_bottom .copy_right ul li {
+  font-size: 0.875rem;
+  color: var(--bs-white);
+}
+
+.achieve_best {
+  padding-top: 193px;
+}
+.achieve_best h2 {
+  font-family: "Bank Gothic";
+  font-size: 5.625rem;
+  line-height: 77%;
+  margin-bottom: 13px;
+  font-weight: 500;
+  color: var(--bs-white);
+  letter-spacing: 3px;
+}
+.achieve_best .achieve_best_subtitle {
+  color: var(--bs-white);
+  font-family: "inter";
+  font-size: 27px;
+  line-height: 38px;
+  letter-spacing: -0.3px;
+}
+.achieve_best .achieve_best_para {
+  font-size: 1.125rem;
+  font-family: "Calibri";
+  padding: 73px 0 84px 0;
+}
+.achieve_best .blueprint_container .card {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 30px;
+  background: url("../../images/cad_paperbackbg.png") no-repeat center;
+}
+.achieve_best .blueprint_container .card .img-container {
+  width: 280px;
+  height: 374px;
+}
+.achieve_best .blueprint_container .card .card_heading {
+  font-size: 1.313rem;
+  line-height: 32px;
+  color: var(--bs-white);
+  padding: 21px 0 0 0;
+}
+.achieve_best .blueprint_container .card .card_subheading span {
+  font-size: 0.875rem;
+}
+.achieve_best .blueprint_container .card .free_star_box {
+  align-items: end;
+  gap: 20px;
+  padding: 12px 0 19px 0;
+}
+.achieve_best .blueprint_container .card .free_star_box .free_ship_txt {
+  font-size: 0.813rem;
+  font-weight: 600;
+}
+.achieve_best .blueprint_container .card .paper_strike {
+  display: flex;
+  gap: 14px;
+}
+.achieve_best .blueprint_container .card .paper_strike .strikethrough {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+.achieve_best .blueprint_container .card .paper_strike .paper_back_box {
+  border: 1px solid rgba(var(--rgb-orange), 0.62);
+  border-radius: 10px;
+  padding: 5px 13px;
+}
+.achieve_best .blueprint_container .card .paper_strike .paper_back_box p {
+  color: var(--bs-Yellow);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+:root {
+  --bs-red: #e90202;
+  --bs-primary-red: #ee3338;
+  --bs-white: #fff;
+  --bs-black: #000;
+  --bs-Yellow: #ffb800;
+  --rgb-orange: 232, 170, 10;
+}/*# sourceMappingURL=style.css.map */

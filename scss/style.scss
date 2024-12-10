@@ -1,0 +1,18 @@
+@import '../scss/base/base_dir';
+@import './utilities/utilitues';
+@import './layout/_layout';
+@import './pages/_page_dir';
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+:root {
+  --bs-red: #e90202;
+  --bs-primary-red: #ee3338;
+  --bs-white: #fff;
+  --bs-black: #000;
+  --bs-Yellow: #ffb800;
+  --rgb-orange: 232, 170, 10;
+}

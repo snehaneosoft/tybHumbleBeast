@@ -1,0 +1,15 @@
+.button {
+  background: var(--bs-primary-red);
+  line-height: 30px;
+  text-align: center;
+  padding: 6px 24px;
+  display: inline-block;
+  outline: none;
+  border: 1px solid var(--bs-primary-red);
+  min-width: fit-content;
+  @include border-radius(8px);
+  color: var(--bs-white);
+  font-family: calibri;
+  font-size: 16px;
+  line-height: 29px;
+}
