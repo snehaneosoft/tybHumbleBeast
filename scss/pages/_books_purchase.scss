@@ -68,7 +68,7 @@
   .purchase_footer_section {
     gap: 33px;
     &_incdes {
-      gap: 12px
+      gap: 12px;
     }
     .incrdecr_span,
     .count_show {
@@ -85,3 +85,27 @@
     }
   }
 }
+.para_bk_pur {
+  margin-top: 27px;
+  p {
+    color: var(--bs-light-white);
+    font-size: 0.875rem;
+  }
+}
+.divider-sec {
+  margin: 30px 0 46px 0;
+  .divider-outer {
+    background: var(--bs-primary-red);
+    height: 17px;
+    width: 97px;
+    @include border-radius(25px);
+  }
+  .divider-border {
+    top: 50%;
+    z-index: -1;
+    transform: translate(0, -50%);
+    border: 1px solid var(--bs-white);
+    width: 100%;
+  }
+}
+

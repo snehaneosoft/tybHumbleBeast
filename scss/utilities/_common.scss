@@ -35,3 +35,62 @@ body {
   font-size: 1.125rem;
   line-height: 27px;
 }
+.blueprint_container {
+  .card {
+    @include border-radius(50px);
+    border: 1px solid #fff;
+    padding: 30px;
+    background: url('../../images/cad_paperbackbg.png') no-repeat center;
+    position: relative;
+    .heart_sec {
+      position: absolute;
+      right: 22px;
+      width: 26px;
+      height: 22px;
+      top: 30px;
+    }
+    .img-container {
+      width: 280px;
+      height: 374px;
+    }
+    .card_heading {
+      font-size: 1.313rem;
+      line-height: 32px;
+      color: var(--bs-white);
+      padding: 21px 0 0 0;
+    }
+    .card_subheading {
+      span {
+        font-size: 0.875rem;
+      }
+    }
+    .free_star_box {
+      align-items: end;
+      gap: 20px;
+      padding: 12px 0 19px 0;
+      .free_ship_txt {
+        font-size: 0.813rem;
+        font-weight: 600;
+      }
+    }
+    .paper_strike {
+      display: flex;
+      gap: 14px;
+
+      .paper_back_box {
+        border: 1px solid rgba(var(--rgb-orange), 0.62);
+        @include border-radius(10px);
+        padding: 5px 13px;
+        &.paper_back_blue {
+          border-color: var(--bs-blue);
+          p {
+            color: var(--bs-blue);
+          }
+        }
+        p {
+          color: var(--bs-Yellow);
+        }
+      }
+    }
+  }
+}
