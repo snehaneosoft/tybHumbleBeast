@@ -38,7 +38,7 @@ body {
 .blueprint_container {
   .card {
     @include border-radius(50px);
-    border: 1px solid #fff;
+    border: 1px solid var(--bs-white);
     padding: 30px;
     background: url('../../images/cad_paperbackbg.png') no-repeat center;
     position: relative;

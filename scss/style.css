@@ -141,7 +141,7 @@ body {
 
 .blueprint_container .card {
   border-radius: 50px;
-  border: 1px solid #fff;
+  border: 1px solid var(--bs-white);
   padding: 30px;
   background: url("../../images/cad_paperbackbg.png") no-repeat center;
   position: relative;
@@ -451,7 +451,7 @@ footer .footer_bottom .copy_right ul li {
 }
 
 .divider-sec {
-  margin: 30px 0 46px 0;
+  margin: 30px 0 0px 0;
 }
 .divider-sec .divider-outer {
   background: var(--bs-primary-red);
@@ -465,6 +465,58 @@ footer .footer_bottom .copy_right ul li {
   transform: translate(0, -50%);
   border: 1px solid var(--bs-white);
   width: 100%;
+}
+
+.slider_sec_blueprint {
+  margin-top: 70px;
+}
+.slider_sec_blueprint .slick-track {
+  width: 100% !important;
+  gap: 20px;
+  display: flex;
+}
+.slider_sec_blueprint .slick-track .card {
+  padding: 30px 30px 19px;
+}
+.slider_sec_blueprint .slick-track .card .img-container {
+  width: 100% !important;
+  height: 270px !important;
+}
+.slider_sec_blueprint .slick-track .card .card_heading {
+  line-height: 22px;
+  padding: 10px 0 0 0;
+}
+.slider_sec_blueprint .slick-track .card .card_subheading {
+  margin-top: 12px;
+  margin-bottom: 0;
+  gap: 12px;
+}
+.slider_sec_blueprint .slick-track .card .free_star_box {
+  padding: 8px 0 13px 0;
+}
+.slider_sec_blueprint .slick-track .card .star_img {
+  width: 104px;
+}
+
+.slick-carousel-detail .slick-next:before,
+.slick-carousel-detail .slick-prev:before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  content: "";
+}
+.slick-carousel-detail .slick-next {
+  right: 35px;
+}
+.slick-carousel-detail .slick-next:before {
+  background: url("../../images/right.png") no-repeat;
+}
+.slick-carousel-detail .slick-prev {
+  left: 30px;
+}
+.slick-carousel-detail .slick-prev:before {
+  background: url("../../images/right.png") no-repeat;
+  transform: rotate(-180deg);
 }
 
 ul {
