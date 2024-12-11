@@ -1,13 +1,13 @@
 .books_purchase_wrap {
   .books_purchase_wrap_box {
-    background: url(../../images/book1.png) no-repeat;
-    background-position: 50% 35%;
-    background-size: cover;
+    // background: url(../../images/book1.png) no-repeat;
+    // background-position: 50% 35%;
+    // background-size: cover;
   }
   .books_purchase_banner {
-    padding: 103px 40px 73px 40px;
+    padding: 67px 40px 73px 40px;
     background: url(../../images/bgbk.png) #000 no-repeat right;
-    width: 65%;
+    // width: 65%;
     h5 {
       font-size: 3.563rem;
       line-height: 50px;
@@ -158,5 +158,10 @@
       background: url('../../images/right.png') no-repeat;
       transform: rotate(-180deg);
     }
+  }
+}
+.bk_right_container {
+  img {
+    aspect-ratio: 25/18;
   }
 }
