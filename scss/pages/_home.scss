@@ -40,4 +40,12 @@
     right: 0;
     bottom: -194px;
   }
+  .authbox {
+    position: absolute;
+    top: -21%;
+    left: 37px;
+    z-index: 1;
+    width: 612px;
+    transform: translate(0, -2%);
+  }
 }

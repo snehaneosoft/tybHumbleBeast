@@ -583,6 +583,14 @@ footer .footer_bottom .copy_right ul li {
   right: 0;
   bottom: -194px;
 }
+.goals_container .authbox {
+  position: absolute;
+  top: -21%;
+  left: 37px;
+  z-index: 1;
+  width: 612px;
+  transform: translate(0, -2%);
+}
 
 ul {
   list-style: none;
