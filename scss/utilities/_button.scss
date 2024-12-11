@@ -19,4 +19,9 @@
   &_rounded {
     @include border-radius(25px);
   }
+  &_primary {
+    background: radial-gradient(50% 50% at 50% 50%, #f37c7e 0%, #ea3f42 100%);
+    padding: 10px 25px;
+    box-shadow: 0px -5.72px 2.86px 0px #00000040 inset;
+  }
 }
