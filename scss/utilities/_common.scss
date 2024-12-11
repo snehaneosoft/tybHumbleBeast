@@ -100,11 +100,25 @@ body {
     }
   }
 }
-.a_bgtransparent {
+.a_bgtransparent,
+.a_bgtransparent_brred {
   border: 1px solid var(--bs-white);
   @include border-radius(25px);
   line-height: 26px;
   padding: 4px 22px;
   margin-top: 41px;
-  
+}
+.a_bgtransparent_brred {
+  border: 1px solid var(--bs-red);
+  padding: 7px 22px;
+}
+.footer_brder {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) -1.36%,
+    #ff0000 49.33%,
+    rgba(0, 0, 0, 0) 100.03%
+  );
+  width: 100%;
+  padding-top: 6px;
 }

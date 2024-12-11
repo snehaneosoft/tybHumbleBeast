@@ -214,12 +214,24 @@ body {
   color: var(--bs-Yellow);
 }
 
-.a_bgtransparent {
+.a_bgtransparent,
+.a_bgtransparent_brred {
   border: 1px solid var(--bs-white);
   border-radius: 25px;
   line-height: 26px;
   padding: 4px 22px;
   margin-top: 41px;
+}
+
+.a_bgtransparent_brred {
+  border: 1px solid var(--bs-red);
+  padding: 7px 22px;
+}
+
+.footer_brder {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1.36%, #ff0000 49.33%, rgba(0, 0, 0, 0) 100.03%);
+  width: 100%;
+  padding-top: 6px;
 }
 
 header {
@@ -299,11 +311,6 @@ footer .footer_section .footer_wrap .footer_sec ul li a {
   color: var(--bs-white);
   text-decoration: none;
   font-family: "Inter";
-}
-footer .footer_section .footer_brder {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1.36%, #ff0000 49.33%, rgba(0, 0, 0, 0) 100.03%);
-  width: 100%;
-  padding-top: 6px;
 }
 footer .footer_section .social_media_ul {
   display: flex;
@@ -593,7 +600,7 @@ footer .footer_bottom .copy_right ul li {
 }
 
 .client_spotlights {
-  padding: 142px 0 210px 0;
+  padding: 142px 0 0 0;
 }
 .client_spotlights .strength_para {
   font-size: 2.18rem;
@@ -635,6 +642,20 @@ footer .footer_bottom .copy_right ul li {
 .client_spotlights .spotlight_wrapper .card_sportlight p {
   font-size: 0.875rem;
   line-height: 19px;
+}
+
+.contact_us_now .contact_us_now_container {
+  margin-top: 123px;
+}
+.contact_us_now .contact_us_now_container .heading {
+  font-size: 4rem;
+  line-height: 59px;
+  letter-spacing: -0.05px;
+  margin-bottom: 40px;
+}
+.contact_us_now .contact_us_now_container .para {
+  font-size: 1.125rem;
+  line-height: 28px;
 }
 
 ul {
