@@ -229,7 +229,7 @@ header .nav-bar {
   position: fixed;
   background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(115, 115, 115, 0.39) 100%);
   width: calc(100% - 50px);
-  z-index: 1;
+  z-index: 2;
   left: 25px;
   padding-right: 25px;
   border-radius: 13px;
@@ -586,10 +586,55 @@ footer .footer_bottom .copy_right ul li {
 .goals_container .authbox {
   position: absolute;
   top: -21%;
-  left: 37px;
+  left: -152px;
   z-index: 1;
   width: 612px;
   transform: translate(0, -2%);
+}
+
+.client_spotlights {
+  padding: 142px 0 210px 0;
+}
+.client_spotlights .strength_para {
+  font-size: 2.18rem;
+  line-height: 53px;
+  margin-bottom: 91px;
+}
+.client_spotlights .client_spotlight_img {
+  width: 939px;
+  margin: 0 auto;
+  max-width: 939px;
+  position: relative;
+}
+.client_spotlights .client_spotlight_img .h4_heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+}
+.client_spotlights .client_spotlight_dumbell {
+  position: absolute;
+  height: 492px;
+  width: 360px;
+  top: -90px;
+}
+.client_spotlights .spotlight_wrapper .card_sportlight {
+  border: 1px solid var(--bs-light-white); /* Set the border width */
+  border-radius: 36px;
+  padding: 33px 40px;
+  margin: 89px 0 150px 0;
+}
+.client_spotlights .spotlight_wrapper .card_sportlight h4 {
+  font-size: 2.68rem;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.client_spotlights .spotlight_wrapper .card_sportlight p {
+  font-size: 0.875rem;
+  line-height: 19px;
 }
 
 ul {
