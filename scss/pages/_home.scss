@@ -48,7 +48,7 @@
   }
 }
 .client_spotlights {
-  padding: 142px 0 0 0;
+  padding: 100px 0 0 0;
   .strength_para {
     font-size: 2.18rem;
     line-height: 53px;
@@ -219,7 +219,7 @@
       position: relative;
       .nut_inner_border {
         position: absolute;
-        top: 0;
+        top: -50px;
         background: linear-gradient(
           180deg,
           rgba(255, 0, 0, 0.32) 0%,
@@ -228,7 +228,7 @@
           rgba(153, 0, 0, 0.4) 100%
         );
         width: 2px;
-        height: 100%;
+        height: calc(100% + 100px);
         z-index: -1;
       }
     }

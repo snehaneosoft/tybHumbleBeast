@@ -624,7 +624,7 @@ footer .footer_bottom .copy_right ul li {
 }
 
 .client_spotlights {
-  padding: 142px 0 0 0;
+  padding: 100px 0 0 0;
 }
 .client_spotlights .strength_para {
   font-size: 2.18rem;
@@ -793,10 +793,10 @@ footer .footer_bottom .copy_right ul li {
 }
 .nutrition_programming_weeklyin .nut_img_outer .nut_img_inner .nut_inner_border {
   position: absolute;
-  top: 0;
+  top: -50px;
   background: linear-gradient(180deg, rgba(255, 0, 0, 0.32) 0%, #cc0000 33.97%, #b00000 66.01%, rgba(153, 0, 0, 0.4) 100%);
   width: 2px;
-  height: 100%;
+  height: calc(100% + 100px);
   z-index: -1;
 }
 
