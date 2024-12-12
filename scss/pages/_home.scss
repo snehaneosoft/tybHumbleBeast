@@ -131,6 +131,7 @@
       margin-bottom: 101px;
     }
     .slider_client {
+      margin-top: 88px;
       .card-layout {
         padding: 16px;
         @include border-radius(57px);
@@ -145,14 +146,53 @@
           height: 108px;
         }
         .username {
-            font-size: 2.18rem;
+          font-size: 2.18rem;
+          line-height: 41px;
+          margin-bottom: 6px;
         }
-        .img-star{
-            img{
-                
-            }
+        .img-star {
+          width: 91px;
+          height: 28px;
+        }
+        .user_detail {
+          font-size: 0.875rem;
+          line-height: 20px;
         }
       }
+      .slick-track {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}
+.nutrition_programming_weeklyin {
+  padding: 163px 0 141px 0;
+  .nutrition_img {
+    background: var(--bs-dark-gray-primary);
+    padding: 13px;
+    @include border-radius(42px);
+    img {
+      @include border-radius(42px);
+    }
+  }
+  .nutrition_content {
+    padding: 90px 0 100px 0;
+    h4 {
+      font-size: 2.25rem;
+      line-height: 30px;
+    }
+    .para_content {
+      font-size: 0.875rem;
+      line-height: 22px;
+    }
+  }
+  .weeklycheckin {
+    background: url('../../images/layout.png');
+    padding: 13px;
+    @include border-radius(42px);
+    img {
+      @include border-radius(47px);
     }
   }
 }

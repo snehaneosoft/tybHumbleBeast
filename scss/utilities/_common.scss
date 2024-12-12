@@ -122,3 +122,28 @@ body {
   width: 100%;
   padding-top: 6px;
 }
+.slick-dots {
+  bottom: -60px !important;
+  li {
+    width: 13px;
+    height: 13px;
+    border: 1px solid var(--bs-white);
+    @include border-radius(25px);
+    &.slick-active {
+      button:before {
+        color: var(--bs-secondary-red);
+        background: var(--bs-secondary-red);
+        border: 1px solid var(--bs-secondary-red);
+        width: 13px;
+        height: 13px;
+        @include border-radius(25px);
+        position: absolute;
+        top: -1px;
+        left: -1px;
+      }
+    }
+  }
+}
+// .slick-dots li.slick-active button:before{
+
+// }
