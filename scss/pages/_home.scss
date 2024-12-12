@@ -195,4 +195,13 @@
       @include border-radius(47px);
     }
   }
+  .nut_img_outer {
+    .nut_img_inner {
+      @include border-radius(25px);
+      img {
+        width: 82px;
+        height: 82px;
+      }
+    }
+  }
 }

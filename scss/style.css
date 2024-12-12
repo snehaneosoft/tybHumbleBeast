@@ -770,6 +770,13 @@ footer .footer_bottom .copy_right ul li {
 .nutrition_programming_weeklyin .weeklycheckin img {
   border-radius: 47px;
 }
+.nutrition_programming_weeklyin .nut_img_outer .nut_img_inner {
+  border-radius: 25px;
+}
+.nutrition_programming_weeklyin .nut_img_outer .nut_img_inner img {
+  width: 82px;
+  height: 82px;
+}
 
 ul {
   list-style: none;
