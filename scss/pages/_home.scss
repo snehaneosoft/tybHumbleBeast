@@ -177,10 +177,19 @@
     }
   }
   .nutrition_content {
-    padding: 90px 0 100px 0;
+    &.nut_content_mt {
+      // padding: 90px 0 100px 0;
+      padding-top: 50px;
+    }
+    &.last_nut_mb {
+      margin-bottom: 50px;
+    }
     h4 {
       font-size: 2.25rem;
       line-height: 30px;
+      &.cust_pt {
+        padding-top: 90px;
+      }
     }
     .para_content {
       font-size: 0.875rem;
@@ -194,13 +203,33 @@
     img {
       @include border-radius(47px);
     }
+    &.weekly_customize {
+      margin-top: 50px;
+    }
   }
   .nut_img_outer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
     .nut_img_inner {
       @include border-radius(25px);
-      img {
-        width: 82px;
-        height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .nut_inner_border {
+        position: absolute;
+        top: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 0, 0, 0.32) 0%,
+          #cc0000 33.97%,
+          #b00000 66.01%,
+          rgba(153, 0, 0, 0.4) 100%
+        );
+        width: 2px;
+        height: 100%;
+        z-index: -1;
       }
     }
   }

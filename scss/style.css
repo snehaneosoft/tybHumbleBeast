@@ -178,13 +178,13 @@ body {
   height: 374px;
 }
 .blueprint_container .card .card_heading {
-  font-size: 1.313rem;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 20px;
   color: var(--bs-white);
-  padding: 21px 0 0 0;
+  padding: 5px 0 0 0;
 }
 .blueprint_container .card .card_subheading span {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 .blueprint_container .card .free_star_box {
   align-items: end;
@@ -389,7 +389,7 @@ footer .footer_bottom .copy_right ul li {
 }
 
 .achieve_best {
-  padding-top: 70px;
+  padding-top: 20px;
 }
 .achieve_best .achieve_your_best_container {
   margin-bottom: 85px;
@@ -751,12 +751,18 @@ footer .footer_bottom .copy_right ul li {
 .nutrition_programming_weeklyin .nutrition_img img {
   border-radius: 42px;
 }
-.nutrition_programming_weeklyin .nutrition_content {
-  padding: 90px 0 100px 0;
+.nutrition_programming_weeklyin .nutrition_content.nut_content_mt {
+  padding-top: 50px;
+}
+.nutrition_programming_weeklyin .nutrition_content.last_nut_mb {
+  margin-bottom: 50px;
 }
 .nutrition_programming_weeklyin .nutrition_content h4 {
   font-size: 2.25rem;
   line-height: 30px;
+}
+.nutrition_programming_weeklyin .nutrition_content h4.cust_pt {
+  padding-top: 90px;
 }
 .nutrition_programming_weeklyin .nutrition_content .para_content {
   font-size: 0.875rem;
@@ -770,12 +776,28 @@ footer .footer_bottom .copy_right ul li {
 .nutrition_programming_weeklyin .weeklycheckin img {
   border-radius: 47px;
 }
+.nutrition_programming_weeklyin .weeklycheckin.weekly_customize {
+  margin-top: 50px;
+}
+.nutrition_programming_weeklyin .nut_img_outer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 .nutrition_programming_weeklyin .nut_img_outer .nut_img_inner {
   border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.nutrition_programming_weeklyin .nut_img_outer .nut_img_inner img {
-  width: 82px;
-  height: 82px;
+.nutrition_programming_weeklyin .nut_img_outer .nut_img_inner .nut_inner_border {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.32) 0%, #cc0000 33.97%, #b00000 66.01%, rgba(153, 0, 0, 0.4) 100%);
+  width: 2px;
+  height: 100%;
+  z-index: -1;
 }
 
 ul {
