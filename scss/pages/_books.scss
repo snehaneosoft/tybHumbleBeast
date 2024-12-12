@@ -1,7 +1,7 @@
 .achieve_best {
   padding-top: 20px;
   .achieve_your_best_container {
-    margin-bottom: 85px;
+    margin-bottom: 65px;
   }
   h2 {
     font-family: 'Bank Gothic';
@@ -23,5 +23,10 @@
     font-size: 1.125rem;
     font-family: 'Calibri';
     padding: 73px 0 84px 0;
+  }
+  .star_img {
+    width: 84px;
+    height: 19px;
+    display: flex;
   }
 }

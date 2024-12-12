@@ -45,7 +45,7 @@ body {
   .card {
     @include border-radius(50px);
     border: 1px solid var(--bs-white);
-    padding: 30px;
+    padding: 20px;
     background: url('../../images/cad_paperbackbg.png') no-repeat center;
     position: relative;
     .heart_sec {
@@ -55,10 +55,10 @@ body {
       height: 22px;
       top: 30px;
     }
-    .img-container {
-      width: 280px;
-      height: 374px;
-    }
+    // .img-container {
+    //   width: 280px;
+    //   height: 374px;
+    // }
     .card_heading {
       font-size: 1rem;
       line-height: 20px;
@@ -73,9 +73,9 @@ body {
     .free_star_box {
       align-items: end;
       gap: 20px;
-      padding: 12px 0 19px 0;
+      padding: 0px 0 8px 0;
       .free_ship_txt {
-        font-size: 0.813rem;
+        font-size: 0.68rem;
         font-weight: 600;
       }
     }
@@ -86,7 +86,7 @@ body {
       .paper_back_box {
         border: 1px solid rgba(var(--rgb-orange), 0.62);
         @include border-radius(10px);
-        padding: 5px 13px;
+        padding: 1px 13px;
         &.paper_back_blue {
           border-color: var(--bs-blue);
           p {
