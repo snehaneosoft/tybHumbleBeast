@@ -1,76 +1,87 @@
 @font-face {
-  font-family: "Calibri";
-  src: url("../../fonts/Calibri.woff2") format("woff2"), url("../../fonts/Calibri.woff") format("woff");
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri.woff2') format('woff2'),
+    url('../fonts/Calibri.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Calibri";
-  src: url("../../fonts/Calibri-Bold.woff2") format("woff2"), url("../../fonts/Calibri-Bold.woff") format("woff");
+  font-family: 'Calibri';
+  src: url('../fonts/Calibri-Bold.woff2') format('woff2'),
+    url('../fonts/Calibri-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Bank Gothic";
-  src: url("../../fonts/BankGothicBTLightRegular.woff2") format("woff2"), url("../../fonts/BankGothicBTLightRegular.woff") format("woff");
+  font-family: 'Bank Gothic';
+  src: url('../fonts/BankGothicBTLightRegular.woff2') format('woff2'),
+    url('../fonts/BankGothicBTLightRegular.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Bank Gothic";
-  src: url("../../fonts/BankGothicBTMediumRegular.woff2") format("woff2"), url("../../fonts/BankGothicBTMediumRegular.woff") format("woff");
+  font-family: 'Bank Gothic';
+  src: url('../fonts/BankGothicBTMediumRegular.woff2') format('woff2'),
+    url('../fonts/BankGothicBTMediumRegular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Jura";
-  src: url("../../fonts/Jura-Bold.woff2") format("woff2"), url("../../fonts/Jura-Bold.woff") format("woff");
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Bold.woff2') format('woff2'),
+    url('../fonts/Jura-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Jura";
-  src: url("../../fonts/Jura-Medium.woff2") format("woff2"), url("../../fonts/Jura-Medium.woff") format("woff");
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Medium.woff2') format('woff2'),
+    url('../fonts/Jura-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Jura";
-  src: url("../../fonts/Jura-Light.woff") format("woff2"), url("../../fonts/Jura-Light.woff") format("woff");
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Light.woff') format('woff2'),
+    url('../fonts/Jura-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("../../fonts/Inter-Light.woff2") format("woff2"), url("../../fonts/Inter-Light.woff") format("woff");
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Light.woff2') format('woff2'),
+    url('../fonts/Inter-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("../../fonts/Inter-SemiBold.woff2") format("woff2"), url("../../fonts/Inter-SemiBold.woff") format("woff");
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/Inter-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../../fonts/Poppins-Bold.woff2") format("woff2"), url("../../fonts/Poppins-Bold.woff") format("woff");
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Dune Rise";
-  src: url("../../fonts/Dune_Rise.woff2") format("woff2"), url("../../fonts/Dune_Rise.woff") format("woff");
+  font-family: 'Dune Rise';
+  src: url('../fonts/Dune_Rise.woff2') format('woff2'),
+    url('../fonts/Dune_Rise.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -110,7 +121,7 @@ html {
 
 body {
   font-size: 1rem;
-  background: url("../images/wave-red-lines-light.jpg") no-repeat;
+  background: url('../images/wave-red-lines-light.jpg') no-repeat;
   background-size: 100% 100%;
   width: 100%;
 }
@@ -122,23 +133,23 @@ body {
 }
 
 .fontInter {
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 .fontBankGothic {
-  font-family: "Bank Gothic";
+  font-family: 'Bank Gothic';
 }
 
 .fontCalibri {
-  font-family: "Calibri";
+  font-family: 'Calibri';
 }
 
 .fontDune {
-  font-family: "Dune Rise";
+  font-family: 'Dune Rise';
 }
 
 .fontPoppins {
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 .fontBold {
@@ -163,7 +174,7 @@ body {
   border-radius: 50px;
   border: 1px solid var(--bs-white);
   padding: 20px;
-  background: url("../../images/cad_paperbackbg.png") no-repeat center;
+  background: url('../images/cad_paperbackbg.png') no-repeat center;
   position: relative;
 }
 .blueprint_container .card .heart_sec {
@@ -225,7 +236,12 @@ body {
 }
 
 .footer_brder {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1.36%, #ff0000 49.33%, rgba(0, 0, 0, 0) 100.03%);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) -1.36%,
+    #ff0000 49.33%,
+    rgba(0, 0, 0, 0) 100.03%
+  );
   width: 100%;
   padding-top: 6px;
 }
@@ -256,7 +272,11 @@ header {
 }
 header .nav-bar {
   position: fixed;
-  background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(115, 115, 115, 0.39) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(115, 115, 115, 0.39) 100%
+  );
   width: calc(100% - 50px);
   z-index: 2;
   left: 25px;
@@ -286,14 +306,14 @@ header .nav-bar .menu-cart {
 }
 
 footer {
-  background: url("../../images/footerbg.jpg") no-repeat;
+  background: url('../images/footerbg.jpg') no-repeat;
   margin-top: 133px;
 }
 footer .footer_section {
   position: relative;
 }
 footer .footer_section::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   width: 100%;
@@ -315,7 +335,7 @@ footer .footer_section .footer_wrap .footer_sec h4 {
   font-size: 1.563rem;
   line-height: 34px;
   margin-bottom: 21px;
-  font-family: "Jura";
+  font-family: 'Jura';
   font-weight: 500;
 }
 footer .footer_section .footer_wrap .footer_sec p {
@@ -327,7 +347,7 @@ footer .footer_section .footer_wrap .footer_sec ul li {
 footer .footer_section .footer_wrap .footer_sec ul li a {
   color: var(--bs-white);
   text-decoration: none;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 footer .footer_section .social_media_ul {
   display: flex;
@@ -343,7 +363,7 @@ footer .footer_section .footer_lt_para {
   font-size: 1.063rem;
   line-height: 20px;
   margin-bottom: 20px;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 footer .footer_section .img-box {
   background: var(--bs-white);
@@ -363,7 +383,7 @@ footer .footer_bottom .exclusive_offer {
   color: var(--bs-white);
   font-size: 0.875rem;
   line-height: 20.74px;
-  font-family: "inter";
+  font-family: 'inter';
   font-weight: 300;
   padding-bottom: 28px;
   margin-bottom: 20px;
@@ -391,7 +411,7 @@ footer .footer_bottom .copy_right ul li {
   margin-bottom: 65px;
 }
 .achieve_best h2 {
-  font-family: "Bank Gothic";
+  font-family: 'Bank Gothic';
   font-size: 5.625rem;
   line-height: 77%;
   margin-bottom: 13px;
@@ -401,14 +421,14 @@ footer .footer_bottom .copy_right ul li {
 }
 .achieve_best .achieve_best_subtitle {
   color: var(--bs-white);
-  font-family: "inter";
+  font-family: 'inter';
   font-size: 27px;
   line-height: 38px;
   letter-spacing: -0.3px;
 }
 .achieve_best .achieve_best_para {
   font-size: 1.125rem;
-  font-family: "Calibri";
+  font-family: 'Calibri';
   padding: 73px 0 84px 0;
 }
 .achieve_best .star_img {
@@ -419,7 +439,7 @@ footer .footer_bottom .copy_right ul li {
 
 .books_purchase_wrap .books_purchase_banner {
   padding: 67px 40px 73px 40px;
-  background: url(../../images/bgbk.png) #000 no-repeat right;
+  background: url(../images/bgbk.png) #000 no-repeat right;
 }
 .books_purchase_wrap .books_purchase_banner h5 {
   font-size: 3.563rem;
@@ -438,7 +458,7 @@ footer .footer_bottom .copy_right ul li {
   margin: 40px 0 74px 0;
 }
 .books_purchase_wrap .bk_purchase_container {
-  background: url("../../images/book1.png") no-repeat right;
+  background: url('../images/book1.png') no-repeat right;
 }
 
 .nutrition_books_purchase {
@@ -557,19 +577,19 @@ footer .footer_bottom .copy_right ul li {
   width: 20px;
   height: 20px;
   position: absolute;
-  content: "";
+  content: '';
 }
 .slick-carousel-detail .slick-next {
   right: 35px;
 }
 .slick-carousel-detail .slick-next:before {
-  background: url("../../images/right.png") no-repeat;
+  background: url('../images/right.png') no-repeat;
 }
 .slick-carousel-detail .slick-prev {
   left: 30px;
 }
 .slick-carousel-detail .slick-prev:before {
-  background: url("../../images/right.png") no-repeat;
+  background: url('../images/right.png') no-repeat;
   transform: rotate(-180deg);
 }
 
@@ -595,7 +615,7 @@ footer .footer_bottom .copy_right ul li {
 }
 .goals_container .author_box_view .author_box {
   border: 1px solid var(--bs-light-white);
-  background: url("../../images/noise_texture.png") no-repeat;
+  background: url('../images/noise_texture.png') no-repeat;
   border-radius: 35px;
 }
 .goals_container .author_box_view .author_box .author-bx-wrap {
@@ -684,14 +704,14 @@ footer .footer_bottom .copy_right ul li {
 }
 
 .client_have_to_say {
-  background: url("../../images/footerbg.jpg") no-repeat;
+  background: url('../images/footerbg.jpg') no-repeat;
 }
 .client_have_to_say .client_have_to_say_container {
   position: relative;
   padding: 76px 0 95px 0;
 }
 .client_have_to_say .client_have_to_say_container::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -712,27 +732,46 @@ footer .footer_bottom .copy_right ul li {
 .client_have_to_say .client_have_to_say_container .slider_client .card-layout {
   padding: 16px;
   border-radius: 57px;
-  background: url("../../images//layout.png") no-repeat;
+  background: url('../images//layout.png') no-repeat;
 }
-.client_have_to_say .client_have_to_say_container .slider_client .card-layout-inner {
+.client_have_to_say
+  .client_have_to_say_container
+  .slider_client
+  .card-layout-inner {
   border: 1px solid var(--bs-dark-gray);
   border-radius: 57px;
   padding: 30px;
 }
-.client_have_to_say .client_have_to_say_container .slider_client .card-layout .image_container {
+.client_have_to_say
+  .client_have_to_say_container
+  .slider_client
+  .card-layout
+  .image_container {
   width: 108px;
   height: 108px;
 }
-.client_have_to_say .client_have_to_say_container .slider_client .card-layout .username {
+.client_have_to_say
+  .client_have_to_say_container
+  .slider_client
+  .card-layout
+  .username {
   font-size: 2.18rem;
   line-height: 41px;
   margin-bottom: 6px;
 }
-.client_have_to_say .client_have_to_say_container .slider_client .card-layout .img-star {
+.client_have_to_say
+  .client_have_to_say_container
+  .slider_client
+  .card-layout
+  .img-star {
   width: 91px;
   height: 28px;
 }
-.client_have_to_say .client_have_to_say_container .slider_client .card-layout .user_detail {
+.client_have_to_say
+  .client_have_to_say_container
+  .slider_client
+  .card-layout
+  .user_detail {
   font-size: 0.875rem;
   line-height: 20px;
 }
@@ -770,7 +809,7 @@ footer .footer_bottom .copy_right ul li {
   line-height: 22px;
 }
 .nutrition_programming_weeklyin .weeklycheckin {
-  background: url("../../images/layout.png");
+  background: url('../images/layout.png');
   padding: 13px;
   border-radius: 42px;
 }
@@ -792,10 +831,19 @@ footer .footer_bottom .copy_right ul li {
   justify-content: center;
   position: relative;
 }
-.nutrition_programming_weeklyin .nut_img_outer .nut_img_inner .nut_inner_border {
+.nutrition_programming_weeklyin
+  .nut_img_outer
+  .nut_img_inner
+  .nut_inner_border {
   position: absolute;
   top: -50px;
-  background: linear-gradient(180deg, rgba(255, 0, 0, 0.32) 0%, #cc0000 33.97%, #b00000 66.01%, rgba(153, 0, 0, 0.4) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.32) 0%,
+    #cc0000 33.97%,
+    #b00000 66.01%,
+    rgba(153, 0, 0, 0.4) 100%
+  );
   width: 2px;
   height: calc(100% + 100px);
   z-index: -1;
@@ -820,4 +868,4 @@ ul {
   --bs-dark-gray: #999;
   --bs-dark-gray-primary: #504646;
   --rgb-orange: 232, 170, 10;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
