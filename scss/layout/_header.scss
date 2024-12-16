@@ -158,6 +158,9 @@ header {
 }
 .main_content {
   padding-top: 128px;
+  @include xs-small-screen {
+    padding-top: 85px;
+  }
 }
 .three_dot_wrap {
   display: none;

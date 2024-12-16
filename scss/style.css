@@ -208,7 +208,7 @@ body {
 .blueprint_container .card .paper_strike .paper_back_box {
   border: 1px solid rgba(var(--rgb-orange), 0.62);
   border-radius: 10px;
-  padding: 1px 13px;
+  padding: 1px 10px;
 }
 .blueprint_container .card .paper_strike .paper_back_box.paper_back_blue {
   border-color: var(--bs-blue);
@@ -416,6 +416,11 @@ header .nav-bar .backdrop {
 
 .main_content {
   padding-top: 128px;
+}
+@media (max-width: 576px) {
+  .main_content {
+    padding-top: 85px;
+  }
 }
 
 .three_dot_wrap {
