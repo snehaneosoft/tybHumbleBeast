@@ -3,9 +3,17 @@
     color: var(--bs-light-gray);
     font-size: 3.625rem;
     line-height: 66px;
+    @include medium-screen {
+      font-size: 2.625rem;
+      line-height: 50px;
+    }
   }
   .goals_lt {
     padding: 70px 55px;
+    @include medium-screen {
+      padding: 10px 0 45px 0;
+      text-align: center;
+    }
     p {
       margin: 35px 0;
     }
@@ -14,6 +22,9 @@
     width: 973px;
     margin: 0 auto;
     max-width: 973px;
+    @include medium-screen {
+      width: 100%;
+    }
     .author_box {
       border: 1px solid var(--bs-light-white);
       background: url('../../images/noise_texture.png') no-repeat;
@@ -21,6 +32,9 @@
 
       .author-bx-wrap {
         padding: 91px 51px 91px 0;
+        @include medium-screen {
+          padding: 58px 30px 70px 30px;
+        }
         h6 {
           font-size: 2.438rem;
           line-height: 45px;
@@ -45,20 +59,34 @@
     z-index: 1;
     width: 612px;
     transform: translate(0, -2%);
+    @include medium-screen {
+      display: none;
+    }
   }
 }
 .client_spotlights {
   padding: 100px 0 0 0;
+  @include medium-screen {
+    padding: 40px 0 0 0;
+  }
   .strength_para {
     font-size: 2.18rem;
     line-height: 53px;
     margin-bottom: 91px;
+    @include medium-screen {
+      margin-bottom: 125px;
+      font-size: 2rem;
+      line-height: 44px;
+    }
   }
   .client_spotlight_img {
     width: 939px;
     margin: 0 auto;
     max-width: 939px;
     position: relative;
+    @include medium-screen {
+      width: 100%;
+    }
     .h4_heading {
       font-size: 3rem;
       text-align: center;
@@ -67,6 +95,12 @@
       bottom: 0;
       display: block;
       width: 100%;
+      @include medium-screen {
+        bottom: 0;
+        position: relative;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
     }
   }
   .client_spotlight_dumbell {
@@ -81,14 +115,27 @@
       @include border-radius(36px) /* Optional: Add rounded corners */;
       padding: 33px 40px;
       margin: 89px 0 150px 0;
+      @include medium-screen {
+        // margin: 180px 0 150px 0;
+        margin: 10px 0 0 0;
+        padding: 30px;
+      }
       h4 {
         font-size: 2.68rem;
         line-height: 48px;
         margin-bottom: 20px;
+        @include medium-screen {
+          font-size: 2rem;
+        }
       }
       p {
         font-size: 0.875rem;
         line-height: 19px;
+      }
+    }
+    .card_last_sportlight {
+      @include medium-screen {
+        margin-bottom: 50px;
       }
     }
   }
@@ -101,6 +148,10 @@
       line-height: 59px;
       letter-spacing: -0.05px;
       margin-bottom: 40px;
+      @include medium-screen {
+        font-size: 3rem;
+        line-height: 50px;
+      }
     }
     .para {
       font-size: 1.125rem;
@@ -111,6 +162,7 @@
 
 .client_have_to_say {
   background: url('../../images/footerbg.jpg') no-repeat;
+  background-size: cover;
   .client_have_to_say_container {
     position: relative;
     padding: 76px 0 95px 0;
@@ -168,6 +220,10 @@
 }
 .nutrition_programming_weeklyin {
   padding: 163px 0 141px 0;
+
+  @include medium-screen {
+    padding: 200px 0 100px 0;
+  }
   .nutrition_img {
     background: var(--bs-dark-gray-primary);
     padding: 13px;
@@ -180,6 +236,9 @@
     &.nut_content_mt {
       // padding: 90px 0 100px 0;
       padding-top: 50px;
+      @include medium-screen {
+        padding-top: 20px;
+      }
     }
     &.last_nut_mb {
       margin-bottom: 50px;
@@ -189,6 +248,9 @@
       line-height: 30px;
       &.cust_pt {
         padding-top: 90px;
+        @include medium-screen {
+          padding-top: 40px;
+        }
       }
     }
     .para_content {
@@ -205,6 +267,14 @@
     }
     &.weekly_customize {
       margin-top: 50px;
+      @include medium-screen {
+        margin-top: 20px;
+      }
+    }
+  }
+  .inner_secondcol_img {
+    @include medium-screen {
+      display: none;
     }
   }
   .nut_img_outer {

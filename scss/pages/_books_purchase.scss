@@ -3,15 +3,32 @@
     // background: url(../../images/book1.png) no-repeat;
     // background-position: 50% 35%;
     // background-size: cover;
+    .purchase_book_firstrow {
+      flex-direction: column;
+      @include small-screen {
+        flex-direction: row;
+      }
+    }
   }
   .books_purchase_banner {
     padding: 67px 40px 73px 40px;
     background: url(../../images/bgbk.png) #000 no-repeat right;
     // width: 65%;
+    @include medium-screen {
+      padding: 40px 10px;
+    }
     h5 {
-      font-size: 3.563rem;
-      line-height: 50px;
+      font-size: 2rem;
+      line-height: 40px;
       margin-bottom: 40px;
+      @include custom-medium-screen {
+        font-size: 2rem !important;
+        line-height: 40px !important;
+      }
+      @include extra-large {
+        font-size: 3.563rem !important;
+        line-height: 50px !important;
+      }
     }
     .explore_txt {
       margin-top: 40px;
@@ -31,10 +48,17 @@
 }
 .nutrition_books_purchase {
   padding: 120px 0 0 0;
+  @include medium-screen {
+    padding: 50px 0 0 0;
+  }
   .card_heading {
     font-size: 2.18rem;
     padding-top: 50px;
     line-height: 56px;
+    @include medium-screen {
+      padding-top: 30px;
+      line-height: 40px;
+    }
   }
   .card_subheading {
     font-size: 1.125rem;
@@ -57,6 +81,12 @@
     margin-bottom: 19px;
   }
   .purchase_bottom_section {
+    .purchase_btm_details {
+      flex-direction: column;
+      @include extra-large {
+        flex-direction: row;
+      }
+    }
     .purchase_bottom_heading {
       font-size: 1.18rem;
     }
@@ -66,7 +96,17 @@
     }
   }
   .purchase_footer_section {
-    gap: 33px;
+    gap: 20px;
+    flex-direction: row;
+    @include xs-small-screen {
+      flex-direction: column;
+    }
+    @include custom-large-screen {
+      gap: 20px;
+    }
+    @include extra-large {
+      gap: 33px;
+    }
     &_incdes {
       gap: 12px;
     }
@@ -81,12 +121,24 @@
       justify-content: center;
     }
     .count_show {
-      width: 74px;
+      width: 60px;
+      @include extra-large {
+        width: 74px;
+      }
+    }
+    .font_del_txt {
+      font-size: 0.625rem;
+      @include extra-large {
+        font-size: 0.875rem;
+      }
     }
   }
 }
 .para_bk_pur {
   margin-top: 27px;
+  @include medium-screen {
+    padding: 0 12px;
+  }
   p {
     color: var(--bs-light-white);
     font-size: 0.875rem;
@@ -94,6 +146,9 @@
 }
 .divider-sec {
   margin: 30px 0 0px 0;
+  @include medium-screen {
+    margin: 30px 10px 0 10px;
+  }
   .divider-outer {
     background: var(--bs-primary-red);
     height: 17px;
@@ -151,9 +206,15 @@
     &:before {
       background: url('../../images/right.png') no-repeat;
     }
+    @include medium-screen {
+      right: 15px;
+    }
   }
   .slick-prev {
     left: 30px;
+    @include medium-screen {
+      left: 0px;
+    }
     &:before {
       background: url('../../images/right.png') no-repeat;
       transform: rotate(-180deg);
@@ -161,7 +222,13 @@
   }
 }
 .bk_right_container {
+  @include small-screen {
+    height: 100%;
+  }
   img {
     aspect-ratio: 25/18;
+    @include small-screen {
+      height: 100%;
+    }
   }
 }

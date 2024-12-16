@@ -41,6 +41,10 @@ footer {
               font-family: 'Inter';
             }
             margin-bottom: 20px;
+            word-break: break-all;
+            @include extra-large {
+              word-break: normal;
+            }
           }
         }
       }

@@ -78,15 +78,15 @@
     <section class="main_content">
         <div class="books_purchase_wrap">
             <div class="books_purchase_wrap_box">
-                <div class="d-flex">
-                    <div class="col-md-8">
+                <div class="d-flex purchase_book_firstrow">
+                    <div class="col-xl-8 col-xxl-8 col-lg-8 col-md-8 col-sm-8 col-12">
                         <div class="books_purchase_banner h-100">
                             <h5 class="fontBankGothic text-white">Inspire Your Mind,
                                 Transform Your Future&#33;</h5>
                             <a class="button_bgtransparent text-white fontInter explore_txt">Explore</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                         <div class="bk_right_container">
                             <img src="././images/book.jpg" alt="book" class="w-100">
                         </div>
@@ -153,7 +153,7 @@
                             </div>
                             <div class="purchase_bottom_section">
                                 <h4 class="purchase_bottom_heading text-white fontCalibri fontBold">Details :</h4>
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between purchase_btm_details">
                                     <ul>
                                         <li class="text-white fontInter common_font">ISBN - <span
                                                 class="fontBold">978-93-48104-84-7</span></li>
@@ -179,7 +179,7 @@
                                     <span class="incrdecr_span text-white">+</span>
                                 </div>
                                 <button class="button button_rounded fontInter fontBold">ADD TO CART</button>
-                                <p class="mb-0 fontInter fontBold text-white">(FREE DELIVERY)</p>
+                                <p class="mb-0 fontInter fontBold text-white font_del_txt">(FREE DELIVERY)</p>
                             </div>
                         </div>
                     </div>
@@ -455,7 +455,7 @@
                     <div class="col-md-5">
                         <div class="d-flex footer_lt flex-column">
                             <a href="" class="logo">
-                                <img src="./images/logo.svg" alt="The Humble Beast">
+                                <img src="./images/logo.svg" alt="The Humble Beast" class="img-fluid">
                             </a>
                             <p class="footer_lt_para text-white">We'd love to hear from you! Whether you have a
                                 question,
@@ -521,16 +521,17 @@
                     </div>
                 </div>
                 <div class="row footer_bottom">
-                    <h5 class="exclusive_offer ps-0">
-                        Stay connected with us for updates and exclusive offers!
-                    </h5>
-
-                    <div class="d-flex justify-content-between copy_right">
-                        <h5 class="fontInter">@2024. All Rights Reserved</h5>
-                        <ul class="d-flex">
-                            <li class="fontInter">Terms & Condition</li>
-                            <li class="fontInter">Terms & Privacy</li>
-                        </ul>
+                    <div class="col-md-12">
+                        <h5 class="exclusive_offer ps-0">
+                            Stay connected with us for updates and exclusive offers!
+                        </h5>
+                        <div class="d-flex justify-content-between copy_right">
+                            <h5 class="fontInter">@2024. All Rights Reserved</h5>
+                            <ul class="d-flex">
+                                <li class="fontInter">Terms & Condition</li>
+                                <li class="fontInter">Terms & Privacy</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -567,6 +568,13 @@
                         }
                     },
 
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
                     {
                         breakpoint: 600,
                         settings: {

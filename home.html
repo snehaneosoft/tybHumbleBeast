@@ -9,7 +9,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="scss/style.css">
 </head>
 
@@ -79,7 +80,7 @@
             <div class="goals_container">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-12">
                             <div class="goals_lt">
                                 <h3 class="fontDune">Achieve Your
                                     Ultimate Body
@@ -188,13 +189,13 @@
                             <div class="col-md-12">
                                 <div class="vegetable_container">
 
-                                    <div class="row">
+                                    <div class="row g-3">
                                         <div class="col-md-4">
                                             <div class="nutrition_img">
                                                 <img src="./images/nutrition.jpg" alt="vegetable" class="img-fluid">
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4 inner_secondcol_img">
                                             <div class="middle_customize_checkin h-100">
                                                 <div class="nut_img_outer">
                                                     <div class="nut_img_inner ">
@@ -221,7 +222,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row g-3">
                                         <div class="col-md-4">
                                             <div class="nutrition_content">
                                                 <h4 class="text-white fontBankGothic cust_pt">Customized
@@ -237,7 +238,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4  inner_secondcol_img">
                                             <div class="middle_customize_checkin h-100">
                                                 <div class="nut_img_outer">
                                                     <div class="nut_img_inner">
@@ -255,14 +256,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row g-3">
                                         <div class="col-md-4">
                                             <div class="weeklycheckin weekly_customize">
                                                 <img src="./images/weeklycheckin.jpg" alt="weeklycheckin"
                                                     class="img-fluid">
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4  inner_secondcol_img">
                                             <div class="middle_customize_checkin h-100">
                                                 <div class="nut_img_outer">
                                                     <div class="nut_img_inner">
@@ -288,9 +289,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -326,7 +324,7 @@
                                             results. Whether you're a beginner </p>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 card_last_sportlight">
                                     <div class="card_sportlight">
                                         <h4 class="fontBankGothic text-white d-flex flex-column">Jake Reynolds
                                             <span class="heading_brdr"></span>
@@ -567,8 +565,8 @@
             arrows: false,
             speed: 300,              // Transition speed
             centerMode: true,
-            slidesToShow: 3,     // Number of slides to show
-            slidesToScroll: 3,       // Number of slides to scroll
+            // slidesToShow: 3,     // Number of slides to show
+            // slidesToScroll: 3,       // Number of slides to scroll
             autoplay: true,          // Autoplay enabled
             autoplaySpeed: 900,     // Autoplay speed in milliseconds
             responsive: [            // Responsive breakpoints
@@ -576,14 +574,21 @@
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 1
+                        slidesToScroll: 3
                     }
                 },
                 {
                     breakpoint: 1366,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 1
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 768, // For tablets
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
                 },
 

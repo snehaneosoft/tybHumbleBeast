@@ -3,7 +3,7 @@ html {
 }
 body {
   font-size: 1rem;
-  background: url('../images/wave-red-lines-light.jpg') no-repeat;
+  background: url('../images/bodybg.jpg') no-repeat;
   background-size: 100% 100%;
   width: 100%;
 }
@@ -107,6 +107,9 @@ body {
   line-height: 26px;
   padding: 4px 22px;
   margin-top: 41px;
+  @include medium-screen {
+    margin-top: 30px;
+  }
 }
 .a_bgtransparent_brred {
   border: 1px solid var(--bs-red);

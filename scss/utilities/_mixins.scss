@@ -6,3 +6,47 @@
     @content;
   }
 }
+@mixin large-screen {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xs-small-screen {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin small-screen {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin custom-medium-screen {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin custom-large-screen {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin extra-large {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin extra-xx-large {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}

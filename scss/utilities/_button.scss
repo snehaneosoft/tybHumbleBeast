@@ -12,6 +12,12 @@
   font-family: calibri;
   font-size: 16px;
   line-height: 29px;
+  @include custom-large-screen {
+    font-size: 14px;
+  }
+  @include extra-large {
+    font-size: 16px;
+  }
   &_bgtransparent {
     border: 1px solid var(--bs-primary-red);
     background: transparent;
