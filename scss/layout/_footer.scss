@@ -20,6 +20,9 @@ footer {
       .footer_sec {
         position: relative;
         color: var(--bs-white);
+        @include medium-screen {
+          margin-bottom: 30px;
+        }
         h4 {
           font-size: 1.563rem;
           line-height: 34px;
@@ -42,7 +45,6 @@ footer {
         }
       }
     }
-   
 
     .social_media_ul {
       display: flex;
@@ -52,6 +54,11 @@ footer {
       margin-bottom: 23px;
       .logo {
         padding-bottom: 40px;
+        @include medium-screen {
+          width: 125px;
+          display: block;
+          margin: 0 auto;
+        }
       }
       &_para {
         font-size: 1.063rem;
@@ -78,6 +85,9 @@ footer {
   .footer_bottom {
     position: relative;
     padding-top: 35px;
+    @include medium-screen {
+      padding-top: 20px;
+    }
     .exclusive_offer {
       color: var(--bs-white);
       font-size: 0.875rem;
@@ -87,18 +97,32 @@ footer {
       padding-bottom: 28px;
       margin-bottom: 20px;
       border-bottom: 1px solid var(--bs-red);
+      @include medium-screen {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
     }
     .copy_right {
       padding: 0;
       h5 {
         font-size: 0.875rem;
         color: var(--bs-white);
+        @include medium-screen {
+          display: flex;
+          align-items: center;
+        }
       }
       ul {
         gap: 60px;
+        @include medium-screen {
+          gap: 10px;
+        }
         li {
           font-size: 0.875rem;
           color: var(--bs-white);
+          @include medium-screen {
+            text-align: center;
+          }
         }
       }
     }
