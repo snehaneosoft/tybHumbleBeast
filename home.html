@@ -473,7 +473,7 @@
                     <div class="col-md-5">
                         <div class="d-flex footer_lt flex-column">
                             <a href="" class="logo">
-                                <img src="./images/logo.svg" alt="The Humble Beast">
+                                <img src="./images/logo.svg" alt="The Humble Beast" class="img-fluid">
                             </a>
                             <p class="footer_lt_para text-white">We'd love to hear from you! Whether you have a
                                 question,
@@ -539,16 +539,17 @@
                     </div>
                 </div>
                 <div class="row footer_bottom">
-                    <h5 class="exclusive_offer ps-0">
-                        Stay connected with us for updates and exclusive offers!
-                    </h5>
-
-                    <div class="d-flex justify-content-between copy_right">
-                        <h5 class="fontInter">@2024. All Rights Reserved</h5>
-                        <ul class="d-flex">
-                            <li class="fontInter">Terms & Condition</li>
-                            <li class="fontInter">Terms & Privacy</li>
-                        </ul>
+                    <div class="col-md-12">
+                        <h5 class="exclusive_offer ps-0">
+                            Stay connected with us for updates and exclusive offers!
+                        </h5>
+                        <div class="d-flex justify-content-between copy_right">
+                            <h5 class="fontInter">@2024. All Rights Reserved</h5>
+                            <ul class="d-flex">
+                                <li class="fontInter">Terms & Condition</li>
+                                <li class="fontInter">Terms & Privacy</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -557,7 +558,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
     <script>
         $('.slider_client').slick({
             dots: true,              // Add navigation dots
@@ -587,7 +592,7 @@
                 {
                     breakpoint: 768, // For tablets
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                     }
                 },

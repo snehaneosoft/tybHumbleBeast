@@ -188,6 +188,7 @@
         padding: 16px;
         @include border-radius(57px);
         background: url('../../images//layout.png') no-repeat;
+        background-size: cover;
         &-inner {
           border: 1px solid var(--bs-dark-gray);
           @include border-radius(57px);
@@ -273,8 +274,9 @@
     }
   }
   .inner_secondcol_img {
-    @include medium-screen {
-      display: none;
+    display: none;
+    @include custom-medium-screen {
+      display: block;
     }
   }
   .nut_img_outer {

@@ -1082,6 +1082,7 @@ footer .footer_bottom .copy_right ul li {
   padding: 16px;
   border-radius: 57px;
   background: url("../../images//layout.png") no-repeat;
+  background-size: cover;
 }
 .client_have_to_say .client_have_to_say_container .slider_client .card-layout-inner {
   border: 1px solid var(--bs-dark-gray);
@@ -1169,9 +1170,12 @@ footer .footer_bottom .copy_right ul li {
     margin-top: 20px;
   }
 }
-@media (max-width: 768px) {
+.nutrition_programming_weeklyin .inner_secondcol_img {
+  display: none;
+}
+@media (min-width: 768px) {
   .nutrition_programming_weeklyin .inner_secondcol_img {
-    display: none;
+    display: block;
   }
 }
 .nutrition_programming_weeklyin .nut_img_outer {
