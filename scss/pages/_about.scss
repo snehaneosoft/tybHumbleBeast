@@ -1,5 +1,4 @@
 .bodybuilder {
-  background: url('../../images/iqbalsayed.png') no-repeat left;
   @include custom-medium-screen {
     background: url(../../images/iqbalsayed.png) no-repeat;
     width: 100%;
@@ -15,11 +14,14 @@
     }
     .text_container {
       border: 1px solid var(--bs-dark-gray);
-      padding: 59px;
+      padding: 40px;
       background: url('../../images/noise_texture.png') no-repeat;
       background-size: cover;
       @include border-radius(50px);
       margin-bottom: 35px;
+      @include custom-medium-screen {
+        padding: 59px;
+      }
     }
     .certification_expert_section {
       border: 1px solid var(--bs-dark-gray);
@@ -50,9 +52,35 @@
           }
         }
       }
-      //   .certificate_right {
-      //     background: url('./../../images/medal.svg') no-repeat;
-      //   }
     }
+    .dumbell_wrap {
+      display: none;
+      @include extra-large {
+        display: flex;
+      }
+    }
+  }
+}
+.excellence_container {
+  color: var(--bs-white);
+  padding: 97px 0;
+  .title {
+    font-size: 2rem;
+    line-height: 37px;
+    margin-bottom: 26px;
+    @include custom-large-screen {
+      font-size: 3rem;
+      line-height: 56px;
+    }
+  }
+  .contactus_now {
+    padding: 11px 23px;
+    @include border-radius(50px);
+  }
+  .para_second_cls {
+    margin-bottom: 60px;
+  }
+  .client_spotlight_dumbell {
+    top: 65px;
   }
 }

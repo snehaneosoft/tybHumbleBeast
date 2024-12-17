@@ -267,6 +267,13 @@ body {
   left: -1px;
 }
 
+.client_spotlight_dumbell {
+  position: absolute;
+  height: 492px;
+  width: 360px;
+  top: -90px;
+}
+
 header {
   padding: 25px 25px 0 25px;
 }
@@ -575,9 +582,6 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 
-.bodybuilder {
-  background: url("../../images/iqbalsayed.png") no-repeat left;
-}
 @media (min-width: 768px) {
   .bodybuilder {
     background: url(../../images/iqbalsayed.png) no-repeat;
@@ -594,11 +598,16 @@ footer .footer_bottom .copy_right ul li {
 }
 .bodybuilder .certificate_experties_top .text_container {
   border: 1px solid var(--bs-dark-gray);
-  padding: 59px;
+  padding: 40px;
   background: url("../../images/noise_texture.png") no-repeat;
   background-size: cover;
   border-radius: 50px;
   margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .bodybuilder .certificate_experties_top .text_container {
+    padding: 59px;
+  }
 }
 .bodybuilder .certificate_experties_top .certification_expert_section {
   border: 1px solid var(--bs-dark-gray);
@@ -630,6 +639,40 @@ footer .footer_bottom .copy_right ul li {
   background: var(--bs-primary-red);
   left: 5px;
 }
+.bodybuilder .certificate_experties_top .dumbell_wrap {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .bodybuilder .certificate_experties_top .dumbell_wrap {
+    display: flex;
+  }
+}
+
+.excellence_container {
+  color: var(--bs-white);
+  padding: 97px 0;
+}
+.excellence_container .title {
+  font-size: 2rem;
+  line-height: 37px;
+  margin-bottom: 26px;
+}
+@media (min-width: 992px) {
+  .excellence_container .title {
+    font-size: 3rem;
+    line-height: 56px;
+  }
+}
+.excellence_container .contactus_now {
+  padding: 11px 23px;
+  border-radius: 50px;
+}
+.excellence_container .para_second_cls {
+  margin-bottom: 60px;
+}
+.excellence_container .client_spotlight_dumbell {
+  top: 65px;
+}
 
 .achieve_best {
   padding-top: 20px;
@@ -639,12 +682,17 @@ footer .footer_bottom .copy_right ul li {
 }
 .achieve_best h2 {
   font-family: "Bank Gothic";
-  font-size: 5.625rem;
+  font-size: 4.625rem;
   line-height: 77%;
   margin-bottom: 13px;
   font-weight: 500;
   color: var(--bs-white);
   letter-spacing: 3px;
+}
+@media (min-width: 768px) {
+  .achieve_best h2 {
+    font-size: 5.625rem;
+  }
 }
 .achieve_best .achieve_best_subtitle {
   color: var(--bs-white);
@@ -1048,12 +1096,6 @@ footer .footer_bottom .copy_right ul li {
     font-size: 2rem;
     margin-bottom: 30px;
   }
-}
-.client_spotlights .client_spotlight_dumbell {
-  position: absolute;
-  height: 492px;
-  width: 360px;
-  top: -90px;
 }
 .client_spotlights .spotlight_wrapper .card_sportlight {
   border: 1px solid var(--bs-light-white); /* Set the border width */
