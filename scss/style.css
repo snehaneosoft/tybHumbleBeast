@@ -575,6 +575,62 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 
+.bodybuilder {
+  background: url("../../images/iqbalsayed.png") no-repeat left;
+}
+@media (min-width: 768px) {
+  .bodybuilder {
+    background: url(../../images/iqbalsayed.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+}
+.bodybuilder .certificate_experties_top p {
+  font-size: 1.12rem;
+  color: var(--bs-white);
+}
+.bodybuilder .certificate_experties_top .dumbell_wrap {
+  margin-bottom: 80px;
+}
+.bodybuilder .certificate_experties_top .text_container {
+  border: 1px solid var(--bs-dark-gray);
+  padding: 59px;
+  background: url("../../images/noise_texture.png") no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  margin-bottom: 35px;
+}
+.bodybuilder .certificate_experties_top .certification_expert_section {
+  border: 1px solid var(--bs-dark-gray);
+  padding: 42px;
+  border-radius: 50px;
+  background: url(../images/noise_texture.png);
+  background-size: cover;
+}
+.bodybuilder .certificate_experties_top .certification_expert_section_h4 {
+  color: var(--bs-white);
+}
+.bodybuilder .certificate_experties_top .certification_expert_section .certificate_ul {
+  margin-top: 16px;
+}
+.bodybuilder .certificate_experties_top .certification_expert_section .certificate_ul li {
+  color: var(--bs-white);
+  font-size: 1.06rem;
+  margin-bottom: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.bodybuilder .certificate_experties_top .certification_expert_section .certificate_ul li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--bs-primary-red);
+  left: 5px;
+}
+
 .achieve_best {
   padding-top: 20px;
 }
