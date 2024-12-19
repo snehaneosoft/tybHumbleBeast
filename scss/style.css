@@ -1111,8 +1111,14 @@ footer .footer_bottom .copy_right ul li {
     margin-bottom: 30px;
   }
 }
+.client_spotlights .spotlight_wrapper {
+  margin: 89px 0 100px 0;
+}
+.client_spotlights .spotlight_wrapper .blog_spotlight_wrap {
+  margin-bottom: 50px;
+}
 .client_spotlights .spotlight_wrapper .loadmore_a {
-  padding-bottom: 58px;
+  padding-top: 58px;
 }
 .client_spotlights .spotlight_wrapper .blog {
   margin-bottom: 0;
@@ -1124,8 +1130,16 @@ footer .footer_bottom .copy_right ul li {
   color: var(--bs-white);
 }
 .client_spotlights .spotlight_wrapper .blog .card_sportlight_inner_wrap {
-  gap: 52px;
-  padding: 27px 0 45px 0;
+  gap: 25px;
+  padding: 27px 0 20px 0;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .client_spotlights .spotlight_wrapper .blog .card_sportlight_inner_wrap {
+    flex-direction: row;
+    padding: 27px 0 45px 0;
+    gap: 52px;
+  }
 }
 .client_spotlights .spotlight_wrapper .blog .card_sportlight_inner_wrap .continue_reading_txt {
   font-size: 1.18rem;
@@ -1138,7 +1152,9 @@ footer .footer_bottom .copy_right ul li {
   border: 1px solid var(--bs-light-white); /* Set the border width */
   border-radius: 36px;
   padding: 33px 40px;
-  margin: 89px 0 150px 0;
+}
+.client_spotlights .spotlight_wrapper .card_sportlight.blog {
+  margin: 0 !important;
 }
 @media (max-width: 768px) {
   .client_spotlights .spotlight_wrapper .card_sportlight {
@@ -1148,12 +1164,18 @@ footer .footer_bottom .copy_right ul li {
 }
 .client_spotlights .spotlight_wrapper .card_sportlight h4 {
   font-size: 2.68rem;
-  line-height: 38px;
+  line-height: 30px;
   margin-bottom: 20px;
+  word-wrap: break-word;
 }
 @media (max-width: 768px) {
   .client_spotlights .spotlight_wrapper .card_sportlight h4 {
     font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .client_spotlights .spotlight_wrapper .card_sportlight h4 {
+    line-height: 38px;
   }
 }
 .client_spotlights .spotlight_wrapper .card_sportlight p {

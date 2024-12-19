@@ -105,8 +105,12 @@
   }
 
   .spotlight_wrapper {
+    margin: 89px 0 100px 0;
+    .blog_spotlight_wrap {
+      margin-bottom: 50px;
+    }
     .loadmore_a {
-      padding-bottom: 58px;
+      padding-top: 58px;
     }
     .blog {
       margin-bottom: 0;
@@ -117,8 +121,14 @@
         color: var(--bs-white);
       }
       .card_sportlight_inner_wrap {
-        gap: 52px;
-        padding: 27px 0 45px 0;
+        gap: 25px;
+        padding: 27px 0 20px 0;
+        flex-direction: column;
+        @include small-screen {
+          flex-direction: row;
+          padding: 27px 0 45px 0;
+          gap: 52px;
+        }
         .continue_reading_txt {
           font-size: 1.18rem;
         }
@@ -132,8 +142,10 @@
       border: 1px solid var(--bs-light-white); /* Set the border width */
       @include border-radius(36px) /* Optional: Add rounded corners */;
       padding: 33px 40px;
-      margin: 89px 0 150px 0;
 
+      &.blog {
+        margin: 0 !important;
+      }
       @include medium-screen {
         // margin: 180px 0 150px 0;
         margin: 10px 0 0 0;
@@ -142,10 +154,14 @@
 
       h4 {
         font-size: 2.68rem;
-        line-height: 38px;
+        line-height: 30px;
         margin-bottom: 20px;
+        word-wrap: break-word;
         @include medium-screen {
           font-size: 2rem;
+        }
+        @include custom-medium-screen {
+          line-height: 38px;
         }
       }
       p {
