@@ -31,3 +31,16 @@
     box-shadow: 0px -5.72px 2.86px 0px #00000040 inset;
   }
 }
+.border_transparent {
+  font-size: 1.2rem;
+  line-height: 26px;
+  border: 1px solid var(--bs-white);
+  background: transparent;
+  color: var(--bs-white);
+  @include border-radius(25px);
+  padding: 12px 25px;
+  text-decoration: none;
+  &:hover {
+    color: var(--bs-white);
+  }
+}

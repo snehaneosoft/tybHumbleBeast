@@ -103,21 +103,46 @@
       }
     }
   }
-  
+
   .spotlight_wrapper {
+    .loadmore_a {
+      padding-bottom: 58px;
+    }
+    .blog {
+      margin-bottom: 0;
+      .readingwarp {
+        padding: 10px 23px;
+        border: 1px solid var(--bs-white);
+        @include border-radius(25px);
+        color: var(--bs-white);
+      }
+      .card_sportlight_inner_wrap {
+        gap: 52px;
+        padding: 27px 0 45px 0;
+        .continue_reading_txt {
+          font-size: 1.18rem;
+        }
+      }
+      .comment_txt {
+        font-size: 1rem;
+        line-height: 26px;
+      }
+    }
     .card_sportlight {
       border: 1px solid var(--bs-light-white); /* Set the border width */
       @include border-radius(36px) /* Optional: Add rounded corners */;
       padding: 33px 40px;
       margin: 89px 0 150px 0;
+
       @include medium-screen {
         // margin: 180px 0 150px 0;
         margin: 10px 0 0 0;
         padding: 30px;
       }
+
       h4 {
         font-size: 2.68rem;
-        line-height: 48px;
+        line-height: 38px;
         margin-bottom: 20px;
         @include medium-screen {
           font-size: 2rem;
@@ -132,6 +157,21 @@
       @include medium-screen {
         margin-bottom: 50px;
       }
+    }
+  }
+}
+.related_post {
+  .title {
+    font-size: 3.35rem;
+    line-height: 49px;
+  }
+  ul {
+    padding-left: 22px;
+    li {
+      font-size: 1rem;
+      line-height: 28px;
+      list-style: disc;
+      color: var(--bs-secondary-blue);
     }
   }
 }

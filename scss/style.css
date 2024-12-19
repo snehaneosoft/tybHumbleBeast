@@ -114,6 +114,20 @@
   box-shadow: 0px -5.72px 2.86px 0px rgba(0, 0, 0, 0.2509803922) inset;
 }
 
+.border_transparent {
+  font-size: 1.2rem;
+  line-height: 26px;
+  border: 1px solid var(--bs-white);
+  background: transparent;
+  color: var(--bs-white);
+  border-radius: 25px;
+  padding: 12px 25px;
+  text-decoration: none;
+}
+.border_transparent:hover {
+  color: var(--bs-white);
+}
+
 html {
   font-size: 16px;
 }
@@ -1097,6 +1111,29 @@ footer .footer_bottom .copy_right ul li {
     margin-bottom: 30px;
   }
 }
+.client_spotlights .spotlight_wrapper .loadmore_a {
+  padding-bottom: 58px;
+}
+.client_spotlights .spotlight_wrapper .blog {
+  margin-bottom: 0;
+}
+.client_spotlights .spotlight_wrapper .blog .readingwarp {
+  padding: 10px 23px;
+  border: 1px solid var(--bs-white);
+  border-radius: 25px;
+  color: var(--bs-white);
+}
+.client_spotlights .spotlight_wrapper .blog .card_sportlight_inner_wrap {
+  gap: 52px;
+  padding: 27px 0 45px 0;
+}
+.client_spotlights .spotlight_wrapper .blog .card_sportlight_inner_wrap .continue_reading_txt {
+  font-size: 1.18rem;
+}
+.client_spotlights .spotlight_wrapper .blog .comment_txt {
+  font-size: 1rem;
+  line-height: 26px;
+}
 .client_spotlights .spotlight_wrapper .card_sportlight {
   border: 1px solid var(--bs-light-white); /* Set the border width */
   border-radius: 36px;
@@ -1111,7 +1148,7 @@ footer .footer_bottom .copy_right ul li {
 }
 .client_spotlights .spotlight_wrapper .card_sportlight h4 {
   font-size: 2.68rem;
-  line-height: 48px;
+  line-height: 38px;
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
@@ -1127,6 +1164,20 @@ footer .footer_bottom .copy_right ul li {
   .client_spotlights .spotlight_wrapper .card_last_sportlight {
     margin-bottom: 50px;
   }
+}
+
+.related_post .title {
+  font-size: 3.35rem;
+  line-height: 49px;
+}
+.related_post ul {
+  padding-left: 22px;
+}
+.related_post ul li {
+  font-size: 1rem;
+  line-height: 28px;
+  list-style: disc;
+  color: var(--bs-secondary-blue);
 }
 
 .contact_us_now .contact_us_now_container {
@@ -1316,4 +1367,5 @@ ul {
   --bs-dark-gray: #999;
   --bs-dark-gray-primary: #504646;
   --rgb-orange: 232, 170, 10;
+  --bs-secondary-blue: #00b2ff;
 }/*# sourceMappingURL=style.css.map */
