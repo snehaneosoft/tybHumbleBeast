@@ -4,7 +4,8 @@ html {
 body {
   font-size: 1rem;
   background: url('../images/bodybg.jpg') no-repeat;
-  background-size: 100% 100%;
+  // background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
 }
 .heading_brdr {

@@ -135,7 +135,7 @@ html {
 body {
   font-size: 1rem;
   background: url("../images/bodybg.jpg") no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   width: 100%;
 }
 
@@ -1370,6 +1370,100 @@ footer .footer_bottom .copy_right ul li {
   z-index: -1;
 }
 
+.login_container {
+  height: 100vh;
+}
+.login_container .xs-left-container {
+  display: none;
+}
+@media (min-width: 768px) {
+  .login_container .xs-left-container {
+    display: block;
+  }
+}
+.login_container .login_title .login_h3 {
+  font-size: 2.8rem;
+  line-height: 36px;
+}
+.login_container .login_title .heading_brdr {
+  width: 260px;
+}
+.login_container .para_login {
+  font-size: 1.06rem;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  margin-top: 12px;
+}
+.login_container .login_panel {
+  background: url("../../images/noise_texture.png") no-repeat;
+  border: 1px solid var(--bs-light-gray);
+  padding: 16px 22px;
+  border-radius: 23px;
+}
+.login_container .login_panel .login_frm .form-label {
+  margin-bottom: 13px;
+  font-size: 1.06rem;
+}
+.login_container .login_panel .login_frm .form-control {
+  color: var(--bs-white);
+  box-shadow: none;
+  border-color: var(--bs-white);
+}
+.login_container .login_panel .login_frm .form-control::focus {
+  color: var(--bs-white);
+}
+.login_container .login_panel .login_frm .form-control::-moz-placeholder {
+  color: var(--bs-placeholder);
+}
+.login_container .login_panel .login_frm .form-control::placeholder {
+  color: var(--bs-placeholder);
+}
+.login_container .login_panel .login_frm .eye_panel {
+  position: absolute;
+  right: 15px;
+  top: 6px;
+}
+.login_container .login_panel .login_frm .login_btn {
+  background: var(--bs-primary-red);
+  width: 100%;
+  color: var(--bs-white);
+  border-radius: 7px;
+}
+.login_container .register_for_free_panel {
+  margin-top: 23px;
+  text-align: center;
+  padding: 10px;
+  background: url("../../images/header_auth.png") no-repeat;
+  background-size: cover;
+  border-radius: 14px;
+  border: 1px solid var(--bs-dark-gray);
+}
+.login_container .register_for_free_panel a {
+  font-size: 0.875rem;
+}
+.login_container .login_heading {
+  font-size: 1.18rem;
+  line-height: 21px;
+  letter-spacing: -0.3px;
+}
+.login_container .login_heading .login_title {
+  font-size: 1.5rem;
+  line-height: 21px;
+  letter-spacing: -0.3px;
+  margin-bottom: 13px;
+}
+.login_container .login_heading .login_para {
+  font-size: 0.875rem;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  margin-bottom: 38px;
+}
+@media (min-width: 576px) {
+  .login_container .login_container_panel {
+    margin-top: 24px;
+  }
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -1390,4 +1484,5 @@ ul {
   --bs-dark-gray-primary: #504646;
   --rgb-orange: 232, 170, 10;
   --bs-secondary-blue: #00b2ff;
+  --bs-placeholder: #bcbec0;
 }/*# sourceMappingURL=style.css.map */
