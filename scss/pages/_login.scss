@@ -1,9 +1,39 @@
+body {
+  background-size: unset;
+}
 .login_container {
   height: 100vh;
+
   .xs-left-container {
     display: none;
     @include custom-medium-screen {
       display: block;
+    }
+    &.xs-left-container-reg {
+      display: none;
+      @include extra-large {
+        display: block;
+      }
+    }
+    .level_up_container {
+      background: url('../images/inlevelup.png') no-repeat;
+      background-size: contain;
+      height: 85%;
+      position: relative;
+      top: -120px;
+      .level_up_img {
+        position: absolute;
+        bottom: -60px;
+        left: -9px;
+      }
+    }
+    .level_up_text {
+      font-size: 2.1rem;
+      line-height: 30px;
+      letter-spacing: -0.3px;
+      color: var(--bs-white);
+      position: absolute;
+      bottom: -140px;
     }
   }
   .login_title {
@@ -52,6 +82,16 @@
         width: 100%;
         color: var(--bs-white);
         @include border-radius(7px);
+      }
+      .acc_txt {
+        font-size: 0.875rem;
+        color: var(--bs-white);
+        .text-decoration-underline {
+          text-decoration: underline;
+        }
+      }
+      .form-check-label {
+        font-size: 0.75rem;
       }
     }
   }

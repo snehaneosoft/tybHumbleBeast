@@ -288,6 +288,11 @@ body {
   top: -90px;
 }
 
+.form-check-input {
+  background: transparent;
+  border: 1px solid var(--bs-white);
+}
+
 header {
   padding: 25px 25px 0 25px;
 }
@@ -1370,6 +1375,10 @@ footer .footer_bottom .copy_right ul li {
   z-index: -1;
 }
 
+body {
+  background-size: unset;
+}
+
 .login_container {
   height: 100vh;
 }
@@ -1380,6 +1389,34 @@ footer .footer_bottom .copy_right ul li {
   .login_container .xs-left-container {
     display: block;
   }
+}
+.login_container .xs-left-container.xs-left-container-reg {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .login_container .xs-left-container.xs-left-container-reg {
+    display: block;
+  }
+}
+.login_container .xs-left-container .level_up_container {
+  background: url("../images/inlevelup.png") no-repeat;
+  background-size: contain;
+  height: 85%;
+  position: relative;
+  top: -120px;
+}
+.login_container .xs-left-container .level_up_container .level_up_img {
+  position: absolute;
+  bottom: -60px;
+  left: -9px;
+}
+.login_container .xs-left-container .level_up_text {
+  font-size: 2.1rem;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  color: var(--bs-white);
+  position: absolute;
+  bottom: -140px;
 }
 .login_container .login_title .login_h3 {
   font-size: 2.8rem;
@@ -1428,6 +1465,16 @@ footer .footer_bottom .copy_right ul li {
   width: 100%;
   color: var(--bs-white);
   border-radius: 7px;
+}
+.login_container .login_panel .login_frm .acc_txt {
+  font-size: 0.875rem;
+  color: var(--bs-white);
+}
+.login_container .login_panel .login_frm .acc_txt .text-decoration-underline {
+  text-decoration: underline;
+}
+.login_container .login_panel .login_frm .form-check-label {
+  font-size: 0.75rem;
 }
 .login_container .register_for_free_panel {
   margin-top: 23px;
