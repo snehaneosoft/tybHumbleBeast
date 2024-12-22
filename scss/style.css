@@ -601,6 +601,24 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 
+.termsofservice_container .heading_termsofservice {
+  font-size: 3.5rem;
+  padding: 135px 0 55px 0;
+}
+.termsofservice_container .termofservice_section {
+  padding-top: 66px;
+}
+.termsofservice_container .termofservice_section .title {
+  font-size: 39px;
+  color: var(--bs-white);
+  line-height: 38px;
+}
+.termsofservice_container .termofservice_section .para {
+  font-size: 1.06rem;
+  line-height: 26px;
+  color: var(--bs-white);
+}
+
 @media (min-width: 768px) {
   .bodybuilder {
     background: url(../../images/iqbalsayed.png) no-repeat;
@@ -1373,10 +1391,6 @@ footer .footer_bottom .copy_right ul li {
   width: 2px;
   height: calc(100% + 100px);
   z-index: -1;
-}
-
-body {
-  background-size: unset;
 }
 
 .login_container {
