@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between nav-bar" id="navBar">
+                <a href="" class="logo">
+                    <img src="./images/logo.svg" alt="The Humble Beast">
+                </a>
+                <div class="backdrop"></div>
+                <div class="align-items-center menu-cart">
+                    <div class="position-relative">
+                        <ul class="list-style-none menu-ul">
+                            <li>
+                                <a href="" class="text-decoration-none">Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none">About Us</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none">Books</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none">Book an Appointment</a>
+                            </li>
+                            <li><button class="btn btn-transparent cross-btn fontInter p-0" id="closeBtn">x</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="humberger" id="humbergerId">
+                        <div class="humberger_menu"></div>
+                        <div class="humberger_menu"></div>
+                        <div class="humberger_menu"></div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary bg-transparent border-0 dropdown-toggle btn_after_hide"
+                            type="button" data-bs-toggle="dropdown">
+                            <div class="three_dot_wrap">
+                                <div class="three_dot_cls"></div>
+                                <div class="three_dot_cls"></div>
+                                <div class="three_dot_cls"></div>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item fontInter" href="#">Log In</a>
+                            <a class="dropdown-item fontInter" href="#">Book Now</a>
+                        </div>
+                        <!-- <div class="three_dot_wrap">
+                            <div class="three_dot_cls"></div>
+                            <div class="three_dot_cls"></div>
+                            <div class="three_dot_cls"></div>
+                        </div> -->
+                    </div>
+
+                    <button class="button login_btn">Log in</button>
+                    <!-- <a href="">
+                        <img src="./images/cart.svg" alt="cart">
+                    </a> -->
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main_content">
+        <div class="achieve_best">
+            <div class="container">
+                <div class="checkout_container">
+                    <h4 class="text-white fontBankGothic checkout_h4_title">Payment Details</h4>
+                    <div class="checkout_blueprint_container d-flex">
+                        <div class="checkout_blueprint_container_left">
+                            <a href="" class="">
+                                <img src="./images/book-mockup.png" alt="book-mockup">
+                            </a>
+                        </div>
+                        <div class="checkout_blueprint_container_right">
+                            <h5 class="fontPoppins title text-white">THE NUTRITION BLUEPRINT</h5>
+                            <div class="d-flex checkout_wrapper">
+                                <span class="strikethrough text-white">2199</span>
+                                <span class="checkout_text"><b>₹ 1499</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout_info_container">
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Paperback
+                                    <br /><span class="checkout_para_opt">(Optional)</span>
+                                </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="checkout_section d-flex justify-content-between">
+                                    <span class="checkout_lbl fontInter font600">₹ 1,499.00</span>
+                                    <div class="d-flex checkout_btn">
+                                        <button type="button" class="">-</button>
+                                        <input type="text" class="form-control" value="0">
+                                        <button type="button" class="">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Hardback
+                                    <br /><span class="checkout_para_opt">(Optional)</span>
+                                </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="checkout_section d-flex justify-content-between">
+                                    <span class="checkout_lbl fontInter font600">₹ 1,999.00</span>
+                                    <div class="d-flex checkout_btn">
+                                        <button type="button" class="">-</button>
+                                        <input type="text" class="form-control" value="0">
+                                        <button type="button" class="">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Shipping
+                                    <br /><span class="checkout_para_opt">(Optional)</span>
+                                </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="checkout_section d-flex justify-content-between">
+                                    <span class="checkout_lbl fontInter font600">₹ 50.00</span>
+                                    <div class="d-flex checkout_btn">
+                                        <button type="button" class="">-</button>
+                                        <input type="text" class="form-control" value="0">
+                                        <button type="button" class="">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Name</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="d-flex justify-content-between">
+                                    <input type="text" class="form-control bg-transparent input-field">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Address</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="d-flex justify-content-between">
+                                    <input type="text" class="form-control bg-transparent input-field">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Pincode</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="d-flex justify-content-between">
+                                    <input type="text" class="form-control bg-transparent input-field">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Phone</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="d-flex justify-content-between">
+                                    <input type="text" class="form-control bg-transparent input-field">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-sm-4">
+                                <p class="checkout_para fontInter">Email</p>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="d-flex justify-content-between">
+                                    <input type="email" class="form-control bg-transparent input-field">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-end pay_panel">
+                            <button class="button button_rounded button_primary fontInter font600 pay_text">PAY ₹
+                                0.00</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer_section">
+            <div class="container footer_section_container">
+                <div class="footer_brder"></div>
+                <div class="row footer_wrap">
+                    <div class="col-md-5">
+                        <div class="d-flex footer_lt flex-column">
+                            <a href="" class="logo">
+                                <img src="./images/logo.svg" alt="The Humble Beast" class="img-fluid">
+                            </a>
+                            <p class="footer_lt_para text-white">We'd love to hear from you! Whether you have a
+                                question,
+                                feedback, or need assistance, feel free to reach out.</p>
+                            <ul class="social_media_ul">
+                                <li><img src="./images/social_media_icons/fb.svg" alt="facebook"></li>
+                                <li><img src="./images/social_media_icons/X_vector.svg" alt="x"></li>
+                                <li><img src="./images/social_media_icons/insta.svg" alt="instagram"></li>
+                                <li><img src="./images/social_media_icons/linkedin.svg" alt="linkedin"></li>
+                                <li><img src="./images/social_media_icons/gpay.svg" alt="Gpay"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer_sec">
+                            <h4 class="d-flex flex-column">Quick Links
+                                <span class="heading_brdr"></span>
+                            </h4>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Books</a>
+                                </li>
+                                <li>
+                                    <a href="">Book Appointment</a>
+                                </li>
+                                <li>
+                                    <a href="">Login</a>
+                                </li>
+                                <li>
+                                    <a href="">Registration</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_sec stay_connected">
+                            <h4 class="d-flex flex-column">Stay Connected
+                                <span class="heading_brdr"></span>
+                            </h4>
+                            <p class="fontInter">Stay connected to power your fitness journey! Follow us for expert
+                                tips, training
+                                inspiration, and exclusive updates.</p>
+                            <ul class="">
+                                <li>
+                                    <span class="img-box d-flex justify-content-center align-items-center">
+                                        <img src="./images/social_media_icons/phone.png" alt="phone">
+                                    </span>
+                                    +91 83245 6XXXX
+                                <li>
+                                    <span class="img-box d-flex justify-content-center align-items-center">
+                                        <img src="./images/social_media_icons/mail.png" alt="mail">
+                                    </span>
+                                    iqbalsayedhumblebeast@gmail.com
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer_bottom">
+                    <div class="col-md-12">
+                        <h5 class="exclusive_offer ps-0">
+                            Stay connected with us for updates and exclusive offers!
+                        </h5>
+                        <div class="d-flex justify-content-between copy_right">
+                            <h5 class="fontInter">@2024. All Rights Reserved</h5>
+                            <ul class="d-flex">
+                                <li class="fontInter">Terms & Condition</li>
+                                <li class="fontInter">Terms & Privacy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

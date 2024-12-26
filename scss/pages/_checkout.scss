@@ -1,0 +1,92 @@
+.checkout_container {
+  max-width: 600px;
+  margin: 0 auto;
+  .checkout_h4_title {
+    font-size: 3.2rem;
+    border-bottom: 1px solid var(--bs-white);
+    line-height: 45px;
+    padding-bottom: 20px;
+  }
+  .checkout_blueprint_container_right {
+    .title {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      line-height: 43px;
+    }
+    .checkout_text {
+      color: var(--bs-Yellow);
+      font-size: 1.12rem;
+    }
+    .checkout_wrapper {
+      gap: 10px;
+    }
+  }
+  .checkout_blueprint_container {
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--bs-white);
+  }
+  .checkout_info_container {
+    margin: 32px 0 0 0;
+    .checkout_para {
+      font-size: 1rem;
+      line-height: 19px;
+      color: var(--bs-white);
+      .checkout_para_opt {
+        margin-top: 5px;
+        display: block;
+      }
+    }
+    .checkout_section {
+      padding: 10px 16px;
+      background: var(--bs-dark-gray);
+      .checkout_lbl {
+        color: var(--bs-Yellow);
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+      }
+      .checkout_btn {
+        button,
+        input {
+          background: var(--bs-dark-gray2);
+          color: var(--bs-white);
+        }
+        input {
+          width: 39px;
+          text-align: center;
+          padding: 0;
+          border-radius: 0;
+          border: none;
+          border: 1px solid #000;
+          border-top: none;
+          border-bottom: none;
+        }
+        button {
+          border: none;
+          padding: 0 12px;
+          line-height: 28px;
+        }
+      }
+    }
+    .input-field {
+      padding: 7px 16px 8px 16px;
+      @include border-radius(0);
+      color: var(--bs-white);
+      border: 1px solid var(--bs-checkout-gray);
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .pay_panel {
+   
+    margin-top: 30px;
+    .pay_text {
+      font-size: 1.25rem;
+      line-height: 21px;
+      font-weight: 600;
+      box-shadow: 0px 0px 1.21px 4.82px rgba(255, 255, 255, 0.1);
+    }
+  }
+}
