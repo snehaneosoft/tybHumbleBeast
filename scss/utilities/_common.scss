@@ -7,6 +7,9 @@ body {
   // background-size: 100% 100%;
   background-size: cover;
   width: 100%;
+  &.register_bdy{
+    background-size: inherit;
+  }
 }
 .heading_brdr {
   padding: 1px;
