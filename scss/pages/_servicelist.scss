@@ -1,0 +1,44 @@
+.service_list {
+  .service_list_title {
+    color: var(--bs-white);
+    font-size: 4rem;
+    line-height: 55px;
+    @include custom-medium-screen{
+        font-size: 6rem;
+        line-height: 50px;
+    }
+  }
+  .service_list_para {
+    font-size: 1.6rem;
+    color: var(--bs-white);
+  }
+  .servicelist_card {
+    margin: 57px 0 70px 0;
+    .card {
+      background: url('../../images/noise_texture.png') no-repeat transparent;
+      border: 1px solid var(--bs-dark-gray2);
+      padding: 40px 27px 25px 27px;
+      @include border-radius(31px);
+      .service_list_icon {
+        width: 94px;
+      }
+    }
+    .card-title,
+    .card-para {
+      color: var(--bs-white);
+    }
+    .card-title {
+      font-size: 1.6rem;
+      border-bottom: 1px solid var(--bs-white);
+      padding: 26px 0 15px 0;
+    }
+    .card-para {
+      font-size: 1.18rem;
+    }
+  }
+  .service_list_footer{
+    color: var(--bs-white);
+    font-size: 1.25rem;
+    line-height: 23px;
+  }
+}
