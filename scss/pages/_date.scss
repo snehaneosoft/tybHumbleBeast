@@ -1,0 +1,121 @@
+.header_wrap {
+  .col-date-section {
+    border-right: 1px solid var(--bs-gray);
+    padding-left: 25px;
+    &:last-child {
+      border-right: none;
+    }
+    .question_wrap {
+      padding: 0 0 30px 0;
+      .q_lbl {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 14px;
+        margin-bottom: 7px;
+      }
+      .q_sub_lbl {
+        font-size: 0.75rem;
+        line-height: 14px;
+        font-weight: 300;
+      }
+    }
+    .time_panel {
+      display: flex;
+      gap: 9px;
+      justify-content: center;
+      margin: 35px auto;
+      flex-wrap: wrap;
+      width: 200px;
+      .time_info {
+        padding: 8px 12px;
+        border: 1px solid var(--bs-dark-gray3);
+        @include border-radius(6px);
+        text-align: center;
+        font-size: 0.875rem;
+        line-height: 12px;
+        font-weight: 500;
+        flex: 0 0 calc((100% - 18px) / 2);
+        &.active {
+          background: var(--bs-primary-red);
+        }
+      }
+    }
+  }
+  .datetime_wrap {
+    border: 1px solid var(--bs-gray);
+    position: relative;
+    .close_container{
+      position: absolute;
+      top: 13px;
+      right: 13px;
+    }
+    &:last-child {
+      border-top: none;
+      padding: 18px;
+    }
+  }
+  .col-date-section-header {
+    font-size: 1.25rem;
+    padding: 22px 0 0 0;
+    margin-bottom: 0;
+  }
+  .col-date-para {
+    font-size: 0.75rem;
+  }
+  .calender {
+    border: 1px solid;
+    width: 310px;
+    margin: 0 auto;
+    padding: 24px 17px;
+    @include border-radius(8px);
+    background: url('../../images/noise_texture.png') no-repeat;
+    margin: 20px auto;
+    .calender_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 0 24px 0;
+      .calender_month {
+        font-size: 0.875rem;
+        margin-bottom: 0;
+        line-height: 16px;
+        font-weight: 400;
+      }
+    }
+    .calender_body {
+      .calender_body_wrap {
+        display: flex;
+        gap: 6px;
+        justify-content: space-between;
+        margin-bottom: 24px;
+      }
+      .week_name {
+        font-size: 0.725rem;
+        line-height: 12px;
+        color: var(--bs-dark-gray3);
+        font-weight: 600;
+      }
+      .calendre_body_date {
+        gap: 14px;
+        .calender_date_lbl {
+          flex: 0 0 calc((100% - 84px) / 7);
+          font-size: 1rem;
+          line-height: 18px;
+          font-family: 'Inter';
+          font-weight: 600;
+          text-align: center;
+          width: 26px;
+          height: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &.current {
+            background: var(--bs-primary-red);
+            @include border-radius(25px);
+          }
+        }
+      }
+    }
+  }
+}
