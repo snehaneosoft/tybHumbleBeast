@@ -40,11 +40,43 @@
         }
       }
     }
+    .summaryinfo_section {
+      margin: 21px;
+      .summaryinfo_section_heading {
+        font-size: 1rem;
+        line-height: 14px;
+        font-weight: 500;
+        margin-bottom: 9px;
+      }
+      .summaryinfo_section_subhead {
+        margin-bottom: 0;
+        font-size: 0.875rem;
+        line-height: 14px;
+      }
+      .hide_btn {
+        .btn-action {
+          background: var(--bs-dark-addremoval);
+          width: 17px;
+          height: 17px;
+          color: var(--bs-white);
+          @include border-radius(2px);
+        }
+      }
+    }
+    .addmore_section {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 19px;
+      .addmore_btn {
+        color: var(--bs-primary-red);
+
+      }
+    }
   }
   .datetime_wrap {
     border: 1px solid var(--bs-gray);
     position: relative;
-    .close_container{
+    .close_container {
       position: absolute;
       top: 13px;
       right: 13px;
