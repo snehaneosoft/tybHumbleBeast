@@ -7,7 +7,7 @@ body {
   // background-size: 100% 100%;
   background-size: cover;
   width: 100%;
-  &.register_bdy{
+  &.register_bdy {
     background-size: inherit;
   }
 }
@@ -161,7 +161,10 @@ body {
   width: 360px;
   top: -90px;
 }
-.form-check-input{
+.form-check-input {
   background: transparent;
-  border: 1px solid var(--bs-white)
+  border: 1px solid var(--bs-white);
+}
+.h-80 {
+  height: 80%;
 }

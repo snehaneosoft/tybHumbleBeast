@@ -78,13 +78,15 @@
     <section class="main_content">
         <div class="header_wrap">
             <div class="container text-white">
-                <div class="d-flex g-3 datetime_wrap">
+                <!-- <div class="d-flex g-3 datetime_wrap">
                     <div class="col-date-section col-sm-5">
                         <h5 class="col-date-section-header fontInter">Choose Date</h5>
                     </div>
                     <div class="col-date-section col-sm-4">
-                        <h5 class="col-date-section-header fontInter">Choose Time</h5>
-                        <p class="col-date-para">Pick a slot for January 19</p>
+                        <div class="col-date-section-header">
+                            <h5 class="fontInter">Choose Time sssss</h5>
+                            <p class="col-date-para">Pick a slot for January 19</p>
+                        </div>
                     </div>
                     <div class="col-date-section col-sm-3">
                         <h5 class="col-date-section-header fontInter">Summary</h5>
@@ -94,10 +96,11 @@
                             <img src="./images/close.png" alt="close">
                         </button>
                     </div>
-                </div>
+                </div> -->
                 <div class="d-flex g-3 datetime_wrap p-0">
                     <!-- <div class="calender_wrap"> -->
-                    <div class="col-date-section col-sm-5 ps-0">
+                    <div class="col-date-section col-xl-5 col-xxl-5 col-lg-5 col-md-12 col-sm-12 col-12 ps-0">
+                        <h5 class="col-date-section-header fontInter header_cal_wrap">Choose Date</h5>
                         <div class="calender">
                             <div class="calender_header">
                                 <img src="./images/leftarrow.png" alt="previous">
@@ -156,7 +159,14 @@
                             <p class="text-center mb-0 q_sub_lbl">Call (858) 123-3000 for help</p>
                         </div>
                     </div>
-                    <div class="col-date-section col-sm-4 ps-0">
+                    <div
+                        class="col-date-section col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-12 ps-0 col-sm-4 col-12 ps-0">
+                        <div class="col-date-header-wrapper">
+                            <div class="col-date-section-header">
+                                <h5 class="fontInter mb-0">Choose Time</h5>
+                                <p class="col-date-para">Pick a slot for January 19</p>
+                            </div>
+                        </div>
                         <div class="timeslot_wrap">
                             <div class="time_panel">
                                 <div class="time_info">08:00 am</div>
@@ -174,8 +184,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-date-section col-sm-3 ps-0">
-                        <div class="d-flex justify-content-between h-100">
+                    <div class="col-date-section col-xl-3 col-xxl-3 col-lg-3 col-lg-3 col-md-12 col-sm-12 col-12 ps-0">
+                        <div class="col-date-section-header">
+                            <h5 class="fontInter mb-0">Summary</h5>
+                        </div>
+                        <div class="d-flex justify-content-between h-80 flex-column">
                             <div class="summaryinfo_section">
                                 <div class="d-flex justify-content-between">
                                     <div>
@@ -192,14 +205,15 @@
                                 </div>
                             </div>
                             <div class="summarysection_bottom">
-                                <div class="d-flex justify-content-between">
-                                    <p class="summarysection_bottom_txt fontInter font400">Consultation Call</p>
-                                    <p class="summarysection_bottom_rs fontInter font400">₹0.00</p>
+                                <div class="d-flex justify-content-between summarysection_wrap">
+                                    <p class="summarysection_bottom_txt fontInter font400 mb-0 fontInter">Consultation
+                                        Call</p>
+                                    <p class="summarysection_bottom_rs fontInter font400 mb-0 fontInter">₹0.00</p>
                                 </div>
                                 <hr>
                                 <div class="d-flex justify-content-between">
-                                    <p class="">Total Price</p>
-                                    <p class="">₹0.00</p>
+                                    <p class="summarysection_bottm_total mb-0  fontInter">Total Price</p>
+                                    <p class="summarysection_bottm_price mb-0  fontInter">₹0.00</p>
                                 </div>
                             </div>
                         </div>

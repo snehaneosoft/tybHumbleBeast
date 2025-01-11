@@ -296,6 +296,10 @@ body.register_bdy {
   border: 1px solid var(--bs-white);
 }
 
+.h-80 {
+  height: 80%;
+}
+
 header {
   padding: 25px 25px 0 25px;
 }
@@ -1718,6 +1722,22 @@ footer .footer_bottom .copy_right ul li {
   color: var(--bs-white);
   border-radius: 2px;
 }
+.header_wrap .col-date-section .summarysection_bottom {
+  margin: 21px;
+}
+.header_wrap .col-date-section .summarysection_bottom .summarysection_wrap {
+  margin-bottom: 14px;
+}
+.header_wrap .col-date-section .summarysection_bottom_txt, .header_wrap .col-date-section .summarysection_bottom_rs {
+  font-size: 0.75rem;
+  line-height: 14px;
+  font-weight: 300;
+}
+.header_wrap .col-date-section .summarysection_bottom_total, .header_wrap .col-date-section .summarysection_bottom_price {
+  font-size: 1.06rem;
+  line-height: 22px;
+  font-weight: 400;
+}
 .header_wrap .col-date-section .addmore_section {
   display: flex;
   justify-content: flex-end;
@@ -1729,6 +1749,7 @@ footer .footer_bottom .copy_right ul li {
 .header_wrap .datetime_wrap {
   border: 1px solid var(--bs-gray);
   position: relative;
+  flex-direction: column;
 }
 .header_wrap .datetime_wrap .close_container {
   position: absolute;
@@ -1736,13 +1757,22 @@ footer .footer_bottom .copy_right ul li {
   right: 13px;
 }
 .header_wrap .datetime_wrap:last-child {
-  border-top: none;
   padding: 18px;
+}
+@media (min-width: 992px) {
+  .header_wrap .datetime_wrap {
+    flex-direction: row;
+  }
 }
 .header_wrap .col-date-section-header {
   font-size: 1.25rem;
-  padding: 22px 0 0 0;
+  padding: 32px 0 32px 25px;
   margin-bottom: 0;
+  height: 95px;
+  border-bottom: 1px solid gray;
+}
+.header_wrap .col-date-section-header.header_cal_wrap {
+  border-bottom: 1px solid var(--bs-gray);
 }
 .header_wrap .col-date-para {
   font-size: 0.75rem;
