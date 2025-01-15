@@ -1,0 +1,51 @@
+.video_consultation_wrapper {
+  padding-bottom: 90px;
+  .video_consultation_heading {
+    font-size: 3.6rem;
+    line-height: 52px;
+    color: var(--bs-white);
+  }
+}
+.video_cons_container {
+  .video_cons_desc {
+    &_para {
+      color: var(--bs-white);
+      font-size: 0.75rem;
+      line-height: 20px;
+      color: var(--bs-white);
+    }
+  }
+  .contactus_wrapper {
+    margin-top: 38px;
+    .contactus_btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  }
+  .conversation_img {
+    width: 128px;
+    height: 128px;
+  }
+  .updated_list_container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 120px;
+    .updates_list {
+      display: flex;
+      gap: 26px;
+      align-items: flex-start;
+
+      .updates_list_wrapper {
+        color: var(--bs-white);
+        .title {
+          font-size: 2.18rem;
+          line-height: 42px;
+        }
+        .para {
+          font-size: 0.813rem;
+        }
+      }
+    }
+  }
+}

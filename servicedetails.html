@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between nav-bar" id="navBar">
+                <a href="" class="logo">
+                    <img src="./images/logo.svg" alt="The Humble Beast">
+                </a>
+                <div class="backdrop"></div>
+                <div class="align-items-center menu-cart">
+                    <div class="position-relative">
+                        <ul class="list-style-none menu-ul">
+                            <li>
+                                <a href="" class="text-decoration-none">Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none">About Us</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none">Books</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none">Book an Appointment</a>
+                            </li>
+                            <li><button class="btn btn-transparent cross-btn fontInter p-0" id="closeBtn">x</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="humberger" id="humbergerId">
+                        <div class="humberger_menu"></div>
+                        <div class="humberger_menu"></div>
+                        <div class="humberger_menu"></div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary bg-transparent border-0 dropdown-toggle btn_after_hide"
+                            type="button" data-bs-toggle="dropdown">
+                            <div class="three_dot_wrap">
+                                <div class="three_dot_cls"></div>
+                                <div class="three_dot_cls"></div>
+                                <div class="three_dot_cls"></div>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item fontInter" href="#">Log In</a>
+                            <a class="dropdown-item fontInter" href="#">Book Now</a>
+                        </div>
+                        <!-- <div class="three_dot_wrap">
+                            <div class="three_dot_cls"></div>
+                            <div class="three_dot_cls"></div>
+                            <div class="three_dot_cls"></div>
+                        </div> -->
+                    </div>
+
+                    <button class="button login_btn">Log in</button>
+                    <!-- <a href="">
+                        <img src="./images/cart.svg" alt="cart">
+                    </a> -->
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="service_list main_content">
+        <div class="container">
+            <div class="row">
+                <div class="video_consultation_wrapper text-center">
+                    <img src="./images/onlinecon.png" alt="Online video consultation">
+                    <h3 class="fontBankGothic video_consultation_heading">Online video consultation</h3>
+                </div>
+                <div class="video_cons_container">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-xl-5 col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                                <img src="./images/videoconsultation.png" alt="videoconsultation" class="img-fluid">
+                            </div>
+                            <div class="col-xl-7 col-xxl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                                <div class="video_cons_desc">
+                                    <p class="video_cons_desc_para fontInter">In today’s fast-paced world, convenience
+                                        is key when
+                                        it comes to achieving your fitness goals. Our Online Video Consultation service
+                                        is designed to give you direct, real-time access to professional fitness
+                                        trainers, bodybuilders, and nutrition experts — no matter where you are. This
+                                        personalized one-on-one session allows you to connect with experts through a
+                                        live video call, giving you the opportunity to discuss your goals, challenges,
+                                        and progress in detail. Whether you're just starting your fitness journey or
+                                        preparing for a competition, our online video consultations provide the guidance
+                                        you need to stay on track.</p>
+
+                                    <p class="video_cons_desc_para fontInter">During the video consultation, our experts
+                                        will
+                                        assess your current fitness level, review your workout routines, and evaluate
+                                        your dietary habits to ensure you’re on the right path toward your goals. Unlike
+                                        traditional phone calls, video consultations allow for a more interactive
+                                        experience. You can demonstrate your exercise form, get real-time feedback, and
+                                        receive tips on improving your technique to avoid injuries and maximize results.
+                                        It’s like having a personal trainer right in your living room!</p>
+                                </div>
+                                <div class="contactus_wrapper">
+                                    <button class="button border_transparent button_rounded contactus_btn">Contact
+                                        Us</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="servicelist_detail">
+                            <div class="row g-2">
+
+                                <div class="col-xl-12">
+                                    <div class="updated_list_container">
+                                        <div class="updates_list">
+                                            <div class="conversation_img">
+                                                <img src="./images/conversation.png" alt="conversation">
+                                            </div>
+                                            <div class="updates_list_wrapper">
+                                                <h5 class="title fontBankGothic">Initial Consultation</h5>
+                                                <p class="para fontInter">Every great fitness journey begins with a
+                                                    clear
+                                                    plan. Our
+                                                    Initial
+                                                    Consultation service is designed to help you lay the foundation for
+                                                    your
+                                                    success by understanding your unique goals, lifestyle, and fitness
+                                                    level. This first step is crucial in creating a personalized roadmap
+                                                    that aligns with your body transformation aspirations, whether it's
+                                                    building muscle, losing fat, or improving overall strength and
+                                                    endurance.
+                                                </p>
+
+                                                <p class="para fontInter"> During the Initial Consultation, you’ll have
+                                                    a
+                                                    one-on-one
+                                                    session with a
+                                                    fitness expert who will take the time to understand your current
+                                                    fitness
+                                                    status, workout history, dietary habits, and any challenges you may
+                                                    have
+                                                    faced in the past. We’ll discuss your short-term and long-term
+                                                    goals,
+                                                    assess your body composition, and identify any potential barriers
+                                                    that
+                                                    could affect your progress. This session is not just about gathering
+                                                    information — it’s about creating a partnership and setting the tone
+                                                    for
+                                                    a successful fitness journey.</p>
+                                            </div>
+                                        </div>
+                                        <div class="updates_list">
+                                            <div class="conversation_img">
+                                                <img src="./images/weeklycheckin.png" alt="conversation">
+                                            </div>
+                                            <div class="updates_list_wrapper">
+                                                <h5 class="title fontBankGothic">Weekly Check-ins</h5>
+                                                <p class="para fontInter">Consistency is the key to achieving any
+                                                    fitness goal, and our Weekly Check-ins service ensures you stay on
+                                                    track throughout your journey. These regular sessions provide you
+                                                    with the accountability, support, and expert feedback you need to
+                                                    continuously progress toward your goals. Whether you’re working on
+                                                    building muscle, losing fat, or enhancing performance, weekly
+                                                    check-ins help you measure your progress, make adjustments, and stay
+                                                    motivated.
+
+
+                                                </p>
+
+                                                <p class="para fontInter"> During each Weekly Check-in, you’ll connect
+                                                    with your fitness coach
+                                                    to review your progress over the past week. This includes assessing
+                                                    your workout performance, tracking your weight and measurements,
+                                                    reviewing your dietary habits, and discussing any challenges you’ve
+                                                    faced. Our experts will offer personalized feedback, highlight areas
+                                                    of improvement, and suggest modifications to your workout or meal
+                                                    plan if needed. These regular check-ins ensure that your fitness
+                                                    plan evolves with your body’s changing needs, keeping you on the
+                                                    path to success.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="updates_list">
+                                            <div class="conversation_img">
+                                                <img src="./images/nutritionupdate.png" alt="nutrition">
+                                            </div>
+                                            <div class="updates_list_wrapper">
+                                                <h5 class="title fontBankGothic">Weekly Training and Nutrition Updates
+                                                </h5>
+                                                <p class="para fontInter">Every great fitness journey begins with a
+                                                    clear plan. Our Initial Consultation service is designed to help you
+                                                    lay the foundation for your success by understanding your unique
+                                                    goals, lifestyle, and fitness level. This first step is crucial in
+                                                    creating a personalized roadmap that aligns with your body
+                                                    transformation aspirations, whether it's building muscle, losing
+                                                    fat, or improving overall strength and endurance.
+
+                                                </p>
+
+                                                <p class="para fontInter"> During the Initial Consultation, you’ll have
+                                                    a one-on-one session with a fitness expert who will take the time to
+                                                    understand your current fitness status, workout history, dietary
+                                                    habits, and any challenges you may have faced in the past. We’ll
+                                                    discuss your short-term and long-term goals, assess your body
+                                                    composition, and identify any potential barriers that could affect
+                                                    your progress. This session is not just about gathering information
+                                                    — it’s about creating a partnership and setting the tone for a
+                                                    successful fitness journey.
+                                                    During the Initial Consultation, you’ll have a one-on-one session
+                                                    with a fitness expert who will take the time to understand your
+                                                    current fitness status, workout history, dietary habits, and any
+                                                    challenges you may have faced in the past. We’ll discuss your
+                                                    short-term and long-term goals, assess your body composition, and
+                                                    identify any potential barriers that could affect your progress.
+                                                    This session is not just about gathering information — it’s about
+                                                    creating a partnership and setting the tone for a successful fitness
+                                                    journey.
+                                                    .</p>
+                                            </div>
+                                        </div>
+                                        <div class="updates_list">
+                                            <div class="conversation_img">
+                                                <img src="./images/malegymnastflexingarms.png"
+                                                    alt="malegymnastflexingarms">
+                                            </div>
+                                            <div class="updates_list_wrapper">
+                                                <h5 class="title fontBankGothic">Weekly Posing</h5>
+                                                <p class="para fontInter">Achieving your fitness goals requires more
+                                                    than just following a static plan — it’s about constantly evolving
+                                                    your approach based on your progress and changing needs. Our Weekly
+                                                    Training and Nutrition Updates service ensures that your workout
+                                                    routines and meal plans are regularly adjusted to optimize results,
+                                                    prevent plateaus, and keep you motivated throughout your fitness
+                                                    journey.
+                                                </p>
+
+                                                <p class="para fontInter">
+                                                    Every week, your fitness coach will analyze your progress and make
+                                                    necessary modifications to your training program. Whether it’s
+                                                    increasing intensity, adjusting reps and sets, or incorporating new
+                                                    exercises, these updates ensure your workouts remain challenging and
+                                                    effective. Our goal is to keep your body adapting and improving week
+                                                    after week, leading to faster gains and better performance.
+
+                                                </p>
+                                                <p class="para fontInter"> On the nutrition front, we understand that
+                                                    one size doesn’t fit all.
+                                                    That’s why we personalize your meal plan based on your weekly
+                                                    check-ins, progress reports, and feedback. If you’ve hit a plateau,
+                                                    we’ll tweak your calorie intake or macronutrient distribution to
+                                                    reignite your progress. If you’re finding it hard to stick to the
+                                                    plan, we’ll provide practical alternatives that suit your
+                                                    preferences while keeping you on track. These weekly updates ensure
+                                                    that your nutrition plan remains realistic, sustainable, and aligned
+                                                    with your fitness goals..</p>
+                                            </div>
+                                        </div>
+                                        <div class="updates_list">
+                                            <div class="conversation_img">
+                                                <img src="./images/assistance.png" alt="assistance">
+                                            </div>
+                                            <div class="updates_list_wrapper">
+                                                <h5 class="title fontBankGothic">Unlimited Questions and Assistance</h5>
+                                                <p class="para fontInter">Text or email your coach at any time if you
+                                                    have questions or need support!.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="updates_list">
+                                            <div class="conversation_img">
+                                                <img src="./images/showday.png" alt="show day support">
+                                            </div>
+                                            <div class="updates_list_wrapper">
+                                                <h5 class="title fontBankGothic">Show Day Support</h5>
+                                                <p class="para fontInter">This is the big day! Your coach will provide
+                                                    backstage help at local shows.
+                                                    For online clients, your coach will provide detailed voice and/or
+                                                    video check-ins on the day.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="updates_list">
+                                            <div class="conversation_img">
+                                                <img src="./images/postcamp.png" alt="postcamp">
+                                            </div>
+                                            <div class="updates_list_wrapper">
+                                                <h5 class="title fontBankGothic">Post-Comp Support</h5>
+                                                <p class="para fontInter">Navigating through the post-comp period can be
+                                                    tough for all competitors regardless of experience level, therefore
+                                                    your coach will be there for you every step of the way! It is our
+                                                    top priority to ensure you have a smooth transition from your
+                                                    competition season into your next improvement season, and we will
+                                                    work closely alongside you to set new goals and prioritise mental
+                                                    and physical health.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="footer_section">
+            <div class="container footer_section_container">
+                <div class="footer_brder"></div>
+                <div class="row footer_wrap">
+                    <div class="col-md-5">
+                        <div class="d-flex footer_lt flex-column">
+                            <a href="" class="logo">
+                                <img src="./images/logo.svg" alt="The Humble Beast" class="img-fluid">
+                            </a>
+                            <p class="footer_lt_para text-white">We'd love to hear from you! Whether you have a
+                                question,
+                                feedback, or need assistance, feel free to reach out.</p>
+                            <ul class="social_media_ul">
+                                <li><img src="./images/social_media_icons/fb.svg" alt="facebook"></li>
+                                <li><img src="./images/social_media_icons/X_vector.svg" alt="x"></li>
+                                <li><img src="./images/social_media_icons/insta.svg" alt="instagram"></li>
+                                <li><img src="./images/social_media_icons/linkedin.svg" alt="linkedin"></li>
+                                <li><img src="./images/social_media_icons/gpay.svg" alt="Gpay"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer_sec">
+                            <h4 class="d-flex flex-column">Quick Links
+                                <span class="heading_brdr"></span>
+                            </h4>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Books</a>
+                                </li>
+                                <li>
+                                    <a href="">Book Appointment</a>
+                                </li>
+                                <li>
+                                    <a href="">Login</a>
+                                </li>
+                                <li>
+                                    <a href="">Registration</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_sec stay_connected">
+                            <h4 class="d-flex flex-column">Stay Connected
+                                <span class="heading_brdr"></span>
+                            </h4>
+                            <p class="fontInter">Stay connected to power your fitness journey! Follow us for expert
+                                tips, training
+                                inspiration, and exclusive updates.</p>
+                            <ul class="">
+                                <li>
+                                    <span class="img-box d-flex justify-content-center align-items-center">
+                                        <img src="./images/social_media_icons/phone.png" alt="phone">
+                                    </span>
+                                    +91 83245 6XXXX
+                                <li>
+                                    <span class="img-box d-flex justify-content-center align-items-center">
+                                        <img src="./images/social_media_icons/mail.png" alt="mail">
+                                    </span>
+                                    iqbalsayedhumblebeast@gmail.com
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer_bottom">
+                    <div class="col-md-12">
+                        <h5 class="exclusive_offer ps-0">
+                            Stay connected with us for updates and exclusive offers!
+                        </h5>
+                        <div class="d-flex justify-content-between copy_right">
+                            <h5 class="fontInter">@2024. All Rights Reserved</h5>
+                            <ul class="d-flex">
+                                <li class="fontInter">Terms & Condition</li>
+                                <li class="fontInter">Terms & Privacy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

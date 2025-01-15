@@ -1876,6 +1876,54 @@ footer .footer_bottom .copy_right ul li {
   line-height: 23px;
 }
 
+.video_consultation_wrapper {
+  padding-bottom: 90px;
+}
+.video_consultation_wrapper .video_consultation_heading {
+  font-size: 3.6rem;
+  line-height: 52px;
+  color: var(--bs-white);
+}
+
+.video_cons_container .video_cons_desc_para {
+  color: var(--bs-white);
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: var(--bs-white);
+}
+.video_cons_container .contactus_wrapper {
+  margin-top: 38px;
+}
+.video_cons_container .contactus_wrapper .contactus_btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+}
+.video_cons_container .conversation_img {
+  width: 128px;
+  height: 128px;
+}
+.video_cons_container .updated_list_container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 120px;
+}
+.video_cons_container .updated_list_container .updates_list {
+  display: flex;
+  gap: 26px;
+  align-items: flex-start;
+}
+.video_cons_container .updated_list_container .updates_list .updates_list_wrapper {
+  color: var(--bs-white);
+}
+.video_cons_container .updated_list_container .updates_list .updates_list_wrapper .title {
+  font-size: 2.18rem;
+  line-height: 42px;
+}
+.video_cons_container .updated_list_container .updates_list .updates_list_wrapper .para {
+  font-size: 0.813rem;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
