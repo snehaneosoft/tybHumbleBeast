@@ -1879,10 +1879,22 @@ footer .footer_bottom .copy_right ul li {
 .video_consultation_wrapper {
   padding-bottom: 90px;
 }
+@media (max-width: 576px) {
+  .video_consultation_wrapper {
+    padding-bottom: 50px;
+  }
+}
 .video_consultation_wrapper .video_consultation_heading {
   font-size: 3.6rem;
   line-height: 52px;
   color: var(--bs-white);
+}
+@media (max-width: 576px) {
+  .video_consultation_wrapper .video_consultation_heading {
+    font-size: 2.6rem;
+    line-height: 40px;
+    margin-top: 20px;
+  }
 }
 
 .video_cons_container .video_cons_desc_para {
@@ -1894,6 +1906,11 @@ footer .footer_bottom .copy_right ul li {
 .video_cons_container .contactus_wrapper {
   margin-top: 38px;
 }
+@media (max-width: 576px) {
+  .video_cons_container .contactus_wrapper {
+    text-align: center;
+  }
+}
 .video_cons_container .contactus_wrapper .contactus_btn {
   padding: 10px 25px;
   font-size: 1rem;
@@ -1901,6 +1918,11 @@ footer .footer_bottom .copy_right ul li {
 .video_cons_container .conversation_img {
   width: 128px;
   height: 128px;
+}
+@media (max-width: 576px) {
+  .video_cons_container .conversation_img {
+    margin: auto;
+  }
 }
 .video_cons_container .updated_list_container {
   display: flex;
@@ -1913,15 +1935,52 @@ footer .footer_bottom .copy_right ul li {
   gap: 26px;
   align-items: flex-start;
 }
+@media (max-width: 576px) {
+  .video_cons_container .updated_list_container .updates_list {
+    flex-direction: column;
+  }
+}
 .video_cons_container .updated_list_container .updates_list .updates_list_wrapper {
   color: var(--bs-white);
 }
 .video_cons_container .updated_list_container .updates_list .updates_list_wrapper .title {
   font-size: 2.18rem;
   line-height: 42px;
+  margin-bottom: 22px;
+}
+@media (max-width: 576px) {
+  .video_cons_container .updated_list_container .updates_list .updates_list_wrapper .title {
+    line-height: 30px;
+  }
 }
 .video_cons_container .updated_list_container .updates_list .updates_list_wrapper .para {
   font-size: 0.813rem;
+}
+.video_cons_container .servicedetail_bottom_container {
+  margin-top: 123px;
+  color: var(--bs-white);
+}
+.video_cons_container .servicedetail_bottom_container .title {
+  font-size: 4rem;
+  line-height: 60px;
+  margin-bottom: 60px;
+  margin-top: 123px;
+}
+@media (max-width: 576px) {
+  .video_cons_container .servicedetail_bottom_container .title {
+    font-size: 2.6rem;
+    line-height: 47px;
+  }
+}
+.video_cons_container .servicedetail_bottom_container .para {
+  font-size: 1.12rem;
+  line-height: 27px;
+}
+.video_cons_container .servicedetail_bottom_container .para:not(:last-child) {
+  margin-bottom: 30px;
+}
+.video_cons_container .servicedetail_bottom_container .consult_us_now {
+  margin-top: 55px;
 }
 
 ul {
