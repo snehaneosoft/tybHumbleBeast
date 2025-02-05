@@ -86,3 +86,12 @@
   font-style: normal;
   font-display: swap;
 }
+// white theme fonts
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+    url('../../fonts/Poppins-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

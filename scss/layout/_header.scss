@@ -1,24 +1,36 @@
 header {
-  padding: 25px 25px 0 25px;
-
+  padding: 13px 25px;
+  background: var(--bs-header-black);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   .nav-bar {
-    position: fixed;
-    background: linear-gradient(
-      90deg,
-      rgba(217, 217, 217, 0) 0%,
-      rgba(115, 115, 115, 0.39) 100%
-    );
-    width: calc(100% - 50px);
+    background: var(--bs-header-black);
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(217, 217, 217, 0) 0%,
+    //   rgba(115, 115, 115, 0.39) 100%
+    // );
+    // width: calc(100% - 50px);
     z-index: 2;
     left: 25px;
-    padding-right: 25px;
-    @include border-radius(13px);
-    @include medium-screen {
+    // padding-right: 25px;
+    // @include border-radius(13px);
+    .logo {
+      img {
+        width: 125px;
+      }
+    }
+    @include custom-medium-screen {
       .logo {
+        width: 109px;
+        height: 56px;
         img {
-          width: 125px;
+          width: 100%;
         }
       }
+    }
+    @include medium-screen {
       .humberger {
         display: flex !important;
         margin: 2px;

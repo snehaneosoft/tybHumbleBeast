@@ -75,6 +75,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../../fonts/Poppins-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 .button {
   background: var(--bs-primary-red);
   line-height: 30px;
@@ -134,7 +141,6 @@ html {
 
 body {
   font-size: 1rem;
-  background: url("../images/bodybg.jpg") no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -174,6 +180,10 @@ body.register_bdy {
 
 .font600 {
   font-weight: 600;
+}
+
+.font400 {
+  font-weight: 400;
 }
 
 .strikethrough {
@@ -300,22 +310,38 @@ body.register_bdy {
   height: 80%;
 }
 
+.horizontal_hr {
+  border-color: var(--bs-black);
+  margin: 40px 16px 30px 16px;
+  opacity: 1;
+  width: calc(100% - 32px);
+}
+
 header {
-  padding: 25px 25px 0 25px;
+  padding: 13px 25px;
+  background: var(--bs-header-black);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 header .nav-bar {
-  position: fixed;
-  background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(115, 115, 115, 0.39) 100%);
-  width: calc(100% - 50px);
+  background: var(--bs-header-black);
   z-index: 2;
   left: 25px;
-  padding-right: 25px;
-  border-radius: 13px;
+}
+header .nav-bar .logo img {
+  width: 125px;
+}
+@media (min-width: 768px) {
+  header .nav-bar .logo {
+    width: 109px;
+    height: 56px;
+  }
+  header .nav-bar .logo img {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
-  header .nav-bar .logo img {
-    width: 125px;
-  }
   header .nav-bar .humberger {
     display: flex !important;
     margin: 2px;
@@ -777,11 +803,28 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 .achieve_best .achieve_best_subtitle {
-  color: var(--bs-white);
+  color: var(--bs-black);
   font-family: "inter";
-  font-size: 27px;
-  line-height: 38px;
   letter-spacing: -0.3px;
+  font-size: 4rem;
+  line-height: 50px;
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .achieve_best .achieve_best_subtitle {
+    line-height: 38px;
+    font-size: 4rem;
+  }
+}
+.achieve_best .support_subtitle {
+  font-size: 1.6rem;
+  line-height: 38px;
+  color: var(--bs-gray1);
+}
+@media (min-width: 768px) {
+  .achieve_best .support_subtitle {
+    line-height: 42px;
+  }
 }
 .achieve_best .achieve_best_para {
   font-size: 1.125rem;
@@ -792,6 +835,98 @@ footer .footer_bottom .copy_right ul li {
   width: 84px;
   height: 19px;
   display: flex;
+}
+.achieve_best .blueprint_container .amount_info {
+  gap: 0;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .achieve_best .blueprint_container .amount_info {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 30px;
+  }
+}
+.achieve_best .blueprint_container .amount_info_lbl {
+  color: var(--bs-gray1);
+  font-size: 1.06rem;
+  line-height: 27px;
+  text-decoration: line-through;
+}
+.achieve_best .blueprint_container .amount_info_desc {
+  color: var(--bs-blue);
+  font-size: 1.12rem;
+  line-height: 30px;
+}
+.achieve_best .blueprint_container .list_books_card_header {
+  font-size: 2.9rem;
+  line-height: 57px;
+  margin-bottom: 13px;
+}
+.achieve_best .blueprint_container .list_books_card_subheading {
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: var(--bs-gray1);
+  gap: 16px;
+}
+.achieve_best .blueprint_container .list_books_card .list_books_para {
+  font-size: 1rem;
+  line-height: 24px;
+  color: var(--bs-gray1);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.achieve_best .blueprint_container .list_books_card .freeshipping_wrapper {
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .achieve_best .blueprint_container .list_books_card .freeshipping_wrapper {
+    flex-direction: row;
+    gap: 22px;
+    justify-content: flex-start;
+  }
+}
+.achieve_best .blueprint_container .list_books_card .freeshipping_wrapper .addtocart_btn {
+  font-size: 1.25rem;
+  line-height: 23px;
+  padding: 5px 24px;
+  box-shadow: 3.36px 5.04px 8.49px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.achieve_best .blueprint_container .list_books_card .freeshipping_wrapper .subheading_lbl {
+  color: var(--bs-gray1);
+  font-size: 1.25rem;
+  line-height: 35px;
+}
+.achieve_best .contact_us_now {
+  background: var(--bs-checkout-gray);
+  margin-top: 100px;
+}
+.achieve_best .contact_us_now_wrapper {
+  padding: 55px 0;
+}
+.achieve_best .contact_us_now_wrapper .title {
+  font-size: 3.4rem;
+  line-height: 68px;
+  color: var(--bs-black2);
+  margin-bottom: 38px;
+}
+.achieve_best .contact_us_now_wrapper .para {
+  font-size: 1rem;
+  line-height: 20px;
+  color: var(--bs-black2);
+  margin-bottom: 13px;
+}
+.achieve_best .contact_us_now_wrapper .contactusnow_wrapper {
+  margin-top: 38px;
+}
+.achieve_best .contact_us_now_wrapper .contactusnow_wrapper .consultusnow_btn {
+  font-size: 1.62rem;
+  color: var(--bs-black3);
 }
 
 .books_purchase_wrap .books_purchase_wrap_box .purchase_book_firstrow {
@@ -2009,4 +2144,8 @@ ul {
   --bs-checkout-gray: #e0e0e0;
   --bs-dark-gray3: #b5bec6;
   --bs-dark-addremoval: #d9d9d9;
+  --bs-header-black: #101010;
+  --bs-gray1: #5f5f5f;
+  --bs-black2: #161616;
+  --bs-black3: #262626;
 }/*# sourceMappingURL=style.css.map */

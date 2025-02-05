@@ -16,11 +16,25 @@
     }
   }
   .achieve_best_subtitle {
-    color: var(--bs-white);
+    color: var(--bs-black);
     font-family: 'inter';
-    font-size: 27px;
-    line-height: 38px;
+
     letter-spacing: -0.3px;
+    font-size: 4rem;
+    line-height: 50px;
+    font-size: 3rem;
+    @include custom-medium-screen {
+      line-height: 38px;
+      font-size: 4rem;
+    }
+  }
+  .support_subtitle {
+    font-size: 1.6rem;
+    line-height: 38px;
+    color: var(--bs-gray1);
+    @include custom-medium-screen {
+      line-height: 42px;
+    }
   }
   .achieve_best_para {
     font-size: 1.125rem;
@@ -32,5 +46,104 @@
     height: 19px;
     display: flex;
   }
-  
+  .blueprint_container {
+    .amount_info {
+      gap: 0;
+      flex-direction: column;
+      margin-top: 10px;
+      text-align: center;
+      @include custom-large-screen {
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 30px;
+      }
+
+      &_lbl {
+        color: var(--bs-gray1);
+        font-size: 1.06rem;
+        line-height: 27px;
+        text-decoration: line-through;
+      }
+      &_desc {
+        color: var(--bs-blue);
+        font-size: 1.12rem;
+        line-height: 30px;
+      }
+    }
+    .list_books_card {
+      &_header {
+        font-size: 2.9rem;
+        line-height: 57px;
+        margin-bottom: 13px;
+      }
+      &_subheading {
+        font-size: 1.2rem;
+        line-height: 20px;
+        color: var(--bs-gray1);
+        gap: 16px;
+      }
+      .list_books_para {
+        font-size: 1rem;
+        line-height: 24px;
+        color: var(--bs-gray1);
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
+      .freeshipping_wrapper {
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include small-screen {
+          flex-direction: row;
+          gap: 22px;
+          justify-content: flex-start;
+        }
+        // @include custom-medium-screen {
+        //   justify-content: center;
+        //   align-items: center;
+        //   flex-direction: row;
+        //   gap: 22px;
+        // }
+        .addtocart_btn {
+          font-size: 1.25rem;
+          line-height: 23px;
+          padding: 5px 24px;
+          box-shadow: 3.36px 5.04px 8.49px 0px #00000040;
+        }
+
+        .subheading_lbl {
+          color: var(--bs-gray1);
+          font-size: 1.25rem;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+  .contact_us_now {
+    background: var(--bs-checkout-gray);
+    margin-top: 100px;
+    &_wrapper {
+      padding: 55px 0;
+      .title {
+        font-size: 3.4rem;
+        line-height: 68px;
+        color: var(--bs-black2);
+        margin-bottom: 38px;
+      }
+      .para {
+        font-size: 1rem;
+        line-height: 20px;
+        color: var(--bs-black2);
+        margin-bottom: 13px;
+      }
+      .contactusnow_wrapper {
+        margin-top: 38px;
+        .consultusnow_btn {
+          font-size: 1.62rem;
+          color: var(--bs-black3);
+        }
+      }
+    }
+  }
 }

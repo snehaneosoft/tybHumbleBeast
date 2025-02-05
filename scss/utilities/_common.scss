@@ -3,7 +3,7 @@ html {
 }
 body {
   font-size: 1rem;
-  background: url('../images/bodybg.jpg') no-repeat;
+  // background: url('../images/bodybg.jpg') no-repeat;
   // background-size: 100% 100%;
   background-size: cover;
   width: 100%;
@@ -36,6 +36,9 @@ body {
 }
 .font600 {
   font-weight: 600;
+}
+.font400 {
+  font-weight: 400;
 }
 .strikethrough {
   text-decoration: line-through;
@@ -167,4 +170,10 @@ body {
 }
 .h-80 {
   height: 80%;
+}
+.horizontal_hr {
+  border-color: var(--bs-black);
+  margin: 40px 16px 30px 16px;
+  opacity: 1;
+  width: calc(100% - 32px);
 }
