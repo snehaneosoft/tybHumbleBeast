@@ -192,7 +192,7 @@ body.register_bdy {
 }
 
 .common_font {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 27px;
 }
 
@@ -315,6 +315,34 @@ body.register_bdy {
   margin: 40px 16px 30px 16px;
   opacity: 1;
   width: calc(100% - 32px);
+}
+
+.contact_us_now {
+  background: var(--bs-checkout-gray);
+  margin-top: 100px;
+}
+.contact_us_now_wrapper {
+  padding: 55px 0;
+}
+.contact_us_now_wrapper .title {
+  font-size: 3.4rem;
+  line-height: 68px;
+  color: var(--bs-black2);
+  margin-bottom: 38px;
+  padding: 0 100px 0 0;
+}
+.contact_us_now_wrapper .para {
+  font-size: 1rem;
+  line-height: 20px;
+  color: var(--bs-black2);
+  margin-bottom: 13px;
+}
+.contact_us_now_wrapper .contactusnow_wrapper {
+  margin-top: 38px;
+}
+.contact_us_now_wrapper .contactusnow_wrapper .consultusnow_btn {
+  font-size: 1.62rem;
+  color: var(--bs-black3);
 }
 
 header {
@@ -474,7 +502,7 @@ header .nav-bar .backdrop {
 }
 
 .main_content {
-  padding-top: 128px;
+  padding-top: 82px;
 }
 @media (max-width: 576px) {
   .main_content {
@@ -902,32 +930,6 @@ footer .footer_bottom .copy_right ul li {
   font-size: 1.25rem;
   line-height: 35px;
 }
-.achieve_best .contact_us_now {
-  background: var(--bs-checkout-gray);
-  margin-top: 100px;
-}
-.achieve_best .contact_us_now_wrapper {
-  padding: 55px 0;
-}
-.achieve_best .contact_us_now_wrapper .title {
-  font-size: 3.4rem;
-  line-height: 68px;
-  color: var(--bs-black2);
-  margin-bottom: 38px;
-}
-.achieve_best .contact_us_now_wrapper .para {
-  font-size: 1rem;
-  line-height: 20px;
-  color: var(--bs-black2);
-  margin-bottom: 13px;
-}
-.achieve_best .contact_us_now_wrapper .contactusnow_wrapper {
-  margin-top: 38px;
-}
-.achieve_best .contact_us_now_wrapper .contactusnow_wrapper .consultusnow_btn {
-  font-size: 1.62rem;
-  color: var(--bs-black3);
-}
 
 .books_purchase_wrap .books_purchase_wrap_box .purchase_book_firstrow {
   flex-direction: column;
@@ -939,7 +941,7 @@ footer .footer_bottom .copy_right ul li {
 }
 .books_purchase_wrap .books_purchase_banner {
   padding: 67px 40px 73px 40px;
-  background: url(../../images/bgbk.png) #000 no-repeat right;
+  background: #000 no-repeat right;
 }
 @media (max-width: 768px) {
   .books_purchase_wrap .books_purchase_banner {
@@ -949,7 +951,7 @@ footer .footer_bottom .copy_right ul li {
 .books_purchase_wrap .books_purchase_banner h5 {
   font-size: 2rem;
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 @media (min-width: 768px) {
   .books_purchase_wrap .books_purchase_banner h5 {
@@ -959,8 +961,8 @@ footer .footer_bottom .copy_right ul li {
 }
 @media (min-width: 1200px) {
   .books_purchase_wrap .books_purchase_banner h5 {
-    font-size: 3.563rem !important;
-    line-height: 50px !important;
+    font-size: 4.25rem !important;
+    line-height: 72px !important;
   }
 }
 .books_purchase_wrap .books_purchase_banner .explore_txt {
@@ -988,8 +990,9 @@ footer .footer_bottom .copy_right ul li {
 }
 .nutrition_books_purchase .card_heading {
   font-size: 2.18rem;
-  padding-top: 50px;
-  line-height: 56px;
+  padding-top: 30px;
+  line-height: 33px;
+  margin-bottom: 17px;
 }
 @media (max-width: 768px) {
   .nutrition_books_purchase .card_heading {
@@ -998,8 +1001,8 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 .nutrition_books_purchase .card_subheading {
-  font-size: 1.125rem;
-  line-height: 37px;
+  font-size: 1rem;
+  line-height: 27px;
   gap: 24px;
 }
 .nutrition_books_purchase .paper_strike {
@@ -1090,8 +1093,7 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 .para_bk_pur p {
-  color: var(--bs-light-white);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .divider-sec {
@@ -1166,7 +1168,7 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 .slick-carousel-detail .slick-prev {
-  left: 30px;
+  left: 0;
 }
 @media (max-width: 768px) {
   .slick-carousel-detail .slick-prev {
