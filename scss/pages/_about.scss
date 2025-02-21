@@ -1,86 +1,154 @@
-.bodybuilder {
-  @include custom-medium-screen {
-    background: url(../../images/iqbalsayed.png) no-repeat;
-    width: 100%;
-    background-size: cover;
+// .bodybuilder {
+//   @include custom-medium-screen {
+//     background: url(../../images/iqbalsayed.png) no-repeat;
+//     width: 100%;
+//     background-size: cover;
+//   }
+//   .certificate_experties_top {
+//     p {
+//       font-size: 1.12rem;
+//       color: var(--bs-white);
+//     }
+//     .dumbell_wrap {
+//       margin-bottom: 80px;
+//     }
+//     .text_container {
+//       border: 1px solid var(--bs-dark-gray);
+//       padding: 40px;
+//       background: url('../../images/noise_texture.png') no-repeat;
+//       background-size: cover;
+//       @include border-radius(50px);
+//       margin-bottom: 35px;
+//       @include custom-medium-screen {
+//         padding: 59px;
+//       }
+//     }
+//     .certification_expert_section {
+//       border: 1px solid var(--bs-dark-gray);
+//       padding: 42px;
+//       @include border-radius(50px);
+//       background: url(../images/noise_texture.png);
+//       background-size: cover;
+//       &_h4 {
+//         color: var(--bs-white);
+//       }
+//       .certificate_ul {
+//         margin-top: 16px;
+//         li {
+//           color: var(--bs-white);
+//           font-size: 1.06rem;
+//           margin-bottom: 16px;
+//           position: relative;
+//           display: flex;
+//           align-items: center;
+//           padding-left: 30px;
+//           &::before {
+//             content: '';
+//             position: absolute;
+//             width: 8px;
+//             height: 8px;
+//             background: var(--bs-primary-red);
+//             left: 5px;
+//           }
+//         }
+//       }
+//     }
+//     .dumbell_wrap {
+//       display: none;
+//       @include extra-large {
+//         display: flex;
+//       }
+//     }
+//   }
+// }
+// .excellence_container {
+//   color: var(--bs-white);
+//   padding: 97px 0;
+//   .title {
+//     font-size: 2rem;
+//     line-height: 37px;
+//     margin-bottom: 26px;
+//     @include custom-large-screen {
+//       font-size: 3rem;
+//       line-height: 56px;
+//     }
+//   }
+//   .contactus_now {
+//     padding: 11px 23px;
+//     @include border-radius(50px);
+//   }
+//   .para_second_cls {
+//     margin-bottom: 60px;
+//   }
+//   .client_spotlight_dumbell {
+//     top: 65px;
+//   }
+// }
+.achieve_best {
+  .aboutus_container {
+    margin-bottom: 51px;
+    padding-top: 66px;
+    .title {
+      font-size: 4.625rem;
+      line-height: 70px;
+      color: var(--bs-gray2);
+    }
+    .para {
+      font-size: 1.68rem;
+      line-height: 42px;
+      color: var(--bs-gray1);
+    }
   }
-  .certificate_experties_top {
-    p {
-      font-size: 1.12rem;
-      color: var(--bs-white);
-    }
-    .dumbell_wrap {
-      margin-bottom: 80px;
-    }
-    .text_container {
-      border: 1px solid var(--bs-dark-gray);
-      padding: 40px;
-      background: url('../../images/noise_texture.png') no-repeat;
-      background-size: cover;
-      @include border-radius(50px);
-      margin-bottom: 35px;
-      @include custom-medium-screen {
-        padding: 59px;
+  .aboutus_info_container {
+    .aboutus_para {
+      padding-left: 30px;
+      .aboutus_para_lbl {
+        font-size: 1.06rem;
+        line-height: 26px;
+        color: var(--bs-gray5);
       }
-    }
-    .certification_expert_section {
-      border: 1px solid var(--bs-dark-gray);
-      padding: 42px;
-      @include border-radius(50px);
-      background: url(../images/noise_texture.png);
-      background-size: cover;
-      &_h4 {
-        color: var(--bs-white);
-      }
-      .certificate_ul {
-        margin-top: 16px;
-        li {
-          color: var(--bs-white);
-          font-size: 1.06rem;
-          margin-bottom: 16px;
-          position: relative;
-          display: flex;
-          align-items: center;
-          padding-left: 30px;
-          &::before {
-            content: '';
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--bs-primary-red);
-            left: 5px;
+      .expertise_container {
+        margin-top: 34px;
+        .expertise_h4 {
+          font-size: 1.875rem;
+          line-height: 45px;
+          color: var(--bs-black);
+        }
+        .expertise_ul {
+          margin-bottom: 31px;
+          .expertise_li {
+            font-size: 1.06rem;
+            line-height: 38px;
+            color: var(--bs-gray5);
+            gap: 9px;
+            .list-style-square {
+              width: 8px;
+              height: 8px;
+              background: var(--bs-primary-red);
+              display: flex;
+            }
           }
+        }
+        .contactus_now {
+          padding: 11px 28px;
+          @include border-radius(50px);
+          color: var(--bs-black4);
+          font-size: 1.68rem;
         }
       }
     }
-    .dumbell_wrap {
-      display: none;
-      @include extra-large {
-        display: flex;
+    .commitment_to_excellence_container {
+      margin-top: 60px;
+      .title {
+        font-size: 1.75rem;
+        line-height: 45px;
+        margin-bottom: 19px;
+      }
+      .para {
+        font-size: 1.43rem;
+        line-height: 38px;
+        color: var(--bs-gray5);
       }
     }
-  }
-}
-.excellence_container {
-  color: var(--bs-white);
-  padding: 97px 0;
-  .title {
-    font-size: 2rem;
-    line-height: 37px;
-    margin-bottom: 26px;
-    @include custom-large-screen {
-      font-size: 3rem;
-      line-height: 56px;
-    }
-  }
-  .contactus_now {
-    padding: 11px 23px;
-    @include border-radius(50px);
-  }
-  .para_second_cls {
-    margin-bottom: 60px;
-  }
-  .client_spotlight_dumbell {
-    top: 65px;
   }
 }

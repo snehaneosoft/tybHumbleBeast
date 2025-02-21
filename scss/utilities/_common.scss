@@ -13,7 +13,11 @@ body {
 }
 .heading_brdr {
   padding: 1px;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) -1.36%, #ff0000 77.38%);
+  // background: linear-gradient(
+  //   270deg,
+  //   rgba(0, 0, 0, 0) -1.36%,
+  //   var(--bs-gray4) 77.38%
+  background: var(--bs-gray4);
   width: 48px;
 }
 .fontInter {
@@ -30,6 +34,12 @@ body {
 }
 .fontPoppins {
   font-family: 'Poppins';
+}
+.fontParata {
+  font-family: 'Parata';
+}
+.fontAbhayaLibre {
+  font-family: 'Abhaya Libre';
 }
 .fontBold {
   font-weight: bold;
@@ -110,11 +120,12 @@ body {
 }
 .a_bgtransparent,
 .a_bgtransparent_brred {
-  border: 1px solid var(--bs-white);
+  border: 1px solid var(--bs-Tertiary-red);
   @include border-radius(25px);
   line-height: 26px;
   padding: 4px 22px;
-  margin-top: 41px;
+  margin: 0 0 41px 0;
+  color: var(--bs-black);
   @include medium-screen {
     margin-top: 30px;
   }
@@ -184,7 +195,8 @@ body {
     padding: 55px 0;
     .title {
       font-size: 3.4rem;
-      line-height: 68px;
+      // line-height: 68px;
+      line-height: 55px;
       color: var(--bs-black2);
       margin-bottom: 38px;
       padding: 0 100px 0 0;
@@ -199,7 +211,7 @@ body {
       margin-top: 38px;
       .consultusnow_btn {
         font-size: 1.62rem;
-        color: var(--bs-black3);
+        color: var(--bs-black4);
       }
     }
   }

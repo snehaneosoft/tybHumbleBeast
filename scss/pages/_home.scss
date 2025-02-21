@@ -1,15 +1,18 @@
 .goals_container {
   h3 {
-    color: var(--bs-light-gray);
-    font-size: 3.625rem;
-    line-height: 66px;
+    color: var(--bs-white);
+    font-size: 5.5rem;
+    line-height: 97px;
     @include medium-screen {
       font-size: 2.625rem;
       line-height: 50px;
     }
   }
   .goals_lt {
-    padding: 70px 55px;
+    // padding: 70px 55px;
+    padding: 70px 0 122px 0;
+    background: url('../../images/hero.png') no-repeat;
+    background-size: 100% 100%;
     @include medium-screen {
       padding: 10px 0 45px 0;
       text-align: center;
@@ -18,6 +21,18 @@
       margin: 35px 0;
     }
   }
+
+  .about_author {
+    .abt_author_title {
+      font-size: 4.3rem;
+      color: var(--bs-gray2);
+      line-height: 85px;
+      padding: 94px 0 104px 0;
+    }
+  }
+  .about_author_container {
+    background: var(--bs-gray3);
+  }
   .author_box_view {
     width: 973px;
     margin: 0 auto;
@@ -25,13 +40,14 @@
     @include medium-screen {
       width: 100%;
     }
+
     .author_box {
-      border: 1px solid var(--bs-light-white);
-      background: url('../../images/noise_texture.png') no-repeat;
-      @include border-radius(35px);
+      // border: 1px solid var(--bs-light-white);
+      // background: url('../../images/noise_texture.png') no-repeat;
+      // @include border-radius(35px);
 
       .author-bx-wrap {
-        padding: 91px 51px 91px 0;
+        padding: 38px 51px 34px 0;
         @include medium-screen {
           padding: 58px 30px 70px 30px;
         }
@@ -41,8 +57,8 @@
           margin-bottom: 12px;
         }
         p {
-          font-size: 0.875rem;
-          line-height: 18px;
+          font-size: 1.063rem;
+          line-height: 26px;
         }
       }
     }
@@ -54,7 +70,7 @@
   }
   .authbox {
     position: absolute;
-    top: -21%;
+    top: -18%;
     left: -152px;
     z-index: 1;
     width: 612px;
@@ -139,7 +155,7 @@
       }
     }
     .card_sportlight {
-      border: 1px solid var(--bs-light-white); /* Set the border width */
+      // border: 1px solid var(--bs-light-white); /* Set the border width */
       @include border-radius(36px) /* Optional: Add rounded corners */;
       padding: 33px 40px;
 
@@ -157,6 +173,7 @@
         line-height: 30px;
         margin-bottom: 20px;
         word-wrap: break-word;
+        font-weight: 400;
         @include medium-screen {
           font-size: 2rem;
         }
@@ -271,59 +288,89 @@
   }
 }
 .nutrition_programming_weeklyin {
-  padding: 163px 0 141px 0;
+  padding: 90px 0 90px 0;
 
   @include medium-screen {
     padding: 200px 0 100px 0;
   }
-  .nutrition_img {
-    background: var(--bs-dark-gray-primary);
-    padding: 13px;
-    @include border-radius(42px);
-    img {
-      @include border-radius(42px);
-    }
-  }
-  .nutrition_content {
-    &.nut_content_mt {
-      // padding: 90px 0 100px 0;
-      padding-top: 50px;
-      @include medium-screen {
-        padding-top: 20px;
+  .card_top_img {
+    position: relative;
+    .overlay_icon {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 60%);
       }
     }
-    &.last_nut_mb {
-      margin-bottom: 50px;
-    }
-    h4 {
-      font-size: 2.25rem;
-      line-height: 30px;
-      &.cust_pt {
-        padding-top: 90px;
-        @include medium-screen {
-          padding-top: 40px;
-        }
-      }
-    }
-    .para_content {
-      font-size: 0.875rem;
-      line-height: 22px;
-    }
-  }
-  .weeklycheckin {
-    background: url('../../images/layout.png');
-    padding: 13px;
-    @include border-radius(42px);
-    img {
-      @include border-radius(47px);
-    }
-    &.weekly_customize {
-      margin-top: 50px;
-      @include medium-screen {
-        margin-top: 20px;
+    .card_bottom_content {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: var(--bs-white);
+      width: calc(100% - 3px);
+      min-height: 170px;
+      .card_heading {
+        font-size: 2.125rem;
+        font-weight: 400;
       }
     }
   }
+
+  // .nutrition_img {
+  //   background: var(--bs-dark-gray-primary);
+  //   padding: 13px;
+  //   @include border-radius(42px);
+  //   img {
+  //     @include border-radius(42px);
+  //   }
+  // }
+  // .nutrition_content {
+  //   &.nut_content_mt {
+  //     // padding: 90px 0 100px 0;
+  //     padding-top: 50px;
+  //     @include medium-screen {
+  //       padding-top: 20px;
+  //     }
+  //   }
+  //   &.last_nut_mb {
+  //     margin-bottom: 50px;
+  //   }
+  //   h4 {
+  //     font-size: 2.25rem;
+  //     line-height: 30px;
+  //     &.cust_pt {
+  //       padding-top: 90px;
+  //       @include medium-screen {
+  //         padding-top: 40px;
+  //       }
+  //     }
+  //   }
+  //   .para_content {
+  //     font-size: 0.875rem;
+  //     line-height: 22px;
+  //   }
+  // }
+  // .weeklycheckin {
+  //   background: url('../../images/layout.png');
+  //   padding: 13px;
+  //   @include border-radius(42px);
+  //   img {
+  //     @include border-radius(47px);
+  //   }
+  //   &.weekly_customize {
+  //     margin-top: 50px;
+  //     @include medium-screen {
+  //       margin-top: 20px;
+  //     }
+  //   }
+  // }
   .inner_secondcol_img {
     display: none;
     @include custom-medium-screen {
@@ -355,5 +402,42 @@
         z-index: -1;
       }
     }
+  }
+}
+.strength_section {
+  background: url('../../images/gymlongview.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 65px 24px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .strength_lbl {
+    font-size: 2.68rem;
+    line-height: 50px;
+    margin-bottom: 50px;
+    color: var(--bs-white);
+    text-align: center;
+    font-weight: 300;
+  }
+}
+.client_spotlights_container {
+  .client_spotlights_heading {
+    font-size: 4.625rem;
+    line-height: 85px;
+    color: var(--bs-gray2);
+  }
+}
+.testimonial_container{
+  .testimonial_header{
+    // font-size: ;
   }
 }
