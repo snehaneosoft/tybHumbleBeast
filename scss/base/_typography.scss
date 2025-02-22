@@ -135,3 +135,11 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/Inter18pt-Medium.woff2') format('woff2'),
+    url('../../fonts/Inter18pt-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

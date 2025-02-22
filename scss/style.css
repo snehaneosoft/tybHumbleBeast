@@ -117,6 +117,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter18pt-Medium.woff2") format("woff2"), url("../../fonts/Inter18pt-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 .button {
   background: var(--bs-primary-red);
   line-height: 30px;
@@ -1609,6 +1616,25 @@ footer .footer_bottom .copy_right ul li {
 
 .login_container {
   height: 100vh;
+  border-left: 18px solid var(--bs-black);
+}
+.login_container .login_container_title {
+  font-size: 3.625rem;
+  line-height: 52px;
+  letter-spacing: -0.3px;
+  color: var(--bs-black1);
+  margin-bottom: 21px;
+}
+.login_container .login_container_p {
+  font-size: 1.06rem;
+  line-height: 24px;
+  color: var(--bs-black1);
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+.login_container .loginaccount_container {
+  max-width: 381px;
+  margin: 0 auto;
 }
 .login_container .xs-left-container {
   display: none;
@@ -1738,6 +1764,58 @@ footer .footer_bottom .copy_right ul li {
   .login_container .login_container_panel {
     margin-top: 24px;
   }
+}
+.login_container .login_wrapper {
+  padding-top: 45px;
+}
+.login_container .loginaccount_title {
+  font-size: 1.43rem;
+  color: var(--bs-black1);
+  line-height: 23px;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.login_container .loginaccount_para {
+  font-size: 1rem;
+  line-height: 19px;
+  color: var(--bs-black1);
+  font-weight: 300;
+}
+.login_container .loginaccount_panel_form {
+  padding-top: 30px;
+}
+.login_container .loginaccount_panel_form .loginacc_panel_lbl {
+  font-size: 1.12rem;
+  line-height: 23px;
+  margin-bottom: 9px;
+  color: var(--bs-gray6);
+}
+.login_container .loginaccount_panel_form .input-frm {
+  padding: 18px;
+  font-size: 0.875rem;
+  line-height: 18px;
+  border-color: var(--bs-dark-gray1);
+  border-radius: 5px;
+}
+.login_container .loginaccount_panel_form .input-frm::-moz-placeholder {
+  color: var(--bs-placeholder);
+}
+.login_container .loginaccount_panel_form .input-frm::placeholder {
+  color: var(--bs-placeholder);
+}
+.login_container .loginaccount_panel_form .input-frm-grp {
+  margin-bottom: 15px;
+}
+.login_container .loginaccount_panel_form .password_show .eye_panel {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+.login_container .loginaccount_panel_form .forgotpwd {
+  font-size: 1.125rem;
+  line-height: 25px;
+  color: var(--bs-gray6);
 }
 
 .checkout_container {
@@ -2184,8 +2262,12 @@ ul {
   --bs-black2: #161616;
   --bs-black3: #262626;
   --bs-black4: #292929;
+  --bs-black5: #010101;
   --bs-gray2: #8e8e8e;
   --bs-gray3: #eeeeee;
   --bs-gray4: #a4a4a4;
   --bs-gray5: #4f4f4f;
+  --bs-gray6: #696f79;
+  --bs-black1: #282828;
+  --bs-dark-gray1: #8692a6;
 }/*# sourceMappingURL=style.css.map */
