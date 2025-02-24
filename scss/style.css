@@ -1616,18 +1616,27 @@ footer .footer_bottom .copy_right ul li {
 
 .login_container {
   border-left: 18px solid var(--bs-black);
+  padding: 30px 16px;
 }
 @media (min-width: 992px) {
   .login_container {
     height: 100vh;
+    padding: 0 16px;
   }
 }
 .login_container .login_container_title {
-  font-size: 3.625rem;
-  line-height: 52px;
+  font-size: 3rem;
+  line-height: 45px;
   letter-spacing: -0.3px;
   color: var(--bs-black1);
   margin-bottom: 21px;
+}
+@media (min-width: 992px) {
+  .login_container .login_container_title {
+    font-size: 3.625rem;
+    line-height: 52px;
+    margin-bottom: 15px;
+  }
 }
 .login_container .login_container_p {
   font-size: 1.06rem;
@@ -1636,9 +1645,11 @@ footer .footer_bottom .copy_right ul li {
   margin-bottom: 15px;
   font-weight: 300;
 }
-.login_container .loginaccount_container {
-  max-width: 381px;
-  margin: 0 auto;
+@media (min-width: 992px) {
+  .login_container .loginaccount_container {
+    max-width: 381px;
+    margin: 0 auto 16px;
+  }
 }
 .login_container .xs-left-container {
   display: none;
