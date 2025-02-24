@@ -2,8 +2,10 @@
 //   background-size: unset;
 // }
 .login_container {
-  height: 100vh;
   border-left: 18px solid var(--bs-black);
+  @include custom-large-screen {
+    height: 100vh;
+  }
   .login_container_title {
     font-size: 3.625rem;
     line-height: 52px;
@@ -149,7 +151,9 @@
     }
   }
   .login_wrapper {
-    padding-top: 45px;
+    // padding-top: 45px;
+    display: flex;
+    align-items: center;
   }
   .loginaccount_title {
     font-size: 1.43rem;
@@ -186,17 +190,34 @@
     .input-frm-grp {
       margin-bottom: 15px;
     }
-    .password_show{
-      .eye_panel{
+    .password_show {
+      .eye_panel {
         position: absolute;
         right: 15px;
         top: 14px;
       }
     }
-    .forgotpwd{
+    .forgotpwd {
       font-size: 1.125rem;
       line-height: 25px;
       color: var(--bs-gray6);
+    }
+    .login_btn {
+      background: var(--bs-primary-red);
+      color: var(--bs-white);
+      @include border-radius(5px);
+      font-size: 1.125rem;
+      line-height: 25px;
+      padding: 5px 0;
+      width: 100%;
+    }
+    .register_txt {
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 18px;
+      color: var(--bs-black6);
+      margin-top: 25px;
+      display: block;
     }
   }
 }
