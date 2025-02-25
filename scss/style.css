@@ -2146,6 +2146,7 @@ footer .footer_bottom .copy_right ul li {
   font-size: 1.625rem;
   line-height: 30px;
   font-weight: 400;
+  margin-top: 12px;
 }
 .service_list .training_container {
   padding: 93px 0;
@@ -2210,7 +2211,7 @@ footer .footer_bottom .copy_right ul li {
 }
 @media (min-width: 768px) {
   .service_list .training_container .traininglist_wrap .buy_wrap {
-    padding-left: 12px;
+    padding-left: 24px;
   }
 }
 .service_list .training_container .traininglist_wrap .divider_service {

@@ -72,6 +72,8 @@
         font-size: 1.625rem;
         line-height: 30px;
         font-weight: 400;
+        margin-top: 12px;
+     
       }
     }
   }
@@ -103,7 +105,7 @@
           }
           .training_content {
             padding-right: 12px;
-            @include custom-medium-screen{
+            @include custom-medium-screen {
               padding-right: 12px;
             }
             .training_title {
@@ -127,8 +129,8 @@
         line-height: 60px;
         color: var(--bs-red1);
         font-weight: 600;
-        @include custom-medium-screen{
-          padding-left: 12px;
+        @include custom-medium-screen {
+          padding-left: 24px;
         }
       }
       .divider_service {
