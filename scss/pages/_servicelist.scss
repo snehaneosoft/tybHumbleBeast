@@ -1,44 +1,140 @@
+// .service_list {
+//   .service_list_title {
+//     color: var(--bs-white);
+//     font-size: 4rem;
+//     line-height: 55px;
+//     @include custom-medium-screen{
+//         font-size: 6rem;
+//         line-height: 50px;
+//     }
+//   }
+//   .service_list_para {
+//     font-size: 1.6rem;
+//     color: var(--bs-white);
+//   }
+//   .servicelist_card {
+//     margin: 57px 0 70px 0;
+//     .card {
+//       background: url('../../images/noise_texture.png') no-repeat transparent;
+//       border: 1px solid var(--bs-dark-gray2);
+//       padding: 40px 27px 25px 27px;
+//       @include border-radius(31px);
+//       .service_list_icon {
+//         width: 94px;
+//       }
+//     }
+//     .card-title,
+//     .card-para {
+//       color: var(--bs-white);
+//     }
+//     .card-title {
+//       font-size: 1.6rem;
+//       border-bottom: 1px solid var(--bs-white);
+//       padding: 26px 0 15px 0;
+//     }
+//     .card-para {
+//       font-size: 1.18rem;
+//     }
+//   }
+//   .service_list_footer{
+//     color: var(--bs-white);
+//     font-size: 1.25rem;
+//     line-height: 23px;
+//   }
+// }
+// white theme
 .service_list {
-  .service_list_title {
-    color: var(--bs-white);
-    font-size: 4rem;
-    line-height: 55px;
-    @include custom-medium-screen{
-        font-size: 6rem;
-        line-height: 50px;
+  .servicelist_banner {
+    background: url('../../images/servicelistbanner.png') no-repeat center
+      center/cover;
+    background-size: 100% 100%;
+    height: 298px;
+    @include custom-medium-screen {
+      height: 100%;
+      background-size: 100% 100%;
     }
-  }
-  .service_list_para {
-    font-size: 1.6rem;
-    color: var(--bs-white);
-  }
-  .servicelist_card {
-    margin: 57px 0 70px 0;
-    .card {
-      background: url('../../images/noise_texture.png') no-repeat transparent;
-      border: 1px solid var(--bs-dark-gray2);
-      padding: 40px 27px 25px 27px;
-      @include border-radius(31px);
-      .service_list_icon {
-        width: 94px;
+    .service_list_wrap {
+      padding: 66px 16px;
+      @include custom-medium-screen {
+        padding: 233px 0;
+      }
+      .service_list_title {
+        font-size: 2.625rem;
+        line-height: 70px;
+        font-weight: 400;
+        letter-spacing: -0.5px;
+        @include custom-medium-screen {
+          font-size: 4.625rem;
+          line-height: 49px;
+        }
+      }
+      .service_list_para {
+        font-size: 1.625rem;
+        line-height: 30px;
+        font-weight: 400;
       }
     }
-    .card-title,
-    .card-para {
-      color: var(--bs-white);
-    }
-    .card-title {
-      font-size: 1.6rem;
-      border-bottom: 1px solid var(--bs-white);
-      padding: 26px 0 15px 0;
-    }
-    .card-para {
-      font-size: 1.18rem;
-    }
   }
-  .service_list_footer{
-    color: var(--bs-white);
-    font-size: 1.25rem;
-    line-height: 23px;
+  .training_container {
+    padding: 93px 0;
+    .traininglist_wrap {
+      .training_lt {
+        .training_content {
+          border-right: 1px solid var(--bs-black);
+        }
+        .training_panel {
+          gap: 30px;
+          flex-direction: column;
+          @include custom-medium-screen {
+            flex-direction: row;
+          }
+          .training_icon {
+            width: 100%;
+            @include custom-medium-screen {
+              width: 84px;
+              height: 84px;
+            }
+          }
+        }
+        .training_content_wrap {
+          width: 100%;
+          @include custom-medium-screen {
+            width: calc(100% - 84px);
+          }
+          .training_content {
+            padding-right: 12px;
+            @include custom-medium-screen{
+              padding-right: 12px;
+            }
+            .training_title {
+              font-size: 1.5rem;
+              line-height: 27px;
+              @include custom-medium-screen {
+                font-size: 2.3rem;
+                line-height: 60px;
+              }
+            }
+            .training_para {
+              font-size: 1rem;
+              line-height: 19px;
+            }
+          }
+        }
+      }
+      .buy_wrap {
+        padding-left: 12px;
+        font-size: 2.31rem;
+        line-height: 60px;
+        color: var(--bs-red1);
+        font-weight: 600;
+        @include custom-medium-screen{
+          padding-left: 12px;
+        }
+      }
+      .divider_service {
+        margin: 56px 0;
+        border-color: var(--bs-black);
+      }
+    }
   }
 }
