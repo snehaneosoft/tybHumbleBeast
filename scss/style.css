@@ -712,60 +712,44 @@ footer .footer_bottom .copy_right ul li {
   }
 }
 
-.termsofservice_container.blog_container .title {
-  margin-bottom: 75px;
-}
-.termsofservice_container.blog_container .title .termofservice_section .title {
-  margin-bottom: 80px;
-}
-.termsofservice_container.blog_container .blog_info {
-  margin: 50px 12px;
-}
-@media (min-width: 1200px) {
-  .termsofservice_container.blog_container .blog_info {
-    margin: 85px 75px;
-  }
-}
-.termsofservice_container.blog_container .blog_info_title {
-  color: var(--bs-white);
-}
-.termsofservice_container.blog_container .blog_info_ul {
-  padding-left: 30px;
-  margin-bottom: 40px;
-}
-.termsofservice_container.blog_container .blog_info_ul li {
-  color: var(--bs-white);
-  font-size: 1.063rem;
-  line-height: 26px;
-  font-family: "Inter";
-  list-style: disc;
-}
-.termsofservice_container.blog_container .button_action {
-  display: flex;
-  gap: 30px;
-}
-.termsofservice_container .heading_termsofservice {
-  font-size: 2.5rem;
-  padding: 65px 0 35px 0;
+.termsofservice_container {
+  background: url("../../images/termsofservice.png") #000 no-repeat center center/cover;
+  background-size: 100% 100%;
+  padding: 50px 0 12px 0;
 }
 @media (min-width: 768px) {
-  .termsofservice_container .heading_termsofservice {
-    font-size: 3.5rem;
-    padding: 135px 0 55px 0;
+  .termsofservice_container {
+    padding: 118px 0;
   }
 }
-.termsofservice_container .termofservice_section {
-  padding-top: 66px;
+.termsofservice_container .termsofservice_title {
+  font-size: 2.625rem;
+  line-height: 53px;
+  letter-spacing: -0.5px;
 }
-.termsofservice_container .termofservice_section .title {
-  font-size: 39px;
-  color: var(--bs-white);
-  line-height: 38px;
+@media (min-width: 768px) {
+  .termsofservice_container .termsofservice_title {
+    font-size: 4.625rem;
+    line-height: 75px;
+  }
 }
-.termsofservice_container .termofservice_section .para {
-  font-size: 1.06rem;
+
+.termsofservice_wrapper {
+  padding: 48px 0 100px 0;
+}
+.termsofservice_wrapper .termofservice_para .termofservice_section {
+  padding-top: 52px;
+}
+.termsofservice_wrapper .termofservice_para .termofservice_section .title {
+  font-size: 2.18rem;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: var(--bs-black7);
+}
+.termsofservice_wrapper .termofservice_para .termofservice_section .para {
+  font-size: 1rem;
   line-height: 26px;
-  color: var(--bs-white);
+  color: var(--bs-gray5);
 }
 
 .achieve_best .aboutus_container {
@@ -2360,6 +2344,7 @@ ul {
   --bs-black4: #292929;
   --bs-black5: #010101;
   --bs-black6: #212121;
+  --bs-black7: #0a0a0a;
   --bs-gray2: #8e8e8e;
   --bs-gray3: #eeeeee;
   --bs-gray4: #a4a4a4;
@@ -2367,5 +2352,5 @@ ul {
   --bs-gray6: #696f79;
   --bs-black1: #282828;
   --bs-dark-gray1: #8692a6;
-  --bs-red1:#cb0202 ;
+  --bs-red1: #cb0202;
 }/*# sourceMappingURL=style.css.map */

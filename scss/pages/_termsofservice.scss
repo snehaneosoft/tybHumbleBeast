@@ -1,57 +1,95 @@
+// .termsofservice_container {
+//   &.blog_container {
+//     .title {
+//       margin-bottom: 75px;
+//       .termofservice_section {
+//         .title {
+//           margin-bottom: 80px;
+//         }
+//       }
+//     }
+//     .blog_info{
+//       margin: 50px 12px;
+//       @include extra-large {
+//         margin: 85px 75px;
+//       }
+//     }
+//     .blog_info_title{
+//       color: var(--bs-white);
+//     }
+//     .blog_info_ul{
+//       padding-left: 30px;
+//       margin-bottom: 40px;
+//       li{
+//         color: var(--bs-white);
+//         font-size: 1.063rem;
+//         line-height: 26px;
+//         font-family: 'Inter';
+//         list-style: disc;
+//       }
+//     }
+//     .button_action{
+//       display: flex;
+//       gap: 30px;
+//     }
+//   }
+//   .heading_termsofservice {
+//     font-size: 2.5rem;
+//     padding: 65px 0 35px 0;
+//     @include custom-medium-screen {
+//       font-size: 3.5rem;
+//       padding: 135px 0 55px 0;
+//     }
+//   }
+//   .termofservice_section {
+//     padding-top: 66px;
+//     .title {
+//       font-size: 39px;
+//       color: var(--bs-white);
+//       line-height: 38px;
+//     }
+//     .para {
+//       font-size: 1.06rem;
+//       line-height: 26px;
+//       color: var(--bs-white);
+//     }
+//   }
+// }
+//white theme
 .termsofservice_container {
-  &.blog_container {
-    .title {
-      margin-bottom: 75px;
-      .termofservice_section {
-        .title {
-          margin-bottom: 80px;
-        }
-      }
-    }
-    .blog_info{
-      margin: 50px 12px;
-      @include extra-large {
-        margin: 85px 75px;
-      }
-    }
-    .blog_info_title{
-      color: var(--bs-white);
-    }
-    .blog_info_ul{
-      padding-left: 30px;
-      margin-bottom: 40px;
-      li{
-        color: var(--bs-white);
-        font-size: 1.063rem;
-        line-height: 26px;
-        font-family: 'Inter';
-        list-style: disc;
-      }
-    }
-    .button_action{
-      display: flex;
-      gap: 30px;
-    }
+  background: url('../../images/termsofservice.png') #000 no-repeat center
+    center/cover;
+  background-size: 100% 100%;
+  padding: 50px 0 12px 0;
+  @include custom-medium-screen {
+    padding: 118px 0;
   }
-  .heading_termsofservice {
-    font-size: 2.5rem;
-    padding: 65px 0 35px 0;
+  .termsofservice_title {
+    font-size: 2.625rem;
+    line-height: 53px;
+    letter-spacing: -0.5px;
     @include custom-medium-screen {
-      font-size: 3.5rem;
-      padding: 135px 0 55px 0;
+      font-size: 4.625rem;
+      line-height: 75px;
     }
   }
-  .termofservice_section {
-    padding-top: 66px;
-    .title {
-      font-size: 39px;
-      color: var(--bs-white);
-      line-height: 38px;
-    }
-    .para {
-      font-size: 1.06rem;
-      line-height: 26px;
-      color: var(--bs-white);
+}
+.termsofservice_wrapper {
+  padding: 48px 0 100px 0;
+  .termofservice_para {
+    .termofservice_section {
+      padding-top: 52px;
+      .title {
+        font-size: 2.18rem;
+        line-height: 30px;
+        margin-bottom: 20px;
+        color: var(--bs-black7);
+      }
+      .para {
+        font-size: 1rem;
+        line-height: 26px;
+        color: var(--bs-gray5);
+      }
     }
   }
 }
