@@ -2559,6 +2559,11 @@ footer .footer_bottom .copy_right ul li {
 .bloglist .bloglist_row .blog_content .comment_wrap .commentlbl {
   color: var(--bs-black);
 }
+.bloglist .loadmore_box {
+  display: block;
+  margin: 78px 0;
+  text-align: center;
+}
 
 ul {
   list-style: none;
