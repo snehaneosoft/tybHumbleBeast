@@ -230,4 +230,84 @@
       display: block;
     }
   }
+  .registration_container {
+    padding: 60px 0;
+    // gap: 20px;
+    @include custom-medium-screen {
+      //  gap: inherit;
+    }
+    .register_panel_title {
+      font-size: 2.31rem;
+      line-height: 38px;
+      letter-spacing: -0.3px;
+      color: var(--bs-black9);
+      margin-bottom: 40px;
+    }
+    .register_account {
+      margin-top: 20px;
+      @include small-screen {
+        margin-top: 0;
+      }
+      .heading {
+        font-size: 1.25rem;
+        line-height: 21px;
+        letter-spacing: -0.3px;
+        margin-bottom: 10px;
+      }
+      .loginaccount_para {
+        font-size: 1.25rem;
+        line-height: 21px;
+        letter-spacing: -0.3px;
+        font-weight: 400;
+        margin-bottom: 45px;
+      }
+      .sub_heading {
+        font-size: 0.875rem;
+        line-height: 16px;
+        letter-spacing: -0.3px;
+        font-weight: 400;
+      }
+      .register_form_container {
+        margin-top: 48px;
+        .lbl {
+          font-family: Tahoma, 'Trebuchet MS', sans-serif;
+          color: var(--bs-gray6);
+        }
+        .input-frm {
+          @include border-radius(8px);
+        }
+      }
+      .register_btn_wrap {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        @include custom-medium-screen {
+          flex-direction: row;
+          gap: inherit;
+          margin-top: 25px;
+        }
+        .register_btn {
+          background: var(--bs-primary-red);
+          color: var(--bs-white);
+          @include border-radius(8px);
+          font-size: 1rem;
+          line-height: 16px;
+          padding: 8px 40px;
+          font-family: Tahoma, 'Trebuchet MS', sans-serif;
+        }
+        .acc_txt {
+          font-size: 0.75rem;
+          line-height: 12px;
+          color: var(--bs-black11);
+          .logintxt {
+            font-size: 0.985rem;
+            line-height: 15px;
+            letter-spacing: -0.3px;
+            color: var(--bs-black11);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
