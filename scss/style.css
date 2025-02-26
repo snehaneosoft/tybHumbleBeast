@@ -2564,6 +2564,29 @@ footer .footer_bottom .copy_right ul li {
   margin: 78px 0;
   text-align: center;
 }
+.bloglist .blog_info_list .blog_info_title, .bloglist .blogdetails_container .blogdetails_section .blogdetails_para .blog_info_list .blog_info_ul li, .blogdetails_container .blogdetails_section .blogdetails_para .bloglist .blog_info_list .blog_info_ul li {
+  font-family: "ABeeZee";
+  font-size: 3.4rem;
+  line-height: 49px;
+}
+.bloglist .blog_info_list .blog_info_ul {
+  list-style-type: disc;
+  padding-left: 22px;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  margin-bottom: 66px;
+}
+.bloglist .blog_info_list .blog_info_ul li {
+  font-size: 1.06rem;
+  line-height: 30px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: var(--bs-secondary-blue);
+}
+.bloglist .blog_info_list .blog_info_ul li:first-child {
+  margin-top: 28px;
+}
 
 ul {
   list-style: none;
