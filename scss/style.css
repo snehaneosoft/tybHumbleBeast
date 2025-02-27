@@ -428,6 +428,11 @@ body.register_bdy {
 .contact_us_now_wrapper .contactusnow_wrapper .consultusnow_btn {
   font-size: 1.62rem;
   color: var(--bs-black4);
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 43px;
+  padding: 5px 26px;
+  border-radius: 25px;
 }
 
 header {
@@ -2425,110 +2430,113 @@ footer .footer_bottom .copy_right ul li {
 }
 
 .video_consultation_wrapper {
-  padding-bottom: 90px;
+  background: url("../../images/servicedetails/onlinevideo.png") rgba(0, 0, 0, 0.8) no-repeat center;
+  background-size: 100% 100%;
 }
-@media (max-width: 576px) {
-  .video_consultation_wrapper {
-    padding-bottom: 50px;
+.video_consultation_wrapper .video_consultation_box {
+  position: relative;
+  padding: 40px 0;
+  gap: 12px;
+}
+.video_consultation_wrapper .video_consultation_box .video_consultation_heading {
+  color: var(--bs-white);
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+@media (min-width: 768px) {
+  .video_consultation_wrapper .video_consultation_box .video_consultation_heading {
+    font-size: 4.6rem;
+    line-height: 85px;
+    padding: 78px 0 91px 0;
   }
 }
-.video_consultation_wrapper .video_consultation_heading {
-  font-size: 3.6rem;
-  line-height: 52px;
-  color: var(--bs-white);
+.video_consultation_wrapper .video_consultation_box .onlineconimg {
+  width: 46px;
+  height: 46px;
 }
-@media (max-width: 576px) {
-  .video_consultation_wrapper .video_consultation_heading {
-    font-size: 2.6rem;
-    line-height: 40px;
-    margin-top: 20px;
+@media (min-width: 768px) {
+  .video_consultation_wrapper .video_consultation_box .onlineconimg {
+    width: 128px;
+    height: 128px;
   }
 }
 
-.video_cons_container .video_cons_desc_para {
-  color: var(--bs-white);
-  font-size: 0.75rem;
-  line-height: 20px;
-  color: var(--bs-white);
+.video_cons_container {
+  padding: 54px 0 0 0;
+}
+@media (min-width: 768px) {
+  .video_cons_container {
+    padding: 117px 0 0 0;
+  }
+}
+.video_cons_container .video_cons_desc {
+  padding-top: 10px;
+}
+.video_cons_container .video_cons_desc .video_cons_desc_para {
+  font-size: 0.81rem;
 }
 .video_cons_container .contactus_wrapper {
-  margin-top: 38px;
-}
-@media (max-width: 576px) {
-  .video_cons_container .contactus_wrapper {
-    text-align: center;
-  }
+  margin-top: 36px;
 }
 .video_cons_container .contactus_wrapper .contactus_btn {
-  padding: 10px 25px;
-  font-size: 1rem;
+  color: var(--bs-black);
+  font-size: 1.25rem;
+  line-height: 35px;
+  padding: 6px 38px;
 }
-.video_cons_container .conversation_img {
-  width: 128px;
-  height: 128px;
+.video_cons_container .servicelist_detail {
+  padding: 63px 0;
 }
-@media (max-width: 576px) {
-  .video_cons_container .conversation_img {
-    margin: auto;
+@media (min-width: 768px) {
+  .video_cons_container .servicelist_detail {
+    padding: 121px 0 163px 0;
   }
 }
-.video_cons_container .updated_list_container {
+.video_cons_container .servicelist_detail .updated_list_container {
   display: flex;
+  gap: 48px;
   flex-direction: column;
-  gap: 80px;
-  margin-top: 120px;
 }
-.video_cons_container .updated_list_container .updates_list {
+.video_cons_container .servicelist_detail .updated_list_container .updates_list {
   display: flex;
-  gap: 26px;
-  align-items: flex-start;
+  gap: 11px;
 }
-@media (max-width: 576px) {
-  .video_cons_container .updated_list_container .updates_list {
-    flex-direction: column;
+.video_cons_container .servicelist_detail .updated_list_container .updates_list .conversation_img {
+  width: 56px;
+  height: 56px;
+}
+@media (min-width: 768px) {
+  .video_cons_container .servicelist_detail .updated_list_container .updates_list .conversation_img {
+    width: 91px;
+    height: 91px;
   }
 }
-.video_cons_container .updated_list_container .updates_list .updates_list_wrapper {
-  color: var(--bs-white);
+.video_cons_container .servicelist_detail .updated_list_container .updates_list .conversation_img img {
+  width: 100%;
 }
-.video_cons_container .updated_list_container .updates_list .updates_list_wrapper .title {
-  font-size: 2.18rem;
-  line-height: 42px;
-  margin-bottom: 22px;
+.video_cons_container .servicelist_detail .updated_list_container .updates_list .updates_list_wrapper {
+  width: 100%;
+  height: 100%;
 }
-@media (max-width: 576px) {
-  .video_cons_container .updated_list_container .updates_list .updates_list_wrapper .title {
-    line-height: 30px;
+@media (min-width: 768px) {
+  .video_cons_container .servicelist_detail .updated_list_container .updates_list .updates_list_wrapper {
+    width: calc(100% - 91px);
   }
 }
-.video_cons_container .updated_list_container .updates_list .updates_list_wrapper .para {
-  font-size: 0.813rem;
-}
-.video_cons_container .servicedetail_bottom_container {
-  margin-top: 123px;
-  color: var(--bs-white);
-}
-.video_cons_container .servicedetail_bottom_container .title {
-  font-size: 4rem;
-  line-height: 60px;
-  margin-bottom: 60px;
-  margin-top: 123px;
-}
-@media (max-width: 576px) {
-  .video_cons_container .servicedetail_bottom_container .title {
-    font-size: 2.6rem;
-    line-height: 47px;
-  }
-}
-.video_cons_container .servicedetail_bottom_container .para {
-  font-size: 1.12rem;
-  line-height: 27px;
-}
-.video_cons_container .servicedetail_bottom_container .para:not(:last-child) {
+.video_cons_container .servicelist_detail .updated_list_container .updates_list .updates_list_wrapper .title {
+  font-size: 1.5rem;
+  line-height: 20px;
   margin-bottom: 30px;
 }
-.video_cons_container .servicedetail_bottom_container .consult_us_now {
-  margin-top: 55px;
+@media (min-width: 768px) {
+  .video_cons_container .servicelist_detail .updated_list_container .updates_list .updates_list_wrapper .title {
+    font-size: 2.18rem;
+    line-height: 29px;
+  }
+}
+.video_cons_container .servicelist_detail .updated_list_container .updates_list .updates_list_wrapper .para {
+  font-size: 1.0625rem;
+  line-height: 21px;
 }
 
 .blogdetails_container .blogdetails_section .blogdetails_para {
