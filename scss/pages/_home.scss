@@ -24,10 +24,15 @@
 
   .about_author {
     .abt_author_title {
-      font-size: 4.3rem;
+      font-size: 1.5rem;
       color: var(--bs-gray2);
-      line-height: 85px;
-      padding: 94px 0 104px 0;
+      line-height: 23px;
+      padding: 34px 0 23px 0;
+      @include custom-medium-screen {
+        font-size: 4.3rem;
+        line-height: 85px;
+        padding: 94px 0 104px 0;
+      }
     }
   }
   .about_author_container {
@@ -47,14 +52,22 @@
       // @include border-radius(35px);
 
       .author-bx-wrap {
-        padding: 38px 51px 34px 0;
-        @include medium-screen {
-          padding: 58px 30px 70px 30px;
+        padding: 23px 4px 0 4px;
+        text-align: center;
+
+        @include custom-medium-screen {
+          text-align: left;
+          padding: 38px 51px 34px 0;
         }
         h6 {
-          font-size: 2.438rem;
-          line-height: 45px;
+          font-size: 1.375rem;
+          line-height: 25px;
           margin-bottom: 12px;
+          @include custom-medium-screen {
+            font-size: 2.438rem;
+            line-height: 45px;
+            margin-bottom: 12px;
+          }
         }
         p {
           font-size: 1.063rem;
@@ -69,14 +82,15 @@
     bottom: -194px;
   }
   .authbox {
-    position: absolute;
-    top: -18%;
-    left: -152px;
-    z-index: 1;
-    width: 612px;
-    transform: translate(0, -2%);
-    @include medium-screen {
-      display: none;
+    position: relative;
+    width: 100%;
+    @include custom-medium-screen {
+      position: absolute;
+      top: -18%;
+      left: -152px;
+      z-index: 1;
+      width: 612px;
+      transform: translate(0, -2%);
     }
   }
 }
@@ -121,7 +135,10 @@
   }
 
   .spotlight_wrapper {
-    margin: 89px 0 100px 0;
+    margin: 32px 0;
+    @include custom-medium-screen {
+      margin: 74px 0 100px 0;
+    }
     .blog_spotlight_wrap {
       margin-bottom: 50px;
     }
@@ -157,16 +174,18 @@
     .card_sportlight {
       // border: 1px solid var(--bs-light-white); /* Set the border width */
       @include border-radius(36px) /* Optional: Add rounded corners */;
-      padding: 33px 40px;
-
+      padding: 0;
+      @include custom-medium-screen {
+        padding: 0 40px;
+      }
       &.blog {
         margin: 0 !important;
       }
-      @include medium-screen {
-        // margin: 180px 0 150px 0;
-        margin: 10px 0 0 0;
-        padding: 30px;
-      }
+      // @include medium-screen {
+      //   // margin: 180px 0 150px 0;
+      //   margin: 10px 0 0 0;
+      //   padding: 30px;
+      // }
 
       h4 {
         font-size: 2.68rem;
@@ -288,10 +307,10 @@
   }
 }
 .nutrition_programming_weeklyin {
-  padding: 90px 0 90px 0;
+  padding: 43px 0 45px 0;
 
-  @include medium-screen {
-    padding: 200px 0 100px 0;
+  @include custom-medium-screen {
+    padding: 90px 0 90px 0;
   }
   .card_top_img {
     position: relative;
@@ -409,7 +428,10 @@
   background-size: cover;
   position: relative;
   z-index: 1;
-  padding: 65px 24px;
+  padding: 49px 24px 49px 0;
+  @include custom-medium-screen {
+    padding: 65px 24px;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -421,23 +443,31 @@
     z-index: -1;
   }
   .strength_lbl {
-    font-size: 2.68rem;
-    line-height: 50px;
+    font-size: 1.06rem;
+    line-height: 22px;
     margin-bottom: 50px;
     color: var(--bs-white);
     text-align: center;
     font-weight: 300;
+    @include custom-medium-screen {
+      font-size: 2.68rem;
+      line-height: 50px;
+    }
   }
 }
 .client_spotlights_container {
   .client_spotlights_heading {
-    font-size: 4.625rem;
-    line-height: 85px;
+    font-size: 1.5rem;
+    line-height: 24px;
     color: var(--bs-gray2);
+    @include custom-medium-screen {
+      font-size: 4.625rem;
+      line-height: 85px;
+    }
   }
 }
-.testimonial_container{
-  .testimonial_header{
+.testimonial_container {
+  .testimonial_header {
     // font-size: ;
   }
 }
