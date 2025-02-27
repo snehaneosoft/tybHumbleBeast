@@ -799,8 +799,10 @@ footer .footer_bottom .copy_right ul li {
   line-height: 42px;
   color: var(--bs-gray1);
 }
-.achieve_best .aboutus_info_container .aboutus_para {
-  padding-left: 30px;
+@media (min-width: 768px) {
+  .achieve_best .aboutus_info_container .aboutus_para {
+    padding-left: 30px;
+  }
 }
 .achieve_best .aboutus_info_container .aboutus_para .aboutus_para_lbl {
   font-size: 1.06rem;

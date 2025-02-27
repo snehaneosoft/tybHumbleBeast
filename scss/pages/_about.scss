@@ -101,7 +101,10 @@
   }
   .aboutus_info_container {
     .aboutus_para {
-      padding-left: 30px;
+      
+      @include custom-medium-screen{
+        padding-left: 30px;
+      }
       .aboutus_para_lbl {
         font-size: 1.06rem;
         line-height: 26px;
