@@ -1,7 +1,14 @@
 .achieve_best {
   padding-top: 20px;
   .achieve_your_best_container {
-    margin-bottom: 65px;
+    padding:35px 0 22px 0;
+    border-bottom: 1px solid var(--bs-black);
+    margin-bottom: 22px;
+    @include custom-medium-screen {
+      padding: 47px 0 62px 0;
+      border-bottom: none;
+      margin-bottom: 0;
+    }
   }
   h2 {
     font-family: 'Bank Gothic';
@@ -17,22 +24,23 @@
   }
   .achieve_best_subtitle {
     color: var(--bs-gray2);
+    font-size: 2.18rem;
     font-family: 'inter';
-
     letter-spacing: -0.3px;
-    font-size: 4rem;
-    line-height: 50px;
-    font-size: 3rem;
+    line-height: 40px;
+    margin-bottom: 0;
     @include custom-medium-screen {
-      line-height: 38px;
       font-size: 4rem;
+      line-height: 38px;
+      margin-bottom: 10px;
     }
   }
   .support_subtitle {
-    font-size: 1.6rem;
+    font-size: 1.06rem;
     line-height: 38px;
     color: var(--bs-gray1);
     @include custom-medium-screen {
+      font-size: 1.6rem;
       line-height: 42px;
     }
   }
@@ -72,15 +80,22 @@
     }
     .list_books_card {
       &_header {
-        font-size: 2.9rem;
-        line-height: 57px;
+        font-size: 1.2rem;
+        line-height: 16px;
         margin-bottom: 13px;
+        @include custom-large-screen {
+          font-size: 2.9rem;
+          line-height: 57px;
+        }
       }
       &_subheading {
-        font-size: 1.2rem;
+        font-size: 0.875rem;
         line-height: 20px;
         color: var(--bs-gray1);
         gap: 16px;
+        @include custom-large-screen {
+          font-size: 1.2rem;
+        }
       }
       .list_books_para {
         font-size: 1rem;
@@ -91,12 +106,16 @@
       }
       .freeshipping_wrapper {
         gap: 12px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         @include small-screen {
           flex-direction: row;
           gap: 22px;
+          justify-content: flex-start;
+        }
+        @include custom-large-screen {
+          flex-direction: row;
           justify-content: flex-start;
         }
         // @include custom-medium-screen {
@@ -106,17 +125,51 @@
         //   gap: 22px;
         // }
         .addtocart_btn {
-          font-size: 1.25rem;
-          line-height: 23px;
-          padding: 5px 24px;
+          font-size: 0.75rem;
+          line-height: 10px;
+          padding: 5px 8px;
           box-shadow: 3.36px 5.04px 8.49px 0px #00000040;
+          @include custom-medium-screen {
+            font-size: 1.25rem;
+            line-height: 23px;
+            padding: 5px 24px;
+          }
+        }
+
+        .star_container {
+          width: 80px;
+          @include custom-large-screen {
+            width: auto;
+          }
         }
 
         .subheading_lbl {
           color: var(--bs-gray1);
-          font-size: 1.25rem;
-          line-height: 35px;
+          font-size: 0.75rem;
+          line-height: 10px;
+          @include custom-medium-screen {
+            font-size: 1.25rem;
+            line-height: 35px;
+          }
         }
+      }
+    }
+    .horizontal_hr{
+      margin: 40px 0 30px 0;
+      width: 100%;
+    }
+    .blueprint_desc {
+      order: 2;
+    }
+    .blueprint_thumbnail {
+      order: 1;
+    }
+    @include custom-large-screen {
+      .blueprint_desc {
+        order: inherit;
+      }
+      .blueprint_thumbnail {
+        order: inherit;
       }
     }
   }
