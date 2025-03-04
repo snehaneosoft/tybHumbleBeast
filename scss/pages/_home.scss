@@ -216,40 +216,90 @@
   background: var(--bs-light-gray1);
   padding: 49px 0 63px 0;
   .testimonial_header {
-    font-size: 4.6rem;
+    font-size: 1.18rem;
     color: var(--bs-gray2);
-    line-height: 85px;
-    margin-bottom: 18px;
+    line-height: 28px;
+
+    @include custom-medium-screen {
+      font-size: 4.6rem;
+      line-height: 85px;
+    }
   }
   .testimonial_slider {
+    padding-top: 24px;
+
+    .slick-list {
+      padding: 24px 40px !important;
+      .slick-track {
+        display: flex;
+        gap: 36px;
+      }
+    }
     .testimonial_card {
       padding: 32px;
       box-shadow: 0px 7.97px 21.59px -3.19px #0000001f;
       background: rgba(245, 243, 248, 0.63);
-      .testimonial_img{
+      width: 331px;
+      &.slick-slide.slick-current.slick-active.slick-center {
+        transform: scale(1.13);
+      }
+      .testimonial_img {
         width: 64px;
-        height:64px;
+        height: 64px;
         @include border-radius(50px);
       }
-      .testimonial_wrap{
+      .testimonial_wrap {
         gap: 12px;
       }
-      .testimonial_card_contents{
+      .testimonial_card_contents {
         gap: 4px;
-        .testimonial_card_header{
+        .testimonial_card_header {
           font-size: 1.18rem;
           line-height: 21px;
           font-weight: 600;
         }
-        .testimonial_card_star{
+        .testimonial_card_star {
           width: 65px;
           height: 17px;
         }
       }
-      .testimonial_para{
+      .testimonial_para {
         font-size: 0.93rem;
         line-height: 19px;
         margin-top: 17px;
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      z-index: 1;
+      width: 40px;
+      height: 40px;
+      @include border-radius(50px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--bs-white);
+      width: 40px;
+      height: 40px;
+    }
+    .slick-prev {
+      left: 5%;
+      &:before {
+        background: url('../../images/right-arrow_container.png') no-repeat;
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+        font-size: inherit;
+      }
+    }
+    .slick-next {
+      right: 5%;
+      &:before {
+        background: url('../../images/right-arrow_container.png') no-repeat;
+        width: 20px;
+        height: 20px;
+
+        font-size: inherit;
       }
     }
   }

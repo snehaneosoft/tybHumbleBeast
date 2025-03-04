@@ -188,7 +188,7 @@
                                 achieve and sustain your best self.
                             </p>
                         </div>
-                        <div class="row g-5 mt-0 mt-xl-5 mt-xxl-5 mt-lg-5 mt-md-5 mt-sm-5">
+                        <div class="row g-3 mt-0 mt-xl-5 mt-xxl-5 mt-lg-5 mt-md-5 mt-sm-5">
                             <div class="col-xl-4">
                                 <div class="card_top_img">
                                     <div class="card_overlay_icon">
@@ -648,24 +648,37 @@
         $('.testimonial_slider').slick({
             centerMode: true,
             centerPadding: '60px',
-            slidesToShow: 3,
+            slidesToShow: 1,
+            centerMargin: '40px',
             arrows: true,
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 992,
                     settings: {
                         arrows: true,
                         centerMode: true,
                         centerPadding: '40px',
-                        slidesToShow: 3
+                        slidesToShow: 2,
+                        innerWidth: '331px'
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 1440,
                     settings: {
-                        arrows: false,
+                        arrows: true,
                         centerMode: true,
                         centerPadding: '40px',
+                        slidesToShow: 3,
+                        innerWidth: '331px'
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+
                         slidesToShow: 1
                     }
                 }
