@@ -76,13 +76,6 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../../fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../../fonts/Poppins-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Prata";
   src: url("../../fonts/Prata-Regular.woff2") format("woff2"), url("../../fonts/Prata-Regular.woff") format("woff");
   font-weight: normal;
@@ -1459,7 +1452,7 @@ footer .footer_bottom .copy_right ul li {
 }
 @media (min-width: 768px) {
   .client_spotlights .spotlight_wrapper {
-    margin: 74px 0 100px 0;
+    margin: 74px 0 40px 0;
   }
 }
 .client_spotlights .spotlight_wrapper .blog_spotlight_wrap {
@@ -1533,6 +1526,47 @@ footer .footer_bottom .copy_right ul li {
   .client_spotlights .spotlight_wrapper .card_last_sportlight {
     margin-bottom: 50px;
   }
+}
+
+.testimonial_container {
+  background: var(--bs-light-gray1);
+  padding: 49px 0 63px 0;
+}
+.testimonial_container .testimonial_header {
+  font-size: 4.6rem;
+  color: var(--bs-gray2);
+  line-height: 85px;
+  margin-bottom: 18px;
+}
+.testimonial_container .testimonial_slider .testimonial_card {
+  padding: 32px;
+  box-shadow: 0px 7.97px 21.59px -3.19px rgba(0, 0, 0, 0.1215686275);
+  background: rgba(245, 243, 248, 0.63);
+}
+.testimonial_container .testimonial_slider .testimonial_card .testimonial_img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}
+.testimonial_container .testimonial_slider .testimonial_card .testimonial_wrap {
+  gap: 12px;
+}
+.testimonial_container .testimonial_slider .testimonial_card .testimonial_card_contents {
+  gap: 4px;
+}
+.testimonial_container .testimonial_slider .testimonial_card .testimonial_card_contents .testimonial_card_header {
+  font-size: 1.18rem;
+  line-height: 21px;
+  font-weight: 600;
+}
+.testimonial_container .testimonial_slider .testimonial_card .testimonial_card_contents .testimonial_card_star {
+  width: 65px;
+  height: 17px;
+}
+.testimonial_container .testimonial_slider .testimonial_card .testimonial_para {
+  font-size: 0.93rem;
+  line-height: 19px;
+  margin-top: 17px;
 }
 
 .related_post .title {
@@ -2877,6 +2911,7 @@ ul {
   --bs-gray4: #a4a4a4;
   --bs-gray5: #4f4f4f;
   --bs-gray6: #696f79;
+  --bs-light-gray1: #f5f5f5;
   --bs-black1: #282828;
   --bs-dark-gray1: #8692a6;
   --bs-red1: #cb0202;

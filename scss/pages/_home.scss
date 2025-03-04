@@ -137,7 +137,7 @@
   .spotlight_wrapper {
     margin: 32px 0;
     @include custom-medium-screen {
-      margin: 74px 0 100px 0;
+      margin: 74px 0 40px 0;
     }
     .blog_spotlight_wrap {
       margin-bottom: 50px;
@@ -208,6 +208,48 @@
     .card_last_sportlight {
       @include medium-screen {
         margin-bottom: 50px;
+      }
+    }
+  }
+}
+.testimonial_container {
+  background: var(--bs-light-gray1);
+  padding: 49px 0 63px 0;
+  .testimonial_header {
+    font-size: 4.6rem;
+    color: var(--bs-gray2);
+    line-height: 85px;
+    margin-bottom: 18px;
+  }
+  .testimonial_slider {
+    .testimonial_card {
+      padding: 32px;
+      box-shadow: 0px 7.97px 21.59px -3.19px #0000001f;
+      background: rgba(245, 243, 248, 0.63);
+      .testimonial_img{
+        width: 64px;
+        height:64px;
+        @include border-radius(50px);
+      }
+      .testimonial_wrap{
+        gap: 12px;
+      }
+      .testimonial_card_contents{
+        gap: 4px;
+        .testimonial_card_header{
+          font-size: 1.18rem;
+          line-height: 21px;
+          font-weight: 600;
+        }
+        .testimonial_card_star{
+          width: 65px;
+          height: 17px;
+        }
+      }
+      .testimonial_para{
+        font-size: 0.93rem;
+        line-height: 19px;
+        margin-top: 17px;
       }
     }
   }
@@ -464,10 +506,5 @@
       font-size: 4.625rem;
       line-height: 85px;
     }
-  }
-}
-.testimonial_container {
-  .testimonial_header {
-    // font-size: ;
   }
 }
